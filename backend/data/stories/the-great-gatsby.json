@@ -1,0 +1,170 @@
+{
+  "id": "the-great-gatsby",
+  "title": "The Great Gatsby",
+  "description": "Nick Carraway moves to West Egg and becomes neighbors with the mysterious millionaire Jay Gatsby, who throws extravagant parties in hopes of reuniting with his lost love, Daisy Buchanan.",
+  "difficulty": "hard",
+  "coverImage": "",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "West Egg",
+      "content": "Nick Carraway, a young man from Minnesota, moves to West Egg, Long Island, in the summer of 1922. He rents a small house next to a mansion owned by a mysterious man named Jay Gatsby. Nick's cousin, Daisy Buchanan, lives across the bay in the more fashionable East Egg with her husband Tom. Nick visits them and meets Jordan Baker, a professional golfer. He learns that Tom is having an affair. Daisy tells Nick about her daughter and seems unhappy. Later that evening, Nick sees Gatsby standing alone on his lawn, reaching out toward a green light across the water.",
+      "questions": [
+        {
+          "id": "q1-1",
+          "question": "What is the name of the narrator?",
+          "type": "text",
+          "answer": "Nick Carraway"
+        },
+        {
+          "id": "q1-2",
+          "question": "Where does Nick move to?",
+          "type": "text",
+          "answer": "West Egg, Long Island"
+        },
+        {
+          "id": "q1-3",
+          "question": "Who is Nick's neighbor?",
+          "type": "text",
+          "answer": "Jay Gatsby"
+        },
+        {
+          "id": "q1-4",
+          "question": "What does Nick see Gatsby reaching toward?",
+          "type": "text",
+          "answer": "a green light across the water"
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "title": "The Valley of Ashes",
+      "content": "Nick describes the valley of ashes, a desolate area between West Egg and New York City. This is where George and Myrtle Wilson live. Myrtle is Tom Buchanan's mistress. Tom takes Nick to meet Myrtle at their apartment in New York. They have a party with Myrtle's sister and some friends. Myrtle talks about wanting to leave her husband. She mentions Daisy's name, and Tom becomes violent, breaking Myrtle's nose. This shows Tom's brutal nature and the corruption beneath the surface of the wealthy society.",
+      "questions": [
+        {
+          "id": "q2-1",
+          "question": "What is the valley of ashes?",
+          "type": "text",
+          "answer": "a desolate area between West Egg and New York City"
+        },
+        {
+          "id": "q2-2",
+          "question": "Who is Myrtle Wilson?",
+          "type": "text",
+          "answer": "Tom Buchanan's mistress"
+        },
+        {
+          "id": "q2-3",
+          "question": "What does Tom do when Myrtle mentions Daisy's name?",
+          "type": "text",
+          "answer": "becomes violent, breaking Myrtle's nose"
+        },
+        {
+          "id": "q2-4",
+          "question": "What is the name of Nick's neighbor from Chapter 1?",
+          "type": "text",
+          "answer": "Jay Gatsby"
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "title": "Gatsby's Party",
+      "content": "Nick receives an invitation to one of Gatsby's extravagant parties. He attends and is amazed by the opulence and the number of guests. Most people don't know Gatsby and have never met him. They just come for the free food and alcohol. Nick finally meets Gatsby, who has a remarkable smile. Gatsby tells Nick that they served in the same division during the war. Gatsby seems to know a lot about Nick. Later, Jordan tells Nick that Gatsby wants to ask him a favor. The party shows Gatsby's wealth and his desire to be accepted by high society, but also his isolation and loneliness.",
+      "questions": [
+        {
+          "id": "q3-1",
+          "question": "What does Nick notice about most of Gatsby's party guests?",
+          "type": "text",
+          "answer": "they don't know Gatsby and have never met him"
+        },
+        {
+          "id": "q3-2",
+          "question": "What does Gatsby tell Nick about their past?",
+          "type": "text",
+          "answer": "they served in the same division during the war"
+        },
+        {
+          "id": "q3-3",
+          "question": "What does Jordan tell Nick about Gatsby?",
+          "type": "text",
+          "answer": "Gatsby wants to ask him a favor"
+        },
+        {
+          "id": "q3-4",
+          "question": "What is the name of Tom's mistress from Chapter 2?",
+          "type": "text",
+          "answer": "Myrtle Wilson"
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "title": "Gatsby's Past",
+      "content": "Gatsby takes Nick to lunch in New York. He tells Nick about his past, claiming he comes from a wealthy family in the Middle West and was educated at Oxford. He shows Nick a medal from the war. Gatsby asks Nick to arrange a meeting with Daisy. He explains that he and Daisy were in love five years ago, but he was too poor to marry her. Now he has become wealthy and wants to win her back. Nick agrees to help. This reveals Gatsby's motivation: everything he has done—his wealth, his parties, his mansion—has been to win back Daisy's love.",
+      "questions": [
+        {
+          "id": "q4-1",
+          "question": "What does Gatsby claim about his background?",
+          "type": "text",
+          "answer": "he comes from a wealthy family in the Middle West and was educated at Oxford"
+        },
+        {
+          "id": "q4-2",
+          "question": "What does Gatsby ask Nick to do?",
+          "type": "text",
+          "answer": "arrange a meeting with Daisy"
+        },
+        {
+          "id": "q4-3",
+          "question": "How long ago were Gatsby and Daisy in love?",
+          "type": "text",
+          "answer": "five years ago"
+        },
+        {
+          "id": "q4-4",
+          "question": "What has been Gatsby's motivation for everything he has done?",
+          "type": "text",
+          "answer": "to win back Daisy's love"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "title": "The Green Light",
+      "content": "Nick arranges the meeting between Gatsby and Daisy at his house. Gatsby is extremely nervous. When Daisy arrives, Gatsby is awkward at first, but they reconnect. Gatsby shows Daisy his mansion and his expensive possessions. He throws his shirts into the air to show her his wealth. Daisy cries because she has never seen such beautiful shirts. Later, Gatsby points out the green light at the end of Daisy's dock. He says that the green light was always his guiding light, his dream. But now that he has Daisy, the light seems less important. The green light symbolizes Gatsby's dream of recapturing the past and winning Daisy's love.",
+      "questions": [
+        {
+          "id": "q5-1",
+          "question": "Where does Nick arrange the meeting between Gatsby and Daisy?",
+          "type": "text",
+          "answer": "at his house"
+        },
+        {
+          "id": "q5-2",
+          "question": "What does Gatsby do with his shirts?",
+          "type": "text",
+          "answer": "throws them into the air to show Daisy his wealth"
+        },
+        {
+          "id": "q5-3",
+          "question": "What does the green light symbolize?",
+          "type": "text",
+          "answer": "Gatsby's dream of recapturing the past and winning Daisy's love"
+        },
+        {
+          "id": "q5-4",
+          "question": "What was Gatsby's motivation from Chapter 4?",
+          "type": "text",
+          "answer": "to win back Daisy's love"
+        },
+        {
+          "id": "q5-5",
+          "question": "What does Gatsby say about the green light now that he has Daisy?",
+          "type": "text",
+          "answer": "it seems less important"
+        }
+      ]
+    }
+  ]
+}

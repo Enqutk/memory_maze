@@ -1,0 +1,170 @@
+{
+  "id": "the-little-prince",
+  "title": "The Little Prince",
+  "description": "A pilot crashes in the Sahara Desert and meets a young prince who has traveled from a small asteroid. Through their conversations, the prince shares profound wisdom about life, love, and what truly matters.",
+  "difficulty": "medium",
+  "coverImage": "",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "The Pilot and the Prince",
+      "content": "A pilot crashes his plane in the Sahara Desert. While trying to fix his engine, he is approached by a little prince who asks him to draw a sheep. The pilot, who had given up drawing as a child after adults criticized his drawings, draws several sheep, but the prince rejects them all. Finally, the pilot draws a box and tells the prince that the sheep is inside. The prince is delighted. The prince tells the pilot that he comes from a very small planet, Asteroid B-612. He says that his planet is so small that he can watch the sunset forty-four times in one day by simply moving his chair.",
+      "questions": [
+        {
+          "id": "q1-1",
+          "question": "Where does the pilot crash his plane?",
+          "type": "text",
+          "answer": "Sahara Desert"
+        },
+        {
+          "id": "q1-2",
+          "question": "What does the little prince ask the pilot to draw?",
+          "type": "text",
+          "answer": "a sheep"
+        },
+        {
+          "id": "q1-3",
+          "question": "What is the name of the prince's planet?",
+          "type": "text",
+          "answer": "Asteroid B-612"
+        },
+        {
+          "id": "q1-4",
+          "question": "How many times can the prince watch the sunset in one day?",
+          "type": "text",
+          "answer": "forty-four"
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "title": "The Rose",
+      "content": "The prince tells the pilot about his rose. He says that his rose is unique in all the world because he has tamed her and she has tamed him. The prince explains that taming means to establish ties. He says that his rose is more important than all the other roses in the universe because he has watered her, protected her, and listened to her. The prince also tells the pilot about the fox he met on Earth. The fox taught him that what is essential is invisible to the eye. The fox said that it is only with the heart that one can see rightly.",
+      "questions": [
+        {
+          "id": "q2-1",
+          "question": "Why is the prince's rose unique?",
+          "type": "text",
+          "answer": "because he has tamed her and she has tamed him"
+        },
+        {
+          "id": "q2-2",
+          "question": "What does taming mean according to the prince?",
+          "type": "text",
+          "answer": "to establish ties"
+        },
+        {
+          "id": "q2-3",
+          "question": "What did the fox teach the prince?",
+          "type": "text",
+          "answer": "what is essential is invisible to the eye"
+        },
+        {
+          "id": "q2-4",
+          "question": "What is the name of the prince's planet from Chapter 1?",
+          "type": "text",
+          "answer": "Asteroid B-612"
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "title": "The Planets",
+      "content": "The prince tells the pilot about the different planets he visited before coming to Earth. On the first planet, he met a king who thought he ruled over everything, but there was no one to rule. On the second planet, he met a conceited man who only wanted to be admired. On the third planet, he met a drunkard who drank to forget that he was ashamed of drinking. On the fourth planet, he met a businessman who was counting stars, claiming he owned them. The prince thought all these adults were very strange. They were all too busy with their own concerns to see what was truly important.",
+      "questions": [
+        {
+          "id": "q3-1",
+          "question": "Who did the prince meet on the first planet?",
+          "type": "text",
+          "answer": "a king"
+        },
+        {
+          "id": "q3-2",
+          "question": "What did the conceited man want?",
+          "type": "text",
+          "answer": "to be admired"
+        },
+        {
+          "id": "q3-3",
+          "question": "What was the drunkard doing?",
+          "type": "text",
+          "answer": "drinking to forget that he was ashamed of drinking"
+        },
+        {
+          "id": "q3-4",
+          "question": "What was the businessman counting?",
+          "type": "text",
+          "answer": "stars"
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "title": "The Snake and the Well",
+      "content": "On Earth, the prince meets a snake who tells him that among men, he is also alone. The prince also meets a flower who tells him that men have no roots and the wind blows them away. The prince finds a well in the desert, and the water from this well is special because it was born of the walk under the stars and the song of the pulley. The prince tells the pilot that the stars are beautiful because of a flower that cannot be seen. He says that what makes the desert beautiful is that somewhere it hides a well.",
+      "questions": [
+        {
+          "id": "q4-1",
+          "question": "What did the snake tell the prince about men?",
+          "type": "text",
+          "answer": "among men, he is also alone"
+        },
+        {
+          "id": "q4-2",
+          "question": "What did the flower say about men?",
+          "type": "text",
+          "answer": "men have no roots and the wind blows them away"
+        },
+        {
+          "id": "q4-3",
+          "question": "Why is the water from the well special?",
+          "type": "text",
+          "answer": "because it was born of the walk under the stars and the song of the pulley"
+        },
+        {
+          "id": "q4-4",
+          "question": "What makes the desert beautiful according to the prince?",
+          "type": "text",
+          "answer": "that somewhere it hides a well"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "title": "The Return",
+      "content": "The prince tells the pilot that he must return to his planet to take care of his rose. He says that his body is too heavy to take with him, so he must leave it behind. The snake will help him return. The prince tells the pilot not to be sad, because when he looks at the stars, he will remember that the prince is laughing on one of them. The prince says that all men have stars, but they are not the same things for different people. For some, the stars are guides. For others, they are no more than little lights in the sky. The prince leaves, and the pilot is left with the memory of their friendship and the wisdom the prince shared.",
+      "questions": [
+        {
+          "id": "q5-1",
+          "question": "Why must the prince return to his planet?",
+          "type": "text",
+          "answer": "to take care of his rose"
+        },
+        {
+          "id": "q5-2",
+          "question": "Who will help the prince return?",
+          "type": "text",
+          "answer": "the snake"
+        },
+        {
+          "id": "q5-3",
+          "question": "What should the pilot remember when he looks at the stars?",
+          "type": "text",
+          "answer": "that the prince is laughing on one of them"
+        },
+        {
+          "id": "q5-4",
+          "question": "What did the fox teach the prince in Chapter 2?",
+          "type": "text",
+          "answer": "what is essential is invisible to the eye"
+        },
+        {
+          "id": "q5-5",
+          "question": "What are stars for different people according to the prince?",
+          "type": "text",
+          "answer": "for some they are guides, for others they are no more than little lights"
+        }
+      ]
+    }
+  ]
+}

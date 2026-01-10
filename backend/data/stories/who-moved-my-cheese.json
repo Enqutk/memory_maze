@@ -1,0 +1,170 @@
+{
+  "id": "who-moved-my-cheese",
+  "title": "Who Moved My Cheese",
+  "description": "A timeless parable about change and adaptation. Follow four characters as they navigate a maze in search of cheese, learning valuable lessons about dealing with change in work and life.",
+  "difficulty": "easy",
+  "coverImage": "",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "The Story Behind The Story",
+      "content": "The story takes place in a Maze where four characters look for Cheese. The Cheese is a metaphor for what you want in life—whether it's a good job, a loving relationship, money, health, or peace of mind. The Maze is where you look for what you want—the organization you work in, the family you live in, or the community you live in. The four characters are Sniff, Scurry, Hem, and Haw. Sniff and Scurry are mice. They are simple creatures with simple brains. They rely on their basic instincts and trial and error. Hem and Haw are little people, about the size of mice, but they have human brains and complex emotions. They are the ones who can think, learn, and adapt.",
+      "questions": [
+        {
+          "id": "q1-1",
+          "question": "What does the Cheese represent in this story?",
+          "type": "text",
+          "answer": "what you want in life"
+        },
+        {
+          "id": "q1-2",
+          "question": "What does the Maze represent?",
+          "type": "text",
+          "answer": "where you look for what you want"
+        },
+        {
+          "id": "q1-3",
+          "question": "What are the names of the four characters?",
+          "type": "text",
+          "answer": "Sniff, Scurry, Hem, and Haw"
+        },
+        {
+          "id": "q1-4",
+          "question": "Which two characters are mice?",
+          "type": "text",
+          "answer": "Sniff and Scurry"
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "title": "The Characters",
+      "content": "Sniff and Scurry are mice. They have simple, rodent brains, good instincts, and the ability to adapt quickly. When they notice the cheese has moved, they immediately put on their running shoes and head out into the Maze to look for New Cheese. Hem and Haw are little people, the size of mice, but they have human brains and complex emotions. They have the ability to think, learn, and adapt, but they also have beliefs and emotions that can get in their way. When they discover the cheese has moved, Hem and Haw get angry and feel entitled. They believe the cheese should be there because they deserve it. They waste time complaining and looking for someone to blame.",
+      "questions": [
+        {
+          "id": "q2-1",
+          "question": "What do Sniff and Scurry do when they notice the cheese has moved?",
+          "type": "text",
+          "answer": "put on their running shoes and head out into the Maze"
+        },
+        {
+          "id": "q2-2",
+          "question": "What are Hem and Haw's main characteristics?",
+          "type": "text",
+          "answer": "they have human brains and complex emotions"
+        },
+        {
+          "id": "q2-3",
+          "question": "How do Hem and Haw react when the cheese moves?",
+          "type": "text",
+          "answer": "they get angry and feel entitled"
+        },
+        {
+          "id": "q2-4",
+          "question": "What are the names of the two mice from Chapter 1?",
+          "type": "text",
+          "answer": "Sniff and Scurry"
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "title": "The Handwriting on the Wall",
+      "content": "As Haw ventured deeper into the Maze, he began to see things differently. He started to realize that his fear was making things worse. He wrote on the wall: 'What would you do if you weren't afraid?' This question helped him see that his fear was paralyzing him. He also wrote: 'The quicker you let go of old cheese, the sooner you find new cheese.' Haw realized that holding onto the old way of doing things was preventing him from finding new opportunities. He began to laugh at himself and his old beliefs. He started to move faster and with more confidence.",
+      "questions": [
+        {
+          "id": "q3-1",
+          "question": "What question did Haw write on the wall?",
+          "type": "text",
+          "answer": "What would you do if you weren't afraid?"
+        },
+        {
+          "id": "q3-2",
+          "question": "What did Haw realize about letting go of old cheese?",
+          "type": "text",
+          "answer": "The quicker you let go of old cheese, the sooner you find new cheese"
+        },
+        {
+          "id": "q3-3",
+          "question": "What was Haw's fear doing to him?",
+          "type": "text",
+          "answer": "making things worse or paralyzing him"
+        },
+        {
+          "id": "q3-4",
+          "question": "What did Haw start to do as he moved through the Maze?",
+          "type": "text",
+          "answer": "laugh at himself and move faster"
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "title": "Finding New Cheese",
+      "content": "After what seemed like a long time, Haw finally found New Cheese Station N. It was the biggest supply of cheese he had ever seen. Sniff and Scurry were already there, enjoying the new cheese. Haw joined them and began to enjoy the new cheese. He realized that the new cheese was actually better than the old cheese. He also realized that if he had moved sooner, he would have found it earlier. Haw learned that change happens, and you need to anticipate it, monitor it, and adapt to it quickly. He also learned that the biggest inhibitor to change lies within yourself—nothing gets better until you change.",
+      "questions": [
+        {
+          "id": "q4-1",
+          "question": "What was the name of the station where Haw found the new cheese?",
+          "type": "text",
+          "answer": "New Cheese Station N"
+        },
+        {
+          "id": "q4-2",
+          "question": "Who was already at the new cheese station when Haw arrived?",
+          "type": "text",
+          "answer": "Sniff and Scurry"
+        },
+        {
+          "id": "q4-3",
+          "question": "What did Haw realize about the new cheese compared to the old?",
+          "type": "text",
+          "answer": "it was actually better"
+        },
+        {
+          "id": "q4-4",
+          "question": "What did Haw learn about change?",
+          "type": "text",
+          "answer": "you need to anticipate it, monitor it, and adapt to it quickly"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "title": "The Lessons",
+      "content": "Haw learned many valuable lessons from his journey. He learned that change happens—they keep moving the cheese. He learned to anticipate change—get ready for the cheese to move. He learned to monitor change—smell the cheese often so you know when it's getting old. He learned to adapt to change quickly—the quicker you let go of old cheese, the sooner you enjoy new cheese. Most importantly, he learned that change happens—move with the cheese. And he learned to enjoy change—savor the adventure and enjoy the taste of new cheese. Haw wrote these lessons on the wall for Hem, hoping his friend would one day find them and learn from them too.",
+      "questions": [
+        {
+          "id": "q5-1",
+          "question": "What is the first lesson Haw learned about change?",
+          "type": "text",
+          "answer": "change happens"
+        },
+        {
+          "id": "q5-2",
+          "question": "What does 'smell the cheese often' mean?",
+          "type": "text",
+          "answer": "monitor change or know when it's getting old"
+        },
+        {
+          "id": "q5-3",
+          "question": "What did Haw write on the wall for Hem?",
+          "type": "text",
+          "answer": "the lessons"
+        },
+        {
+          "id": "q5-4",
+          "question": "What was the name of the station where Haw found new cheese in Chapter 4?",
+          "type": "text",
+          "answer": "New Cheese Station N"
+        },
+        {
+          "id": "q5-5",
+          "question": "What should you do with change according to Haw?",
+          "type": "text",
+          "answer": "move with the cheese or enjoy change"
+        }
+      ]
+    }
+  ]
+}

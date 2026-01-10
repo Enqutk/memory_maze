@@ -1,0 +1,170 @@
+{
+  "id": "the-alchemist",
+  "title": "The Alchemist",
+  "description": "A young Andalusian shepherd named Santiago travels from Spain to the Egyptian desert in search of treasure buried near the Pyramids. Along the way, he meets many people who help him understand his Personal Legend.",
+  "difficulty": "medium",
+  "coverImage": "",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "The Shepherd",
+      "content": "Santiago was a young Andalusian shepherd. He had studied at the seminary for several years, but he had always wanted to travel. His parents had wanted him to become a priest, but he had convinced them to let him become a shepherd instead. He owned a flock of sheep and traveled with them throughout the countryside. He had learned to read from the priest, and he carried a book with him always. One day, he had a recurring dream about finding treasure near the Egyptian pyramids. He decided to visit a gypsy woman to interpret his dream. The gypsy told him that he must travel to the pyramids in Egypt to find his treasure.",
+      "questions": [
+        {
+          "id": "q1-1",
+          "question": "What was Santiago's profession?",
+          "type": "text",
+          "answer": "shepherd"
+        },
+        {
+          "id": "q1-2",
+          "question": "What did Santiago's parents want him to become?",
+          "type": "text",
+          "answer": "priest"
+        },
+        {
+          "id": "q1-3",
+          "question": "What was Santiago's recurring dream about?",
+          "type": "text",
+          "answer": "finding treasure near the Egyptian pyramids"
+        },
+        {
+          "id": "q1-4",
+          "question": "What did the gypsy woman tell Santiago?",
+          "type": "text",
+          "answer": "he must travel to the pyramids in Egypt to find his treasure"
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "title": "The King of Salem",
+      "content": "Santiago met an old man who claimed to be the King of Salem. The old man told Santiago about the concept of a Personal Legend. He explained that when you want something, all the universe conspires in helping you to achieve it. The old man gave Santiago two stones: Urim and Thummim. These stones would help Santiago make decisions. The old man told Santiago that he must follow omens, which are signs from the universe. He also told Santiago that the secret of happiness is to see all the marvels of the world, and never to forget the drops of oil on the spoon.",
+      "questions": [
+        {
+          "id": "q2-1",
+          "question": "Who did Santiago meet who claimed to be the King of Salem?",
+          "type": "text",
+          "answer": "an old man"
+        },
+        {
+          "id": "q2-2",
+          "question": "What is a Personal Legend?",
+          "type": "text",
+          "answer": "what you want or your destiny"
+        },
+        {
+          "id": "q2-3",
+          "question": "What did the old man give Santiago?",
+          "type": "text",
+          "answer": "two stones: Urim and Thummim"
+        },
+        {
+          "id": "q2-4",
+          "question": "What was Santiago's profession in Chapter 1?",
+          "type": "text",
+          "answer": "shepherd"
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "title": "The Crystal Merchant",
+      "content": "Santiago arrived in Tangier, but he was robbed of all his money. He found work with a crystal merchant. The merchant had a shop that had been there for thirty years, but he had never realized his dream of making a pilgrimage to Mecca. Santiago helped the merchant improve his business by suggesting they display the crystal in the street. The business flourished, and Santiago earned enough money to continue his journey. However, the merchant taught Santiago an important lesson: sometimes it's better to dream about your dreams than to actually achieve them, because once you achieve them, you have nothing left to dream about.",
+      "questions": [
+        {
+          "id": "q3-1",
+          "question": "What happened to Santiago when he arrived in Tangier?",
+          "type": "text",
+          "answer": "he was robbed of all his money"
+        },
+        {
+          "id": "q3-2",
+          "question": "What was the crystal merchant's unfulfilled dream?",
+          "type": "text",
+          "answer": "making a pilgrimage to Mecca"
+        },
+        {
+          "id": "q3-3",
+          "question": "How did Santiago help improve the crystal merchant's business?",
+          "type": "text",
+          "answer": "by suggesting they display the crystal in the street"
+        },
+        {
+          "id": "q3-4",
+          "question": "What lesson did the merchant teach Santiago about dreams?",
+          "type": "text",
+          "answer": "sometimes it's better to dream about your dreams than to actually achieve them"
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "title": "The Englishman and the Alchemist",
+      "content": "Santiago joined a caravan crossing the Sahara Desert. In the caravan, he met an Englishman who was searching for the Alchemist. The Englishman had studied alchemy from books and believed that the secret of turning lead into gold could be found through knowledge. Santiago learned that the Englishman was searching for a 200-year-old alchemist who lived at the Al-Fayoum oasis. When they reached the oasis, Santiago met the Alchemist himself. The Alchemist told Santiago that he must listen to his heart, because the heart knows all things. He also told Santiago that when you possess something, you must be prepared to lose it.",
+      "questions": [
+        {
+          "id": "q4-1",
+          "question": "Who did Santiago meet in the caravan?",
+          "type": "text",
+          "answer": "an Englishman"
+        },
+        {
+          "id": "q4-2",
+          "question": "What was the Englishman searching for?",
+          "type": "text",
+          "answer": "the Alchemist"
+        },
+        {
+          "id": "q4-3",
+          "question": "Where did the Alchemist live?",
+          "type": "text",
+          "answer": "Al-Fayoum oasis"
+        },
+        {
+          "id": "q4-4",
+          "question": "What did the Alchemist tell Santiago about the heart?",
+          "type": "text",
+          "answer": "he must listen to his heart, because the heart knows all things"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "title": "The Pyramids",
+      "content": "Santiago finally reached the pyramids. He began to dig where he believed the treasure was buried. However, he was attacked by refugees who stole his gold. Before they left, one of the refugees told Santiago about his own dream: he had dreamed of finding treasure under a sycamore tree in an abandoned church in Spain. Santiago realized that this was the church where he had slept with his sheep! The treasure was not at the pyramids—it was back where he started. Santiago returned to Spain and found the treasure buried under the sycamore tree in the abandoned church. He had completed his Personal Legend, and the journey itself had been the real treasure.",
+      "questions": [
+        {
+          "id": "q5-1",
+          "question": "What happened to Santiago when he reached the pyramids?",
+          "type": "text",
+          "answer": "he was attacked by refugees who stole his gold"
+        },
+        {
+          "id": "q5-2",
+          "question": "What did the refugee tell Santiago about his dream?",
+          "type": "text",
+          "answer": "he had dreamed of finding treasure under a sycamore tree in an abandoned church in Spain"
+        },
+        {
+          "id": "q5-3",
+          "question": "Where was the treasure actually located?",
+          "type": "text",
+          "answer": "under a sycamore tree in an abandoned church in Spain"
+        },
+        {
+          "id": "q5-4",
+          "question": "What was Santiago's profession at the beginning of the story?",
+          "type": "text",
+          "answer": "shepherd"
+        },
+        {
+          "id": "q5-5",
+          "question": "What did Santiago realize about the journey?",
+          "type": "text",
+          "answer": "the journey itself had been the real treasure"
+        }
+      ]
+    }
+  ]
+}

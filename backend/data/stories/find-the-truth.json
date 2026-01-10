@@ -1,0 +1,170 @@
+{
+  "id": "find-the-truth",
+  "title": "Find the Truth",
+  "description": "A mysterious story where memory is your only guide. Each chapter reveals new secrets, but only if you remember what came before.",
+  "difficulty": "medium",
+  "coverImage": "",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "The Red Door",
+      "content": "The door was red and the room was silent. Sarah stood outside, her hand trembling as she reached for the brass handle. The letter had said to come alone, at midnight, to this abandoned warehouse on the edge of the city. She took a deep breath and pushed the door open. Inside, the air was thick with dust and the smell of old wood. A single light bulb hung from the ceiling, casting long shadows across the concrete floor. On the far wall, she noticed a painting of a clock showing 3:17. Underneath it, a small table held a single envelope. Sarah walked slowly across the room, her footsteps echoing in the silence. As she picked up the envelope, she heard a sound behind her—the door closing. She was locked in.",
+      "questions": [
+        {
+          "id": "q1-1",
+          "question": "What color was the door?",
+          "type": "text",
+          "answer": "red"
+        },
+        {
+          "id": "q1-2",
+          "question": "What time did the clock in the painting show?",
+          "type": "text",
+          "answer": "3:17"
+        },
+        {
+          "id": "q1-3",
+          "question": "What was the main character's name?",
+          "type": "text",
+          "answer": "Sarah"
+        },
+        {
+          "id": "q1-4",
+          "question": "What was on the table?",
+          "type": "text",
+          "answer": "envelope"
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "title": "The Locked Room",
+      "content": "Sarah turned around, her heart racing. The door was indeed closed, and when she tried the handle, it wouldn't budge. Panic began to set in, but she forced herself to think clearly. The envelope in her hand felt heavy. She tore it open and found a single sheet of paper with three words written in elegant script: 'Remember the clock.' Sarah looked back at the painting. The clock still showed 3:17, but something was different. She moved closer and noticed that the numbers were actually buttons. She pressed the '3', then '1', then '7'. A click sounded from behind the painting, and it swung open to reveal a hidden passage. Before entering, Sarah noticed something else—a small symbol carved into the door frame: a triangle with a circle inside. She memorized it and stepped into the darkness.",
+      "questions": [
+        {
+          "id": "q2-1",
+          "question": "What did the envelope contain?",
+          "type": "text",
+          "answer": "Remember the clock"
+        },
+        {
+          "id": "q2-2",
+          "question": "What sequence did Sarah press on the clock buttons?",
+          "type": "text",
+          "answer": "3, 1, 7"
+        },
+        {
+          "id": "q2-3",
+          "question": "What symbol was carved into the door frame?",
+          "type": "text",
+          "answer": "triangle with a circle inside"
+        },
+        {
+          "id": "q2-4",
+          "question": "What was the main character's name from Chapter 1?",
+          "type": "text",
+          "answer": "Sarah"
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "title": "The Hidden Passage",
+      "content": "The passage was narrow and dark, with walls that felt damp to the touch. Sarah used her phone's flashlight to illuminate the way forward. The tunnel seemed to go on forever, but after about fifty steps, she came to another door. This one was different—it was made of metal and had no handle. Instead, there were three symbols carved into its surface: a triangle, a circle, and a square. Sarah remembered the symbol from the door frame—a triangle with a circle inside. She touched the triangle, then the circle. Nothing happened. She tried pressing them simultaneously. Still nothing. Then she noticed that the square was actually a button. She pressed it, and the door slid open with a hiss. Beyond it, she saw a room filled with bookshelves. On the center table, there was a journal open to a page that read: 'The truth lies in what you remember, not what you see.'",
+      "questions": [
+        {
+          "id": "q3-1",
+          "question": "How many steps did Sarah take in the passage?",
+          "type": "text",
+          "answer": "fifty"
+        },
+        {
+          "id": "q3-2",
+          "question": "What three symbols were on the metal door?",
+          "type": "text",
+          "answer": "triangle, circle, square"
+        },
+        {
+          "id": "q3-3",
+          "question": "What did the journal page say?",
+          "type": "text",
+          "answer": "The truth lies in what you remember, not what you see"
+        },
+        {
+          "id": "q3-4",
+          "question": "What symbol was carved into the door frame in Chapter 2?",
+          "type": "text",
+          "answer": "triangle with a circle inside"
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "title": "The Library of Memories",
+      "content": "Sarah approached the journal carefully. The room was vast, with bookshelves reaching up to a high ceiling. Each shelf was labeled with dates, and the books seemed to be organized chronologically. She picked up the journal and read more. 'Every memory is a key. Every forgotten detail is a lock. To find the truth, you must remember everything.' Sarah looked around the room. On one wall, there was a map of the city. A red X marked the warehouse where she had entered. But there were other marks too—a blue circle at the old library, a green square at the park, and a yellow triangle at the museum. She realized these matched the symbols she had seen. The journal mentioned that the truth was hidden in one of these locations, but only someone who remembered all the clues could find it. Sarah closed the journal and noticed something written on the back cover: 'Start where the clock stopped, follow the symbols, remember the words.'",
+      "questions": [
+        {
+          "id": "q4-1",
+          "question": "What did the journal say about memories?",
+          "type": "text",
+          "answer": "Every memory is a key. Every forgotten detail is a lock"
+        },
+        {
+          "id": "q4-2",
+          "question": "What four locations were marked on the map?",
+          "type": "text",
+          "answer": "warehouse, library, park, museum"
+        },
+        {
+          "id": "q4-3",
+          "question": "What was written on the back cover of the journal?",
+          "type": "text",
+          "answer": "Start where the clock stopped, follow the symbols, remember the words"
+        },
+        {
+          "id": "q4-4",
+          "question": "What time did the clock show in Chapter 1?",
+          "type": "text",
+          "answer": "3:17"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "title": "The Final Truth",
+      "content": "Sarah understood now. The clock had stopped at 3:17. The symbols led to specific locations. The words from each chapter were clues. She had to remember: the red door, the clock sequence 3-1-7, the triangle-circle symbol, the fifty steps, the three symbols on the metal door, and the journal's message. She left the library and made her way to the museum—the location marked with the yellow triangle. There, in a small exhibit about local history, she found a display case. Inside was a key, and next to it, a plaque that read: 'For those who remember: The truth is that memory itself is the greatest treasure. You have proven that you can remember, and that is the real victory.' Sarah took the key, but she realized the real prize wasn't the key itself—it was the journey of remembering. She had found the truth: that paying attention, remembering details, and connecting the past to the present was the true power. The maze of memory had led her here, and she had succeeded.",
+      "questions": [
+        {
+          "id": "q5-1",
+          "question": "Where did Sarah go to find the final truth?",
+          "type": "text",
+          "answer": "museum"
+        },
+        {
+          "id": "q5-2",
+          "question": "What did the plaque say about memory?",
+          "type": "text",
+          "answer": "memory itself is the greatest treasure"
+        },
+        {
+          "id": "q5-3",
+          "question": "What was the clock sequence from Chapter 2?",
+          "type": "text",
+          "answer": "3-1-7"
+        },
+        {
+          "id": "q5-4",
+          "question": "What color was the door in Chapter 1?",
+          "type": "text",
+          "answer": "red"
+        },
+        {
+          "id": "q5-5",
+          "question": "What did Sarah realize was the real prize?",
+          "type": "text",
+          "answer": "the journey of remembering"
+        }
+      ]
+    }
+  ]
+}

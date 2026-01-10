@@ -1,0 +1,748 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+  min-height: 100vh;
+  background: var(--bg-color);
+  position: relative;
+}
+
+.backBtn {
+  background: var(--card-bg);
+  color: var(--text-primary);
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 14px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s;
+  cursor: pointer;
+  margin-bottom: 24px;
+  font-family: 'Inter', sans-serif;
+}
+
+.backBtn:hover {
+  background: var(--card-hover);
+  transform: translateX(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--gold);
+}
+
+/* Profile Header - Telegram Style */
+.profileHeader {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 32px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+  animation: slideDown 0.4s ease-out;
+}
+
+.avatarSection {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.avatarContainer {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--gold-shiny);
+  background-size: 200% 200%;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  border: 4px solid var(--gold-dark);
+  box-shadow: var(--gold-glow);
+  animation: shimmer 3s ease-in-out infinite;
+  position: relative;
+}
+
+.statusIndicator {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #000000;
+  border: 3px solid var(--card-bg);
+  box-shadow: 0 0 0 2px var(--gold);
+}
+
+.profileInfo {
+  flex: 1;
+}
+
+.profileName {
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 8px 0;
+  letter-spacing: -0.02em;
+}
+
+.profileSubtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 0 0 16px 0;
+}
+
+.rankBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #000000;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 2px solid var(--gold);
+  box-shadow: var(--gold-glow);
+}
+
+.rankText {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+}
+
+.levelText {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.bioSection {
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+.bioSection p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Stats Section - PUBG Style */
+.statsSection {
+  background: #000000;
+  border-radius: 20px;
+  padding: 32px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-xl);
+  border: 2px solid var(--gold);
+  animation: slideUp 0.4s ease-out;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0 0 24px 0;
+  font-family: 'Inter', sans-serif;
+  text-shadow: var(--gold-glow);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.statCard {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s;
+}
+
+.statCard:hover {
+  border-color: var(--gold);
+  box-shadow: var(--gold-glow);
+  transform: translateY(-2px);
+}
+
+.statHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.statLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Inter', sans-serif;
+}
+
+.statValue {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--gold);
+  font-family: 'Poppins', sans-serif;
+  text-shadow: var(--gold-glow);
+}
+
+.statBar {
+  height: 6px;
+  background: #000000;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.statBarFill {
+  height: 100%;
+  background: var(--gold-shiny);
+  background-size: 200% 100%;
+  border-radius: 3px;
+  transition: width 0.6s ease-out;
+  animation: shimmer 3s ease-in-out infinite;
+  box-shadow: var(--gold-glow);
+}
+
+/* Tabs - Telegram Style */
+.tabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 24px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 4px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.tab {
+  flex: 1;
+  padding: 14px 24px;
+  background: transparent;
+  color: var(--text-secondary);
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+}
+
+.tab:hover {
+  color: var(--text-primary);
+  background: var(--card-hover);
+}
+
+.tab.active {
+  background: var(--gold-shiny);
+  background-size: 200% 200%;
+  color: #000000;
+  font-weight: 700;
+  box-shadow: var(--shadow-md), var(--gold-glow);
+  animation: shimmer 3s ease-in-out infinite;
+  border: 1px solid var(--gold-dark);
+}
+
+@keyframes shimmer {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Content Cards - Telegram Style */
+.contentCard {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+  animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message {
+  background: var(--gold-shiny);
+  background-size: 200% 200%;
+  color: #000000;
+  padding: 14px 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  text-align: center;
+  animation: slideDown 0.3s ease-out, shimmer 3s ease-in-out infinite;
+  font-weight: 700;
+  box-shadow: var(--shadow-md), var(--gold-glow);
+  border: 1px solid var(--gold-dark);
+}
+
+.message.error {
+  background: #000000;
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+/* Profile View - Read Only */
+.profileView {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.profileViewHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.editBtn {
+  background: var(--gold-shiny);
+  background-size: 200% 200%;
+  color: #000000;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  border: 2px solid var(--gold-dark);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow-sm), var(--gold-glow);
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+.editBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md), var(--gold-glow);
+  border-color: var(--gold);
+}
+
+.profileInfoGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.infoItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.infoLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Inter', sans-serif;
+}
+
+.infoValue {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.formHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.formActions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.cancelBtn {
+  background: var(--card-bg);
+  color: var(--text-primary);
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  border: 2px solid var(--border-color);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cancelBtn:hover {
+  background: var(--card-hover);
+  border-color: var(--border-dark);
+  transform: translateY(-1px);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formGroup label {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 14px;
+  margin-bottom: 4px;
+  display: block;
+  font-family: 'Inter', sans-serif;
+}
+
+.helpText {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--text-tertiary);
+  font-style: italic;
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+  padding: 14px 16px;
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--card-bg);
+  color: var(--text-primary);
+}
+
+.formGroup input:hover,
+.formGroup textarea:hover,
+.formGroup select:hover {
+  border-color: var(--border-dark);
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus,
+.formGroup select:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 
+    0 0 0 4px rgba(107, 78, 15, 0.1),
+    0 2px 8px rgba(107, 78, 15, 0.2),
+    var(--gold-glow);
+  transform: translateY(-1px);
+}
+
+/* Settings - Telegram Style */
+.settingItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.settingItem:last-child {
+  border-bottom: none;
+}
+
+.settingInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.settingLabel {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 15px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
+.settingDescription {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggleSlider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--border-color);
+  transition: 0.3s;
+  border-radius: 28px;
+}
+
+.toggleSlider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.toggle input:checked + .toggleSlider {
+  background: var(--gold-shiny);
+  background-size: 200% 200%;
+  animation: shimmer 3s ease-in-out infinite;
+  box-shadow: var(--gold-glow);
+}
+
+.toggle input:checked + .toggleSlider:before {
+  transform: translateX(24px);
+}
+
+.goalInput {
+  width: 80px;
+  padding: 10px 14px;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+.goalInput:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(107, 78, 15, 0.1), var(--gold-glow);
+}
+
+.saveBtn {
+  background: var(--gold-shiny);
+  background-size: 200% 200%;
+  color: #000000;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  border: 2px solid var(--gold-dark);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow-md), var(--gold-glow);
+  letter-spacing: -0.01em;
+  animation: shimmer 3s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.saveBtn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transform: rotate(45deg);
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.saveBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg), var(--gold-glow);
+  border-color: var(--gold);
+}
+
+.saveBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Badges Section - PUBG Style */
+.badgesSection {
+  margin-top: 0;
+}
+
+.badgesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.badgeCard {
+  background: #000000;
+  border: 2px solid var(--gold);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s;
+  animation: fadeIn 0.5s ease-out;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.badgeCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gold-shiny);
+  background-size: 200% 200%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+.badgeCard:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: var(--shadow-xl), var(--gold-glow);
+  border-color: var(--gold);
+}
+
+.badgeCard:hover::before {
+  opacity: 0.1;
+}
+
+.badgeIcon {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+  font-family: 'Inter', sans-serif;
+  text-shadow: var(--gold-glow);
+  position: relative;
+  z-index: 1;
+}
+
+.badgeContent {
+  position: relative;
+  z-index: 1;
+}
+
+.badgeTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 8px;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: var(--gold-glow);
+}
+
+.badgeDate {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.noBadges {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-secondary);
+}
+
+.noBadgesIcon {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.3;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 16px;
+  color: var(--gold);
+}
+
+.loading {
+  text-align: center;
+  padding: 60px;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
