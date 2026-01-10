@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { storiesAPI, progressAPI, userAPI } from '@/lib/api';
+import NoteTaking from '@/components/NoteTaking';
 import styles from '@/styles/Story.module.css';
 
 export default function StoryPage() {
@@ -17,6 +18,7 @@ export default function StoryPage() {
   const [loading, setLoading] = useState(true);
   const [showBadge, setShowBadge] = useState(false);
   const [earnedBadge, setEarnedBadge] = useState(null);
+  const [showNotes, setShowNotes] = useState(false);
 
   useEffect(() => {
     if (storyId) {
@@ -236,9 +238,24 @@ export default function StoryPage() {
               <p key={idx}>{paragraph}</p>
             ))}
           </div>
-          <button onClick={handleFinishReading} className={styles.finishBtn}>
-            I've Finished Reading
-          </button>
+          <div className={styles.readingActions}>
+            <button 
+              onClick={() => setShowNotes(true)} 
+              className={styles.notesBtn}
+            >
+              Take Notes
+            </button>
+            <button onClick={handleFinishReading} className={styles.finishBtn}>
+              I've Finished Reading
+            </button>
+          </div>
+          {showNotes && (
+            <NoteTaking
+              storyId={storyId}
+              chapterNumber={chapterData.chapter}
+              onClose={() => setShowNotes(false)}
+            />
+          )}
         </div>
       )}
 

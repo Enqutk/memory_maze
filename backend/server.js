@@ -9,6 +9,7 @@ const storyRoutes = require('./routes/stories');
 const progressRoutes = require('./routes/progress');
 const userRoutes = require('./routes/users');
 const adminRoutes = require('./routes/admin');
+const notesRoutes = require('./routes/notes');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -35,6 +36,7 @@ app.use('/api/stories', storyRoutes);
 app.use('/api/progress', progressRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api/notes', notesRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {

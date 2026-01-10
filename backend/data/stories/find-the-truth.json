@@ -12,27 +12,21 @@
       "questions": [
         {
           "id": "q1-1",
-          "question": "What color was the door?",
+          "question": "At what time was Sarah instructed to arrive, and what was the only object visible on the table when she entered?",
           "type": "text",
-          "answer": "red"
+          "answer": "midnight, envelope"
         },
         {
           "id": "q1-2",
-          "question": "What time did the clock in the painting show?",
+          "question": "What specific time was displayed on the clock painting, and what happened immediately after Sarah picked up the envelope?",
           "type": "text",
-          "answer": "3:17"
+          "answer": "3:17, door closed"
         },
         {
           "id": "q1-3",
-          "question": "What was the main character's name?",
+          "question": "What material was the door handle made of, and what two senses are mentioned in describing the room's atmosphere?",
           "type": "text",
-          "answer": "Sarah"
-        },
-        {
-          "id": "q1-4",
-          "question": "What was on the table?",
-          "type": "text",
-          "answer": "envelope"
+          "answer": "brass, sight and smell"
         }
       ]
     },
@@ -43,27 +37,27 @@
       "questions": [
         {
           "id": "q2-1",
-          "question": "What did the envelope contain?",
+          "question": "What three-word message was in the envelope, and what did Sarah notice was different about the clock when she looked at it again?",
           "type": "text",
-          "answer": "Remember the clock"
+          "answer": "Remember the clock, numbers were buttons"
         },
         {
           "id": "q2-2",
-          "question": "What sequence did Sarah press on the clock buttons?",
+          "question": "What exact sequence did Sarah press to open the hidden passage, and what symbol did she memorize before entering?",
           "type": "text",
-          "answer": "3, 1, 7"
+          "answer": "3-1-7, triangle with circle inside"
         },
         {
           "id": "q2-3",
-          "question": "What symbol was carved into the door frame?",
+          "question": "Based on Chapter 1, what time did the clock show, and how many digits did Sarah need to press in sequence?",
           "type": "text",
-          "answer": "triangle with a circle inside"
+          "answer": "3:17, three"
         },
         {
           "id": "q2-4",
-          "question": "What was the main character's name from Chapter 1?",
+          "question": "What was Sarah's emotional state when she realized she was locked in, and what did she do to calm herself?",
           "type": "text",
-          "answer": "Sarah"
+          "answer": "panic, forced herself to think clearly"
         }
       ]
     },
@@ -74,27 +68,27 @@
       "questions": [
         {
           "id": "q3-1",
-          "question": "How many steps did Sarah take in the passage?",
+          "question": "How many steps did Sarah count before reaching the second door, and what tool did she use to navigate the dark passage?",
           "type": "text",
-          "answer": "fifty"
+          "answer": "fifty, phone flashlight"
         },
         {
           "id": "q3-2",
-          "question": "What three symbols were on the metal door?",
+          "question": "What was the pattern connecting the symbol from Chapter 2's door frame to the symbols on the metal door? Which symbol was different and what action did it enable?",
           "type": "text",
-          "answer": "triangle, circle, square"
+          "answer": "triangle and circle matched, square was button that opened door"
         },
         {
           "id": "q3-3",
-          "question": "What did the journal page say?",
+          "question": "What was the key message on the journal page, and what does this suggest about the relationship between the triangle-circle symbol from Chapter 2 and the door's mechanism?",
           "type": "text",
-          "answer": "The truth lies in what you remember, not what you see"
+          "answer": "truth lies in memory not sight, symbol was memory clue but square button was action"
         },
         {
           "id": "q3-4",
-          "question": "What symbol was carved into the door frame in Chapter 2?",
+          "question": "If the passage walls felt damp, what does this imply about the location? Combine this with the clock time from Chapter 1 to infer what time Sarah likely entered.",
           "type": "text",
-          "answer": "triangle with a circle inside"
+          "answer": "underground or basement, midnight"
         }
       ]
     },
@@ -105,27 +99,27 @@
       "questions": [
         {
           "id": "q4-1",
-          "question": "What did the journal say about memories?",
+          "question": "What was the journal's metaphor about memories and forgotten details, and how does this connect to the symbol pattern Sarah has been following through the chapters?",
           "type": "text",
-          "answer": "Every memory is a key. Every forgotten detail is a lock"
+          "answer": "memories are keys, forgotten details are locks, symbols are memory keys"
         },
         {
           "id": "q4-2",
-          "question": "What four locations were marked on the map?",
+          "question": "What four locations were on the map, and what symbols and colors matched each? Which location did Sarah start at?",
           "type": "text",
-          "answer": "warehouse, library, park, museum"
+          "answer": "warehouse red X, library blue circle, park green square, museum yellow triangle, started warehouse"
         },
         {
           "id": "q4-3",
-          "question": "What was written on the back cover of the journal?",
+          "question": "The back cover said to start where the clock stopped. From Chapter 1, what time was that? What symbol from Chapter 2 matches the second instruction? What words from Chapter 3 should she remember?",
           "type": "text",
-          "answer": "Start where the clock stopped, follow the symbols, remember the words"
+          "answer": "3:17, triangle circle symbol, truth lies in memory"
         },
         {
           "id": "q4-4",
-          "question": "What time did the clock show in Chapter 1?",
+          "question": "Based on all previous chapters, what is the connection between the clock sequence 3-1-7, the triangle-circle-square pattern, and the map locations?",
           "type": "text",
-          "answer": "3:17"
+          "answer": "each represents different clue types, time sequence, symbols, locations"
         }
       ]
     },
@@ -136,33 +130,33 @@
       "questions": [
         {
           "id": "q5-1",
-          "question": "Where did Sarah go to find the final truth?",
+          "question": "Sarah went to the museum because it matched which symbol from Chapter 4's map? What was the color associated with this location, and why was this the correct final destination based on the pattern?",
           "type": "text",
-          "answer": "museum"
+          "answer": "yellow triangle, yellow, triangle was first symbol encountered"
         },
         {
           "id": "q5-2",
-          "question": "What did the plaque say about memory?",
+          "question": "What did the plaque reveal was the greatest treasure, and how does this relate to all the memory-based questions Sarah had to answer throughout her journey?",
           "type": "text",
-          "answer": "memory itself is the greatest treasure"
+          "answer": "memory itself, each step required remembering previous details"
         },
         {
           "id": "q5-3",
-          "question": "What was the clock sequence from Chapter 2?",
+          "question": "To solve the maze, Sarah needed to remember: the clock time from Chapter 1, the button sequence from Chapter 2, the passage steps from Chapter 3, and the map colors from Chapter 4. What was the complete sequence of these key numbers?",
           "type": "text",
-          "answer": "3-1-7"
+          "answer": "3:17, 3-1-7, fifty, four locations"
         },
         {
           "id": "q5-4",
-          "question": "What color was the door in Chapter 1?",
+          "question": "What was the deeper truth Sarah discovered beyond finding the key? How did the maze test her ability to connect information across all five chapters?",
           "type": "text",
-          "answer": "red"
+          "answer": "journey of remembering, required connecting details from each chapter"
         },
         {
           "id": "q5-5",
-          "question": "What did Sarah realize was the real prize?",
+          "question": "The maze was designed to test memory. What specific details from Chapters 1-4 were essential clues that, if forgotten, would have prevented Sarah from reaching the museum?",
           "type": "text",
-          "answer": "the journey of remembering"
+          "answer": "clock 3:17, button sequence 3-1-7, triangle circle symbol, map symbols and colors"
         }
       ]
     }

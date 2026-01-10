@@ -84,9 +84,22 @@ export const adminAPI = {
   getProgress: () => api.get('/admin/progress'),
   
   // Story Management
+  getStories: () => api.get('/admin/stories'),
   createStory: (storyData) => api.post('/admin/stories', storyData),
   updateStory: (storyId, storyData) => api.put(`/admin/stories/${storyId}`, storyData),
   deleteStory: (storyId) => api.delete(`/admin/stories/${storyId}`),
+};
+
+// Notes API
+export const notesAPI = {
+  saveNote: (storyId, chapterNumber, noteData) => 
+    api.post('/notes', { storyId, chapterNumber, ...noteData }),
+  
+  getNote: (storyId, chapterNumber) => 
+    api.get(`/notes/${storyId}/${chapterNumber}`),
+  
+  getAllNotes: (storyId) => 
+    api.get(`/notes/${storyId}`),
 };
 
 export default api;
