@@ -98,8 +98,11 @@ export const notesAPI = {
   getNote: (storyId, chapterNumber) => 
     api.get(`/notes/${storyId}/${chapterNumber}`),
   
-  getAllNotes: (storyId) => 
+  getAllNotesForStory: (storyId) => 
     api.get(`/notes/${storyId}`),
+  
+  getAllNotes: () => 
+    api.get('/notes/all'),
 };
 
 export default api;

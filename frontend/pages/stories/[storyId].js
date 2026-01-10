@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { storiesAPI, progressAPI, userAPI } from '@/lib/api';
-import NoteTaking from '@/components/NoteTaking';
+import NoteSidebar from '@/components/NoteSidebar';
 import styles from '@/styles/Story.module.css';
 
 export default function StoryPage() {
@@ -18,7 +18,7 @@ export default function StoryPage() {
   const [loading, setLoading] = useState(true);
   const [showBadge, setShowBadge] = useState(false);
   const [earnedBadge, setEarnedBadge] = useState(null);
-  const [showNotes, setShowNotes] = useState(false);
+  const [notesOpen, setNotesOpen] = useState(false);
 
   useEffect(() => {
     if (storyId) {
@@ -221,42 +221,37 @@ export default function StoryPage() {
       )}
 
       {view === 'reading' && chapterData && (
-        <div className={styles.chapterView}>
-          <div className={styles.chapterHeader}>
-            <h3>{chapterData.title}</h3>
-            <div className={styles.chapterMeta}>
-              <span>Chapter {chapterData.chapter}</span>
-              {getChapterAttempts(chapterData.chapter) > 0 && (
-                <span className={styles.attemptBadge}>
-                  Attempt {getChapterAttempts(chapterData.chapter) + 1}
-                </span>
-              )}
+        <>
+          <div className={`${styles.chapterView} ${notesOpen ? styles.withSidebar : ''}`}>
+            <div className={styles.chapterHeader}>
+              <h3>{chapterData.title}</h3>
+              <div className={styles.chapterMeta}>
+                <span>Chapter {chapterData.chapter}</span>
+                {getChapterAttempts(chapterData.chapter) > 0 && (
+                  <span className={styles.attemptBadge}>
+                    Attempt {getChapterAttempts(chapterData.chapter) + 1}
+                  </span>
+                )}
+              </div>
             </div>
-          </div>
-          <div className={styles.chapterContent}>
-            {chapterData.content.split('\n').map((paragraph, idx) => (
-              <p key={idx}>{paragraph}</p>
-            ))}
-          </div>
-          <div className={styles.readingActions}>
-            <button 
-              onClick={() => setShowNotes(true)} 
-              className={styles.notesBtn}
-            >
-              Take Notes
-            </button>
+            <div className={styles.chapterContent}>
+              {chapterData.content.split('\n').map((paragraph, idx) => (
+                <p key={idx}>{paragraph}</p>
+              ))}
+            </div>
             <button onClick={handleFinishReading} className={styles.finishBtn}>
               I've Finished Reading
             </button>
           </div>
-          {showNotes && (
-            <NoteTaking
-              storyId={storyId}
-              chapterNumber={chapterData.chapter}
-              onClose={() => setShowNotes(false)}
-            />
-          )}
-        </div>
+          <NoteSidebar
+            storyId={storyId}
+            chapterNumber={chapterData.chapter}
+            storyTitle={story.title}
+            chapterTitle={chapterData.title}
+            isOpen={notesOpen}
+            onToggle={() => setNotesOpen(!notesOpen)}
+          />
+        </>
       )}
 
       {view === 'checkpoint' && chapterData && (

@@ -312,6 +312,11 @@
   border-radius: 12px;
   padding: 32px;
   box-shadow: var(--shadow);
+  transition: margin-right 0.3s ease;
+}
+
+.chapterView.withSidebar {
+  margin-right: 380px;
 }
 
 .chapterHeader {

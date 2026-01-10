@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { userAPI } from '@/lib/api';
+import { userAPI, notesAPI } from '@/lib/api';
 import styles from '@/styles/Profile.module.css';
 
 export default function ProfilePage() {
@@ -9,6 +9,7 @@ export default function ProfilePage() {
   const [stats, setStats] = useState(null);
   const [settings, setSettings] = useState(null);
   const [badges, setBadges] = useState([]);
+  const [notes, setNotes] = useState([]);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState('profile');
   const [saving, setSaving] = useState(false);
@@ -21,11 +22,15 @@ export default function ProfilePage() {
 
   const loadProfile = async () => {
     try {
-      const response = await userAPI.getProfile();
-      setProfile(response.data.profile);
-      setStats(response.data.stats);
-      setSettings(response.data.settings);
-      setBadges(response.data.badges || []);
+      const [profileResponse, notesResponse] = await Promise.all([
+        userAPI.getProfile(),
+        notesAPI.getAllNotes().catch(() => ({ data: { notes: [] } }))
+      ]);
+      setProfile(profileResponse.data.profile);
+      setStats(profileResponse.data.stats);
+      setSettings(profileResponse.data.settings);
+      setBadges(profileResponse.data.badges || []);
+      setNotes(notesResponse.data.notes || []);
     } catch (error) {
       console.error('Error loading profile:', error);
     } finally {
@@ -205,6 +210,12 @@ export default function ProfilePage() {
           onClick={() => setActiveTab('badges')}
         >
           Badges
+        </button>
+        <button
+          className={`${styles.tab} ${activeTab === 'notes' ? styles.active : ''}`}
+          onClick={() => setActiveTab('notes')}
+        >
+          Saved Notes
         </button>
         <button
           className={`${styles.tab} ${activeTab === 'settings' ? styles.active : ''}`}
@@ -414,6 +425,85 @@ export default function ProfilePage() {
               {saving ? 'Saving...' : 'Save Settings'}
             </button>
           </form>
+        </div>
+      )}
+
+      {activeTab === 'notes' && (
+        <div className={styles.contentCard}>
+          <h2 className={styles.sectionTitle}>SAVED NOTES</h2>
+          {notes.length === 0 ? (
+            <div className={styles.emptyNotes}>
+              <p>No notes saved yet. Start reading and taking notes to see them here!</p>
+            </div>
+          ) : (
+            <div className={styles.notesGrid}>
+              {notes.map((note, index) => {
+                const noteDate = new Date(note.createdAt);
+                const formattedDate = noteDate.toLocaleDateString('en-US', {
+                  month: 'short',
+                  day: 'numeric',
+                  year: 'numeric'
+                });
+                const formattedTime = noteDate.toLocaleTimeString('en-US', {
+                  hour: '2-digit',
+                  minute: '2-digit'
+                });
+                
+                return (
+                  <div key={index} className={styles.noteCard}>
+                    <div className={styles.noteHeader}>
+                      <div className={styles.noteBookInfo}>
+                        <h3 className={styles.noteBookTitle}>{note.storyTitle || 'Untitled Story'}</h3>
+                        <span className={styles.noteChapter}>
+                          Chapter {note.chapterNumber} {note.chapterTitle ? `• ${note.chapterTitle}` : ''}
+                        </span>
+                      </div>
+                      <div className={styles.noteDate}>
+                        <span className={styles.noteDateText}>{formattedDate}</span>
+                        <span className={styles.noteTimeText}>{formattedTime}</span>
+                      </div>
+                    </div>
+                    
+                    <div className={styles.noteContent}>
+                      {note.understanding && (
+                        <div className={styles.noteSection}>
+                          <div className={styles.noteSectionHeader}>
+                            <span className={styles.noteSectionIcon}>💡</span>
+                            <span className={styles.noteSectionLabel}>Understanding</span>
+                          </div>
+                          <p className={styles.noteSectionText}>{note.understanding}</p>
+                        </div>
+                      )}
+                      
+                      {note.connection && (
+                        <div className={styles.noteSection}>
+                          <div className={styles.noteSectionHeader}>
+                            <span className={styles.noteSectionIcon}>🔗</span>
+                            <span className={styles.noteSectionLabel}>My Connection</span>
+                          </div>
+                          <p className={styles.noteSectionText}>{note.connection}</p>
+                        </div>
+                      )}
+                      
+                      {note.journal && (
+                        <div className={styles.noteSection}>
+                          <div className={styles.noteSectionHeader}>
+                            <span className={styles.noteSectionIcon}>📔</span>
+                            <span className={styles.noteSectionLabel}>Reflection</span>
+                          </div>
+                          <p className={styles.noteSectionText}>{note.journal}</p>
+                        </div>
+                      )}
+                      
+                      {!note.understanding && !note.connection && !note.journal && (
+                        <p className={styles.noteEmpty}>Empty note</p>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
       )}
     </div>

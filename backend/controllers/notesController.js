@@ -57,8 +57,23 @@ async function getAllNotesForStory(req, res) {
   }
 }
 
+async function getAllNotes(req, res) {
+  try {
+    const { email } = req.user;
+    const notes = await notesService.getAllNotes(email);
+    res.json({ notes });
+  } catch (error) {
+    if (error.message === 'User not found') {
+      return res.status(404).json({ error: error.message });
+    }
+    console.error('Get all notes error:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+}
+
 module.exports = {
   saveNote,
   getNote,
-  getAllNotesForStory
+  getAllNotesForStory,
+  getAllNotes
 };
