@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { storiesAPI, progressAPI, userAPI } from '@/lib/api';
 import NoteSidebar from '@/components/NoteSidebar';
+import AIChat from '@/components/AIChat';
 import styles from '@/styles/Story.module.css';
 
 export default function StoryPage() {
@@ -19,6 +20,7 @@ export default function StoryPage() {
   const [showBadge, setShowBadge] = useState(false);
   const [earnedBadge, setEarnedBadge] = useState(null);
   const [notesOpen, setNotesOpen] = useState(false);
+  const [chatOpen, setChatOpen] = useState(false);
 
   useEffect(() => {
     if (storyId) {
@@ -176,14 +178,22 @@ export default function StoryPage() {
           ← Back to Stories
         </button>
         <h2>{story.title}</h2>
-        <div className={styles.progressInfo}>
-          <div className={styles.progressBar}>
-            <div 
-              className={styles.progressFill}
-              style={{ width: `${(progress.currentChapter / story.chapters.length) * 100}%` }}
-            />
+        <div className={styles.headerActions}>
+          <button 
+            onClick={() => setChatOpen(!chatOpen)} 
+            className={styles.chatBtn}
+          >
+            AI Chat
+          </button>
+          <div className={styles.progressInfo}>
+            <div className={styles.progressBar}>
+              <div 
+                className={styles.progressFill}
+                style={{ width: `${(progress.currentChapter / story.chapters.length) * 100}%` }}
+              />
+            </div>
+            <span>Chapter {progress.currentChapter} of {story.chapters.length}</span>
           </div>
-          <span>Chapter {progress.currentChapter} of {story.chapters.length}</span>
         </div>
       </header>
 
@@ -344,6 +354,15 @@ export default function StoryPage() {
           </div>
         </div>
       )}
+
+      <AIChat 
+        isOpen={chatOpen} 
+        onClose={() => setChatOpen(false)}
+        onBookSelect={(bookTitle) => {
+          router.push('/stories');
+          setChatOpen(false);
+        }}
+      />
     </div>
   );
 }

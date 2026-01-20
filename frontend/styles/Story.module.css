@@ -157,6 +157,31 @@
   border: 1px solid var(--border-color);
 }
 
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.chatBtn {
+  background: var(--gold-shiny);
+  background-size: 200% 200%;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: 1px solid var(--gold-dark);
+  transition: all 0.3s;
+  cursor: pointer;
+  font-weight: 600;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+.chatBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--gold-glow);
+}
+
 .header h2 {
   font-size: 2rem;
   font-family: 'Poppins', sans-serif;

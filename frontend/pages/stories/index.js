@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { storiesAPI, userAPI } from '@/lib/api';
 import { logout, isAdmin } from '@/lib/auth';
+import AIChat from '@/components/AIChat';
 import styles from '@/styles/Stories.module.css';
 
 export default function StoriesPage() {
@@ -14,6 +15,7 @@ export default function StoriesPage() {
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState(null);
   const [showDashboard, setShowDashboard] = useState(true);
+  const [chatOpen, setChatOpen] = useState(false);
 
   useEffect(() => {
     const userData = localStorage.getItem('user');
@@ -71,6 +73,14 @@ export default function StoriesPage() {
     logout();
   };
 
+  const handleBookSelect = (bookTitle) => {
+    const story = stories.find(s => s.title.toLowerCase() === bookTitle.toLowerCase());
+    if (story) {
+      router.push(`/stories/${story.id}`);
+      setChatOpen(false);
+    }
+  };
+
   if (loading) {
     return <div className={styles.loading}>Loading stories...</div>;
   }
@@ -88,6 +98,12 @@ export default function StoriesPage() {
           </button>
         </div>
         <div className={styles.userInfo}>
+          <button 
+            onClick={() => setChatOpen(!chatOpen)} 
+            className={styles.chatBtn}
+          >
+            AI Assistant
+          </button>
           {isAdmin() && (
             <button 
               onClick={() => router.push('/admin')} 
@@ -208,6 +224,12 @@ export default function StoriesPage() {
           })}
         </div>
       </div>
+
+      <AIChat 
+        isOpen={chatOpen} 
+        onClose={() => setChatOpen(false)}
+        onBookSelect={handleBookSelect}
+      />
     </div>
   );
 }

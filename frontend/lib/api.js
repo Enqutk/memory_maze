@@ -105,4 +105,13 @@ export const notesAPI = {
     api.get('/notes/all'),
 };
 
+// Chat API
+export const chatAPI = {
+  sendMessage: (message, conversationHistory = []) =>
+    api.post('/chat/message', { message, conversationHistory }),
+  
+  getRecommendations: (preferences = {}) =>
+    api.post('/chat/recommendations', { preferences }),
+};
+
 export default api;
