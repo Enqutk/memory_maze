@@ -18,8 +18,10 @@ async function sendMessage(req, res) {
     });
   } catch (error) {
     console.error('Chat error:', error);
-    res.status(500).json({ 
-      error: error.message || 'Failed to process chat message' 
+    const statusCode = error.message?.includes('API key') ? 503 : 500;
+    res.status(statusCode).json({ 
+      error: error.message || 'Failed to process chat message',
+      details: process.env.NODE_ENV === 'development' ? error.stack : undefined
     });
   }
 }
@@ -37,8 +39,10 @@ async function getRecommendations(req, res) {
     });
   } catch (error) {
     console.error('Recommendations error:', error);
-    res.status(500).json({ 
-      error: error.message || 'Failed to get recommendations' 
+    const statusCode = error.message?.includes('API key') ? 503 : 500;
+    res.status(statusCode).json({ 
+      error: error.message || 'Failed to get recommendations',
+      details: process.env.NODE_ENV === 'development' ? error.stack : undefined
     });
   }
 }

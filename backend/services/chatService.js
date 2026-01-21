@@ -106,7 +106,19 @@ Keep responses concise, engaging, and helpful. If recommending books, consider t
     };
   } catch (error) {
     console.error('OpenAI API error:', error);
-    throw new Error('Failed to get AI response. Please check your API key configuration.');
+    
+    // More specific error messages
+    if (error.message?.includes('API key') || !process.env.OPENAI_API_KEY) {
+      throw new Error('OpenAI API key is not configured. Please add OPENAI_API_KEY to your backend/.env file.');
+    }
+    if (error.response?.status === 401) {
+      throw new Error('Invalid OpenAI API key. Please check your OPENAI_API_KEY in backend/.env');
+    }
+    if (error.response?.status === 429) {
+      throw new Error('OpenAI API rate limit exceeded. Please try again later.');
+    }
+    
+    throw new Error(error.message || 'Failed to get AI response. Please check your API key configuration.');
   }
 }
 

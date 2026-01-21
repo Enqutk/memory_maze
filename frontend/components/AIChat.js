@@ -63,9 +63,10 @@ export default function AIChat({ isOpen, onClose, onBookSelect }) {
       }]);
     } catch (error) {
       console.error('Chat error:', error);
+      const errorMessage = error.response?.data?.error || error.message || 'Sorry, I encountered an error.';
       setMessages([...newMessages, {
         role: 'assistant',
-        content: 'Sorry, I encountered an error. Please make sure your OpenAI API key is configured in the backend environment variables.'
+        content: errorMessage + (errorMessage.includes('API key') ? ' Add OPENAI_API_KEY to your backend/.env file and restart the server.' : '')
       }]);
     } finally {
       setLoading(false);
@@ -92,9 +93,10 @@ export default function AIChat({ isOpen, onClose, onBookSelect }) {
       }]);
     } catch (error) {
       console.error('Recommendations error:', error);
+      const errorMessage = error.response?.data?.error || error.message || 'Sorry, I couldn\'t fetch recommendations right now.';
       setMessages([...messages, {
         role: 'assistant',
-        content: 'Sorry, I couldn\'t fetch recommendations right now. Please try again later.'
+        content: errorMessage + (errorMessage.includes('API key') ? ' Add OPENAI_API_KEY to your backend/.env file and restart the server.' : '')
       }]);
     } finally {
       setLoadingRecommendations(false);
