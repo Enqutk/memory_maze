@@ -18,6 +18,27 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
+// Handle 401 responses (unauthorized/token expired)
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.response?.status === 401) {
+      // Token expired or invalid - clear storage and redirect
+      const token = localStorage.getItem('token');
+      if (token) {
+        console.warn('Session expired. Clearing token and redirecting to login...');
+        localStorage.removeItem('token');
+        localStorage.removeItem('user');
+        // Redirect to login page if not already there
+        if (typeof window !== 'undefined' && window.location.pathname !== '/') {
+          window.location.href = '/';
+        }
+      }
+    }
+    return Promise.reject(error);
+  }
+);
+
 // Auth API
 export const authAPI = {
   register: (email, password) => 

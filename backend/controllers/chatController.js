@@ -18,9 +18,22 @@ async function sendMessage(req, res) {
     });
   } catch (error) {
     console.error('Chat error:', error);
-    const statusCode = error.message?.includes('API key') ? 503 : 500;
+    
+    // Determine appropriate status code and response
+    let statusCode = 500;
+    let errorMessage = error.message || 'Failed to process chat message';
+    let retryAfter = null;
+    
+    if (error.message?.includes('API key')) {
+      statusCode = 503;
+    } else if (error.message?.includes('rate limit') || error.message?.includes('busy')) {
+      statusCode = 429;
+      retryAfter = 60; // Suggest retry after 60 seconds
+    }
+    
     res.status(statusCode).json({ 
-      error: error.message || 'Failed to process chat message',
+      error: errorMessage,
+      retryAfter,
       details: process.env.NODE_ENV === 'development' ? error.stack : undefined
     });
   }
@@ -39,9 +52,21 @@ async function getRecommendations(req, res) {
     });
   } catch (error) {
     console.error('Recommendations error:', error);
-    const statusCode = error.message?.includes('API key') ? 503 : 500;
+    
+    let statusCode = 500;
+    let errorMessage = error.message || 'Failed to get recommendations';
+    let retryAfter = null;
+    
+    if (error.message?.includes('API key')) {
+      statusCode = 503;
+    } else if (error.message?.includes('rate limit')) {
+      statusCode = 429;
+      retryAfter = 300; // Suggest retry after 5 minutes
+    }
+    
     res.status(statusCode).json({ 
-      error: error.message || 'Failed to get recommendations',
+      error: errorMessage,
+      retryAfter,
       details: process.env.NODE_ENV === 'development' ? error.stack : undefined
     });
   }

@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { chatAPI } from '@/lib/api';
 import styles from '@/styles/AIChat.module.css';
 
-export default function AIChat({ isOpen, onClose, onBookSelect }) {
+export default function AIChat({ isOpen, onClose, onBookSelect, currentBook, currentChapter }) {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
@@ -16,9 +16,19 @@ export default function AIChat({ isOpen, onClose, onBookSelect }) {
     if (isOpen) {
       // Initialize with welcome message
       if (messages.length === 0) {
+        let welcomeMessage = "Hi! I'm KimemAI, your reading assistant. I can help you discover new books, discuss what you're reading, or answer questions about stories.";
+        
+        if (currentBook && currentChapter) {
+          welcomeMessage += `\n\nI see you're currently reading "${currentBook}" - ${currentChapter}. Feel free to ask me questions about this chapter or the book!`;
+        } else if (currentBook) {
+          welcomeMessage += `\n\nI see you're currently reading "${currentBook}". Feel free to ask me questions about it!`;
+        } else {
+          welcomeMessage += " What would you like to explore?";
+        }
+        
         setMessages([{
           role: 'assistant',
-          content: "Hi! I'm your AI reading assistant. I can help you discover new books, discuss what you're reading, or answer questions about stories. What would you like to explore?"
+          content: welcomeMessage
         }]);
       }
       // Focus input when opened
@@ -26,7 +36,7 @@ export default function AIChat({ isOpen, onClose, onBookSelect }) {
         inputRef.current?.focus();
       }, 100);
     }
-  }, [isOpen]);
+  }, [isOpen, currentBook, currentChapter]);
 
   useEffect(() => {
     scrollToBottom();
@@ -53,8 +63,16 @@ export default function AIChat({ isOpen, onClose, onBookSelect }) {
       const conversationHistory = newMessages
         .slice(-10)
         .map(msg => ({ role: msg.role, content: msg.content }));
+      
+      // Add context about current book/chapter if available
+      let messageWithContext = userMessage;
+      if (currentBook && currentChapter) {
+        messageWithContext = `[Context: Currently reading "${currentBook}" - ${currentChapter}]\n\n${userMessage}`;
+      } else if (currentBook) {
+        messageWithContext = `[Context: Currently reading "${currentBook}"]\n\n${userMessage}`;
+      }
 
-      const response = await chatAPI.sendMessage(userMessage, conversationHistory);
+      const response = await chatAPI.sendMessage(messageWithContext, conversationHistory);
       
       // Add AI response
       setMessages([...newMessages, {
@@ -63,10 +81,33 @@ export default function AIChat({ isOpen, onClose, onBookSelect }) {
       }]);
     } catch (error) {
       console.error('Chat error:', error);
-      const errorMessage = error.response?.data?.error || error.message || 'Sorry, I encountered an error.';
+      
+      // Handle authentication errors - don't show message as interceptor will redirect
+      if (error.response?.status === 401) {
+        // The interceptor will handle redirect, just return
+        return;
+      }
+      
+      let errorMessage = error.response?.data?.error || error.message || 'Sorry, I encountered an error.';
+      
+      // Handle rate limit errors
+      if (error.response?.status === 429) {
+        const retryAfter = error.response?.data?.retryAfter;
+        if (retryAfter) {
+          errorMessage += ` Please wait ${Math.ceil(retryAfter)} seconds before trying again.`;
+        } else {
+          errorMessage = 'Too many requests! Please wait a minute before sending another message. The AI service has rate limits to ensure fair usage.';
+        }
+      }
+      
+      // Handle API key errors
+      if (errorMessage.includes('API key')) {
+        errorMessage += ' Add GROQ_API_KEY or OPENAI_API_KEY to your backend/.env file and restart the server.';
+      }
+      
       setMessages([...newMessages, {
         role: 'assistant',
-        content: errorMessage + (errorMessage.includes('API key') ? ' Add OPENAI_API_KEY to your backend/.env file and restart the server.' : '')
+        content: errorMessage
       }]);
     } finally {
       setLoading(false);
@@ -93,10 +134,33 @@ export default function AIChat({ isOpen, onClose, onBookSelect }) {
       }]);
     } catch (error) {
       console.error('Recommendations error:', error);
-      const errorMessage = error.response?.data?.error || error.message || 'Sorry, I couldn\'t fetch recommendations right now.';
+      
+      // Handle authentication errors - don't show message as interceptor will redirect
+      if (error.response?.status === 401) {
+        // The interceptor will handle redirect, just return
+        return;
+      }
+      
+      let errorMessage = error.response?.data?.error || error.message || 'Sorry, I couldn\'t fetch recommendations right now.';
+      
+      // Handle rate limit errors
+      if (error.response?.status === 429) {
+        const retryAfter = error.response?.data?.retryAfter;
+        if (retryAfter) {
+          errorMessage += ` Please wait ${Math.ceil(retryAfter / 60)} minutes before requesting recommendations again.`;
+        } else {
+          errorMessage = 'Too many recommendation requests! Please wait a few minutes before trying again.';
+        }
+      }
+      
+      // Handle API key errors
+      if (errorMessage.includes('API key')) {
+        errorMessage += ' Add GROQ_API_KEY or OPENAI_API_KEY to your backend/.env file and restart the server.';
+      }
+      
       setMessages([...messages, {
         role: 'assistant',
-        content: errorMessage + (errorMessage.includes('API key') ? ' Add OPENAI_API_KEY to your backend/.env file and restart the server.' : '')
+        content: errorMessage
       }]);
     } finally {
       setLoadingRecommendations(false);
@@ -117,7 +181,7 @@ export default function AIChat({ isOpen, onClose, onBookSelect }) {
     <div className={styles.chatContainer}>
       <div className={styles.chatHeader}>
         <div className={styles.headerInfo}>
-          <h3>AI Reading Assistant</h3>
+          <h3>KimemAI</h3>
           <span className={styles.subtitle}>Ask me about books or get recommendations</span>
         </div>
         <div className={styles.headerActions}>

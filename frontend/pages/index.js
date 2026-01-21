@@ -43,11 +43,18 @@ export default function Home() {
 
   return (
     <div className={styles.authScreen}>
+      <div className={styles.heroBackground}>
+        <div className={styles.bookIllustration}></div>
+      </div>
       <div className={styles.authContainer}>
-        <h1 className={styles.appTitle}>Memory Maze</h1>
-        <p className={styles.appSubtitle}>Find the Truth</p>
+        <div className={styles.logoSection}>
+          <div className={styles.bookIcon}>📚</div>
+          <h1 className={styles.appTitle}>Memory Maze</h1>
+          <div className={styles.divider}></div>
+        </div>
+        <p className={styles.appSubtitle}>A Journey Through Literature</p>
         <p className={styles.appDescription}>
-          Progress through stories by remembering what you read
+          Engage with stories, strengthen your memory, and unlock knowledge through thoughtful reading and reflection.
         </p>
 
         <div className={styles.authTabs}>

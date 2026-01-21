@@ -63,6 +63,8 @@ export default function StoryPage() {
   };
 
   const handleFinishReading = () => {
+    setNotesOpen(false); // Close notes when starting checkpoint
+    setChatOpen(false); // Close AI chat when starting checkpoint
     setView('checkpoint');
   };
 
@@ -95,16 +97,33 @@ export default function StoryPage() {
         );
         await loadProgress(); // Reload to get updated progress
         
-        // Check if book is completed
+        // Check if book is completed and award badges
         const updatedProgress = await progressAPI.get(storyId);
         if (updatedProgress.data.currentChapter > story.chapters.length) {
-          // Book completed! Show badge
+          // Book completed! Show badge (badge is added in backend)
           try {
             const badgeResponse = await userAPI.addBadge(storyId, story.title);
             if (badgeResponse.data.isNew) {
               setEarnedBadge(badgeResponse.data.badge);
               setShowBadge(true);
               setTimeout(() => setShowBadge(false), 5000);
+            }
+            
+            // Check if green badge was earned (90+ on all chapters)
+            const allScores = story.chapters.map(ch => updatedProgress.data.scores[`chapter${ch.chapter}`]);
+            const all90Plus = allScores.every(score => score !== null && score >= 90);
+            if (all90Plus) {
+              // Reload badges to check for green badge
+              const profileResponse = await userAPI.getProfile();
+              const greenBadge = profileResponse.data.badges?.find(
+                b => b.storyId === storyId && b.type === 'excellent_score'
+              );
+              if (greenBadge) {
+                // Show green badge notification
+                setEarnedBadge({ ...greenBadge, isGreen: true });
+                setShowBadge(true);
+                setTimeout(() => setShowBadge(false), 6000);
+              }
             }
           } catch (error) {
             console.error('Error adding badge:', error);
@@ -117,6 +136,8 @@ export default function StoryPage() {
   };
 
   const handleRetryReading = () => {
+    setNotesOpen(false); // Reset notes when going back to reading
+    setChatOpen(false); // Reset AI chat when going back to reading
     setView('reading');
     setAnswers({});
     setCheckpointResults(null);
@@ -132,6 +153,8 @@ export default function StoryPage() {
   };
 
   const handleRetryCheckpoint = () => {
+    setNotesOpen(false); // Close notes when retrying checkpoint
+    setChatOpen(false); // Close AI chat when retrying checkpoint
     setView('checkpoint');
     setAnswers({});
     setCheckpointResults(null);
@@ -157,12 +180,18 @@ export default function StoryPage() {
     <div className={styles.container}>
       {showBadge && earnedBadge && (
         <div className={styles.badgeNotification}>
-          <div className={styles.badgeContent}>
-            <div className={styles.badgeIcon}>BADGE</div>
+          <div className={`${styles.badgeContent} ${earnedBadge.isGreen || earnedBadge.type === 'excellent_score' ? styles.greenBadgeContent : ''}`}>
+            <div className={styles.badgeIcon}>{earnedBadge.isGreen || earnedBadge.type === 'excellent_score' ? '⭐' : 'BADGE'}</div>
             <div className={styles.badgeText}>
               <h3>Congratulations!</h3>
-              <p>You've completed "{earnedBadge.storyTitle}"!</p>
-              <span className={styles.badgeEarned}>Badge Earned</span>
+              <p>
+                {earnedBadge.isGreen || earnedBadge.type === 'excellent_score' 
+                  ? `You scored 90%+ on all chapters of "${earnedBadge.storyTitle}"!` 
+                  : `You've completed "${earnedBadge.storyTitle}"!`}
+              </p>
+              <span className={earnedBadge.isGreen || earnedBadge.type === 'excellent_score' ? styles.greenBadgeEarned : styles.badgeEarned}>
+                {earnedBadge.isGreen || earnedBadge.type === 'excellent_score' ? 'Excellent Score Badge Earned! ✨' : 'Badge Earned'}
+              </span>
             </div>
             <button 
               className={styles.badgeClose}
@@ -178,12 +207,13 @@ export default function StoryPage() {
           ← Back to Stories
         </button>
         <h2>{story.title}</h2>
+        {story.author && <p className={styles.author}>by {story.author}</p>}
         <div className={styles.headerActions}>
           <button 
             onClick={() => setChatOpen(!chatOpen)} 
             className={styles.chatBtn}
           >
-            AI Chat
+            KimemAI
           </button>
           <div className={styles.progressInfo}>
             <div className={styles.progressBar}>
@@ -196,6 +226,71 @@ export default function StoryPage() {
           </div>
         </div>
       </header>
+
+      {/* Where to Read Banner - Styled & Ethiopia-Friendly */}
+      {story.whereToRead && (
+        <div className={styles.whereToReadBanner}>
+          <div className={styles.bannerContent}>
+            <div className={styles.bannerLeft}>
+              <div className={styles.bannerIcon}>📚</div>
+              <div className={styles.bannerText}>
+                <h3>Want the Full Book?</h3>
+                <p>{story.whereToRead.note || 'Access the complete story!'}</p>
+              </div>
+            </div>
+            
+            <div className={styles.bannerRight}>
+              <div className={styles.linkSection}>
+                <p className={styles.sectionTitle}>🆓 Free Access</p>
+                <div className={styles.linkGroup}>
+                  {story.whereToRead.gutenbergLink && (
+                    <a href={story.whereToRead.gutenbergLink} target="_blank" rel="noopener noreferrer" className={`${styles.linkBtn} ${styles.freeBtn}`}>
+                      Project Gutenberg
+                    </a>
+                  )}
+                  {story.whereToRead.archiveLink && (
+                    <a href={story.whereToRead.archiveLink} target="_blank" rel="noopener noreferrer" className={`${styles.linkBtn} ${styles.freeBtn}`}>
+                      Internet Archive
+                    </a>
+                  )}
+                </div>
+              </div>
+              
+              <div className={styles.linkSection}>
+                <p className={styles.sectionTitle}>🛒 Buy/Read</p>
+                <div className={styles.linkGroup}>
+                  {story.whereToRead.googleBooksLink && (
+                    <a href={story.whereToRead.googleBooksLink} target="_blank" rel="noopener noreferrer" className={styles.linkBtn}>
+                      Google Books
+                    </a>
+                  )}
+                  {story.whereToRead.amazonLink && (
+                    <a href={story.whereToRead.amazonLink} target="_blank" rel="noopener noreferrer" className={styles.linkBtn}>
+                      Amazon
+                    </a>
+                  )}
+                </div>
+              </div>
+              
+              <div className={styles.linkSection}>
+                <p className={styles.sectionTitle}>ℹ️ Info</p>
+                <div className={styles.linkGroup}>
+                  {story.whereToRead.goodreadsLink && (
+                    <a href={story.whereToRead.goodreadsLink} target="_blank" rel="noopener noreferrer" className={styles.linkBtn}>
+                      Goodreads
+                    </a>
+                  )}
+                  {story.whereToRead.wikipediaLink && (
+                    <a href={story.whereToRead.wikipediaLink} target="_blank" rel="noopener noreferrer" className={styles.linkBtn}>
+                      Wikipedia
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {view === 'map' && (
         <div className={styles.progressMap}>
@@ -219,7 +314,12 @@ export default function StoryPage() {
                   {attempts > 0 && (
                     <div className={styles.chapterMeta}>
                       <span>Attempts: {attempts}</span>
-                      {score !== null && <span>Best: {score}%</span>}
+                      {score !== null && (
+                        <span className={score >= 90 ? styles.excellentScore : ''}>
+                          Score: {score}%
+                          {score >= 90 && <span className={styles.greenBadge}>✨</span>}
+                        </span>
+                      )}
                     </div>
                   )}
                   {!unlocked && <div className={styles.lockedBadge}>Locked</div>}
@@ -249,9 +349,18 @@ export default function StoryPage() {
                 <p key={idx}>{paragraph}</p>
               ))}
             </div>
-            <button onClick={handleFinishReading} className={styles.finishBtn}>
-              I've Finished Reading
-            </button>
+            <div className={styles.readingActions}>
+              <button 
+                onClick={() => setChatOpen(!chatOpen)} 
+                className={styles.aiChatBtn}
+                title="Chat with AI about this chapter"
+              >
+                💬 Ask AI
+              </button>
+              <button onClick={handleFinishReading} className={styles.finishBtn}>
+                I've Finished Reading
+              </button>
+            </div>
           </div>
           <NoteSidebar
             storyId={storyId}
@@ -308,7 +417,10 @@ export default function StoryPage() {
               {checkpointResults.passed ? '✓ You Passed!' : '✗ Try Again'}
             </h3>
             <div className={styles.scoreDisplay}>
-              Your Score: {checkpointResults.score}%
+              <div className={styles.scoreValue}>
+                Your Score: <span className={checkpointResults.score >= 90 ? styles.excellentScore : ''}>{checkpointResults.score}%</span>
+                {checkpointResults.score >= 90 && <span className={styles.excellentBadge}>✨ Excellent!</span>}
+              </div>
               {checkpointResults.passed ? (
                 <span className={styles.passedBadge}>Unlocked Next Chapter!</span>
               ) : (
@@ -355,14 +467,19 @@ export default function StoryPage() {
         </div>
       )}
 
-      <AIChat 
-        isOpen={chatOpen} 
-        onClose={() => setChatOpen(false)}
-        onBookSelect={(bookTitle) => {
-          router.push('/stories');
-          setChatOpen(false);
-        }}
-      />
+      {/* Only show AI Chat during reading view, not during checkpoint or results */}
+      {view === 'reading' && (
+        <AIChat 
+          isOpen={chatOpen} 
+          onClose={() => setChatOpen(false)}
+          onBookSelect={(bookTitle) => {
+            router.push('/stories');
+            setChatOpen(false);
+          }}
+          currentBook={story?.title}
+          currentChapter={chapterData ? `Chapter ${chapterData.chapter}: ${chapterData.title}` : null}
+        />
+      )}
     </div>
   );
 }

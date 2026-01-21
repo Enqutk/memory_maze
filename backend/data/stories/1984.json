@@ -1,0 +1,191 @@
+{
+  "id": "1984",
+  "title": "1984",
+  "author": "George Orwell",
+  "description": "In a totalitarian future society, Winston Smith works at the Ministry of Truth rewriting history. He secretly rebels against the oppressive regime led by Big Brother, falling in love and questioning reality itself.",
+  "difficulty": "hard",
+  "coverImage": "",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "The Ministry of Truth",
+      "content": "Winston Smith works at the Ministry of Truth in Oceania, one of three superstates constantly at war. His job is to rewrite historical documents to match the Party's current version of truth. Winston lives in a world where the government, led by Big Brother, watches everyone through telescreens. He secretly hates the Party and begins writing forbidden thoughts in a diary, which is an act of rebellion punishable by death. Winston knows that thoughtcrime does not entail death: thoughtcrime IS death...\n\n[Get the full book to continue reading!]",
+      "questions": [
+        {
+          "id": "q1-1",
+          "question": "Where does Winston Smith work?",
+          "type": "text",
+          "answer": "Ministry of Truth"
+        },
+        {
+          "id": "q1-2",
+          "question": "What is Winston's job?",
+          "type": "text",
+          "answer": "to rewrite historical documents"
+        },
+        {
+          "id": "q1-3",
+          "question": "Who is the leader of the Party?",
+          "type": "text",
+          "answer": "Big Brother"
+        },
+        {
+          "id": "q1-4",
+          "question": "What forbidden act does Winston commit?",
+          "type": "text",
+          "answer": "writing in a diary"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 2,
+      "title": "Julia",
+      "content": "Winston meets Julia, a fellow worker. At first, he thinks she is a spy for the Thought Police. However, Julia secretly passes him a note saying \"I love you.\" They begin a forbidden love affair. Julia is more practical than Winston; she rebels against the Party by indulging in personal pleasures rather than intellectual resistance. They rent a room above Mr. Charrington's antique shop as a hideaway. Winston believes that love and personal relationships are the ultimate rebellion against the Party...\n\n[Get the full book to continue reading!]",
+      "questions": [
+        {
+          "id": "q2-1",
+          "question": "Who passes Winston a note?",
+          "type": "text",
+          "answer": "Julia"
+        },
+        {
+          "id": "q2-2",
+          "question": "What does Julia's note say?",
+          "type": "text",
+          "answer": "I love you"
+        },
+        {
+          "id": "q2-3",
+          "question": "Where do Winston and Julia meet secretly?",
+          "type": "text",
+          "answer": "a room above Mr. Charrington's antique shop"
+        },
+        {
+          "id": "q2-4",
+          "question": "How does Julia rebel against the Party?",
+          "type": "text",
+          "answer": "by indulging in personal pleasures"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 3,
+      "title": "O'Brien and the Brotherhood",
+      "content": "Winston believes that O'Brien, an Inner Party member, is secretly against the Party. O'Brien invites Winston to his home and introduces him to the Brotherhood, a legendary resistance group. O'Brien gives Winston a book written by Emmanuel Goldstein, the supposed enemy of the state. Winston and Julia read the book, which explains how the Party maintains power through perpetual war, manipulation of language (Newspeak), and control of the past.\n\n[This is a preview. Read the full book for the comple...\n\n[Get the full book to continue reading!]",
+      "questions": [
+        {
+          "id": "q3-1",
+          "question": "Who invites Winston to his home?",
+          "type": "text",
+          "answer": "O'Brien"
+        },
+        {
+          "id": "q3-2",
+          "question": "What is the Brotherhood?",
+          "type": "text",
+          "answer": "a legendary resistance group"
+        },
+        {
+          "id": "q3-3",
+          "question": "Who wrote the book O'Brien gives Winston?",
+          "type": "text",
+          "answer": "Emmanuel Goldstein"
+        },
+        {
+          "id": "q3-4",
+          "question": "What does Newspeak do?",
+          "type": "text",
+          "answer": "manipulates language to control thought"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 4,
+      "title": "The Betrayal",
+      "content": "Winston and Julia are arrested by the Thought Police. It turns out that Mr. Charrington, the shop owner, is a member of the Thought Police, and their hideaway was under surveillance the entire time. O'Brien was never a member of the Brotherhood—he was testing Winston all along. Winston is taken to the Ministry of Love, where he is tortured and brainwashed. O'Brien personally oversees Winston's re-education, using physical pain and psychological manipulation.\n\n[This is a preview. Read the full bo...\n\n[Get the full book to continue reading!]",
+      "questions": [
+        {
+          "id": "q4-1",
+          "question": "Who arrests Winston and Julia?",
+          "type": "text",
+          "answer": "the Thought Police"
+        },
+        {
+          "id": "q4-2",
+          "question": "What is Mr. Charrington's real identity?",
+          "type": "text",
+          "answer": "a member of the Thought Police"
+        },
+        {
+          "id": "q4-3",
+          "question": "Was O'Brien really in the Brotherhood?",
+          "type": "text",
+          "answer": "no"
+        },
+        {
+          "id": "q4-4",
+          "question": "Where is Winston taken?",
+          "type": "text",
+          "answer": "the Ministry of Love"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 5,
+      "title": "Room 101",
+      "content": "Winston is taken to Room 101, where prisoners face their worst fear. For Winston, it is rats. O'Brien places a cage of starving rats on Winston's face. In terror, Winston begs them to torture Julia instead. This final betrayal breaks Winston completely. He is released, a shell of his former self. In the end, Winston sits in a café, loving Big Brother. He has been fully converted. The Party has won.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "questions": [
+        {
+          "id": "q5-1",
+          "question": "What is Room 101?",
+          "type": "text",
+          "answer": "a place where prisoners face their worst fear"
+        },
+        {
+          "id": "q5-2",
+          "question": "What is Winston's worst fear?",
+          "type": "text",
+          "answer": "rats"
+        },
+        {
+          "id": "q5-3",
+          "question": "Who does Winston betray?",
+          "type": "text",
+          "answer": "Julia"
+        },
+        {
+          "id": "q5-4",
+          "question": "How does the book end?",
+          "type": "text",
+          "answer": "Winston loves Big Brother"
+        },
+        {
+          "id": "q5-5",
+          "question": "Who wins in the end?",
+          "type": "text",
+          "answer": "the Party"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    }
+  ],
+  "whereToRead": {
+    "gutenbergLink": "https://www.gutenberg.org/ebooks/search/?query=1984",
+    "archiveLink": "https://archive.org/search.php?query=1984",
+    "amazonLink": "https://www.amazon.com/s?k=1984",
+    "googleBooksLink": "https://books.google.com/books?q=1984",
+    "goodreadsLink": "https://www.goodreads.com/search?q=1984",
+    "wikipediaLink": "https://en.wikipedia.org/wiki/1984",
+    "note": "📖 This is a preview. Access the full book through the links below!"
+  },
+  "educationalNote": "This platform helps you practice reading comprehension. Summary content is provided for educational purposes. Please purchase or borrow the complete book to read the full story and support the author."
+}

@@ -1,5 +1,29 @@
 const adminService = require('../services/adminService');
 const storyService = require('../services/storyService');
+const { getKeyRotation } = require('../utils/keyRotation');
+
+async function getApiKeyStats(req, res) {
+  try {
+    const keyRotation = getKeyRotation();
+    
+    if (!keyRotation) {
+      return res.json({
+        enabled: false,
+        message: 'Key rotation not enabled. Using single API key.',
+        totalKeys: 1
+      });
+    }
+    
+    const stats = keyRotation.getStats();
+    res.json({
+      enabled: true,
+      ...stats
+    });
+  } catch (error) {
+    console.error('Get API key stats error:', error);
+    res.status(500).json({ error: 'Failed to get API key statistics' });
+  }
+}
 
 async function getAllUsers(req, res) {
   try {
@@ -130,6 +154,7 @@ module.exports = {
   updateUserRole,
   deleteUser,
   getSystemStats,
+  getApiKeyStats,
   getAllStoriesAdmin,
   createStory,
   updateStory,

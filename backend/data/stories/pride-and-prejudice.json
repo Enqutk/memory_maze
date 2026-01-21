@@ -1,0 +1,131 @@
+{
+  "id": "pride-and-prejudice",
+  "title": "Pride and Prejudice",
+  "author": "Jane Austen",
+  "description": "Elizabeth Bennet must navigate society, family expectations, and her own pride to find love with the seemingly arrogant Mr. Darcy.",
+  "difficulty": "medium",
+  "coverImage": "",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "First Impressions",
+      "content": "Mr. Bingley, a wealthy bachelor, moves into Netherfield Park. Mrs. Bennet is determined to marry one of her five daughters to him. At a ball, Bingley is immediately taken with Jane Bennet, the eldest daughter. His friend Mr. Darcy appears proud and aloof, refusing to dance with Elizabeth and calling her \"tolerable, but not handsome enough to tempt me.\" Elizabeth overhears this and takes an instant dislike to Darcy.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "questions": [
+        {
+          "id": "q1-1",
+          "question": "Who moves into Netherfield Park?",
+          "type": "text",
+          "answer": "Mr. Bingley"
+        },
+        {
+          "id": "q1-2",
+          "question": "What does Mr. Darcy say about Elizabeth?",
+          "type": "text",
+          "answer": "tolerable, but not handsome enough to tempt me"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 2,
+      "title": "Mr. Wickham",
+      "content": "Elizabeth meets the charming Mr. Wickham, who tells her that Darcy treated him unfairly and denied him a promised inheritance. This confirms Elizabeth's negative opinion of Darcy. Meanwhile, Mr. Collins, a ridiculous clergyman and distant cousin, proposes to Elizabeth. She refuses, and he quickly becomes engaged to her friend Charlotte Lucas instead.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "questions": [
+        {
+          "id": "q2-1",
+          "question": "Who tells Elizabeth bad things about Darcy?",
+          "type": "text",
+          "answer": "Mr. Wickham"
+        },
+        {
+          "id": "q2-2",
+          "question": "Who proposes to Elizabeth?",
+          "type": "text",
+          "answer": "Mr. Collins"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 3,
+      "title": "Darcy's Proposal",
+      "content": "Darcy surprises Elizabeth by proposing to her, but he does so in an insulting manner, emphasizing how he struggled against his feelings due to her lower social status. Elizabeth angrily rejects him, accusing him of separating Jane and Bingley and mistreating Wickham. Darcy writes her a letter explaining everything: Wickham is actually a liar who tried to elope with Darcy's sister, and he separated Jane and Bingley because he didn't think Jane truly loved Bingley.\n\n[This is a preview. Read the fu...\n\n[Get the full book to continue reading!]",
+      "questions": [
+        {
+          "id": "q3-1",
+          "question": "How does Elizabeth respond to Darcy's proposal?",
+          "type": "text",
+          "answer": "she angrily rejects him"
+        },
+        {
+          "id": "q3-2",
+          "question": "What does Darcy reveal about Wickham?",
+          "type": "text",
+          "answer": "he is a liar who tried to elope with Darcy's sister"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 4,
+      "title": "Lydia's Scandal",
+      "content": "Elizabeth's youngest sister Lydia elopes with Wickham without getting married, bringing scandal to the family. Darcy secretly tracks them down and pays Wickham to marry Lydia, saving the Bennet family's reputation. Elizabeth learns of Darcy's kind intervention and realizes he has changed—and that she has misjudged him.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "questions": [
+        {
+          "id": "q4-1",
+          "question": "What scandal does Lydia cause?",
+          "type": "text",
+          "answer": "she elopes with Wickham without getting married"
+        },
+        {
+          "id": "q4-2",
+          "question": "How does Darcy help?",
+          "type": "text",
+          "answer": "he pays Wickham to marry Lydia"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 5,
+      "title": "True Love",
+      "content": "Bingley returns to Netherfield and proposes to Jane, who accepts. Darcy visits Elizabeth and proposes again, this time humbly and sincerely. Elizabeth accepts, having overcome her pride and prejudice. The two couples marry, and Elizabeth reflects on how wrong her first impressions were and how love can triumph over pride and prejudice.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "questions": [
+        {
+          "id": "q5-1",
+          "question": "Who proposes to Jane?",
+          "type": "text",
+          "answer": "Bingley"
+        },
+        {
+          "id": "q5-2",
+          "question": "Does Elizabeth accept Darcy's second proposal?",
+          "type": "text",
+          "answer": "yes"
+        },
+        {
+          "id": "q5-3",
+          "question": "What does Elizabeth realize?",
+          "type": "text",
+          "answer": "her first impressions were wrong"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    }
+  ],
+  "whereToRead": {
+    "gutenbergLink": "https://www.gutenberg.org/ebooks/search/?query=Pride%20and%20Prejudice",
+    "archiveLink": "https://archive.org/search.php?query=Pride%20and%20Prejudice",
+    "amazonLink": "https://www.amazon.com/s?k=Pride%20and%20Prejudice",
+    "googleBooksLink": "https://books.google.com/books?q=Pride%20and%20Prejudice",
+    "goodreadsLink": "https://www.goodreads.com/search?q=Pride%20and%20Prejudice",
+    "wikipediaLink": "https://en.wikipedia.org/wiki/Pride_and_Prejudice",
+    "note": "📖 This is a preview. Access the full book through the links below!"
+  },
+  "educationalNote": "This platform helps you practice reading comprehension. Summary content is provided for educational purposes. Please purchase or borrow the complete book to read the full story and support the author."
+}

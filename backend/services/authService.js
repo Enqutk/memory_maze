@@ -54,7 +54,7 @@ async function registerUser(email, password) {
   users[email] = userData;
   await saveUsers(users);
 
-  const token = jwt.sign({ email }, JWT_SECRET, { expiresIn: '7d' });
+  const token = jwt.sign({ email }, JWT_SECRET, { expiresIn: '30d' }); // Changed from 7d to 30d
 
   return {
     token,
@@ -107,7 +107,7 @@ async function loginUser(email, password) {
     await saveUsers(users);
   }
 
-  const token = jwt.sign({ email }, JWT_SECRET, { expiresIn: '7d' });
+  const token = jwt.sign({ email }, JWT_SECRET, { expiresIn: '30d' }); // Changed from 7d to 30d
 
   return {
     token,
@@ -148,6 +148,13 @@ function verifyToken(token) {
   try {
     return jwt.verify(token, JWT_SECRET);
   } catch (error) {
+    // Provide more specific error messages
+    if (error.name === 'TokenExpiredError') {
+      throw new Error('Token expired');
+    }
+    if (error.name === 'JsonWebTokenError') {
+      throw new Error('Invalid token format');
+    }
     throw new Error('Invalid token');
   }
 }

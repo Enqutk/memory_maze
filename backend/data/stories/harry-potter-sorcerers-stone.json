@@ -1,0 +1,155 @@
+{
+  "id": "harry-potter-sorcerers-stone",
+  "title": "Harry Potter and the Sorcerer's Stone",
+  "author": "J.K. Rowling",
+  "description": "An orphaned boy discovers he's a wizard and attends Hogwarts School of Witchcraft and Wizardry, where he makes friends and uncovers the truth about his past.",
+  "difficulty": "easy",
+  "coverImage": "",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "The Boy Who Lived",
+      "content": "Harry Potter lives with his cruel aunt, uncle, and cousin, the Dursleys, who treat him terribly. On his 11th birthday, a giant named Hagrid arrives and tells Harry the truth: he is a wizard, and his parents were murdered by the evil Lord Voldemort. Harry survived Voldemort's killing curse as a baby, making him famous in the wizarding world as \"The Boy Who Lived.\" Hagrid takes Harry to Diagon Alley to buy school supplies for Hogwarts School of Witchcraft and Wizardry.\n\n[This is a preview. Read th...\n\n[Get the full book to continue reading!]",
+      "questions": [
+        {
+          "id": "q1-1",
+          "question": "Who tells Harry he is a wizard?",
+          "type": "text",
+          "answer": "Hagrid"
+        },
+        {
+          "id": "q1-2",
+          "question": "Who killed Harry's parents?",
+          "type": "text",
+          "answer": "Lord Voldemort"
+        },
+        {
+          "id": "q1-3",
+          "question": "What is Harry called in the wizarding world?",
+          "type": "text",
+          "answer": "The Boy Who Lived"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 2,
+      "title": "Hogwarts",
+      "content": "Harry boards the Hogwarts Express at Platform 9¾ and meets Ron Weasley and Hermione Granger, who become his best friends. At Hogwarts, students are sorted into four houses. Harry is sorted into Gryffindor along with Ron and Hermione. Harry also meets Draco Malfoy, a bully from Slytherin house. Harry discovers he has a natural talent for flying and is chosen to be the youngest Seeker on the Gryffindor Quidditch team in a century.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "questions": [
+        {
+          "id": "q2-1",
+          "question": "Who are Harry's two best friends?",
+          "type": "text",
+          "answer": "Ron Weasley and Hermione Granger"
+        },
+        {
+          "id": "q2-2",
+          "question": "What house is Harry sorted into?",
+          "type": "text",
+          "answer": "Gryffindor"
+        },
+        {
+          "id": "q2-3",
+          "question": "What position does Harry play in Quidditch?",
+          "type": "text",
+          "answer": "Seeker"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 3,
+      "title": "The Three-Headed Dog",
+      "content": "Harry, Ron, and Hermione accidentally discover a three-headed dog guarding a trapdoor on the third floor. They learn that something called the Sorcerer's Stone, which grants immortality, is hidden at Hogwarts. They suspect that Professor Snape, who seems to hate Harry, is trying to steal it. Meanwhile, Harry receives an Invisibility Cloak that belonged to his father, allowing him to explore the castle unseen.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "questions": [
+        {
+          "id": "q3-1",
+          "question": "What is guarding the trapdoor?",
+          "type": "text",
+          "answer": "a three-headed dog"
+        },
+        {
+          "id": "q3-2",
+          "question": "What does the Sorcerer's Stone do?",
+          "type": "text",
+          "answer": "grants immortality"
+        },
+        {
+          "id": "q3-3",
+          "question": "What magical item does Harry receive?",
+          "type": "text",
+          "answer": "an Invisibility Cloak"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 4,
+      "title": "Through the Trapdoor",
+      "content": "Harry, Ron, and Hermione realize someone is going to steal the Stone. They decide to protect it themselves and go through the trapdoor, facing a series of magical challenges. Ron is injured during a giant chess game, and Hermione stays behind to help him. Harry continues alone and discovers the shocking truth: it's not Snape trying to steal the Stone—it's Professor Quirrell, who has been possessed by Voldemort.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "questions": [
+        {
+          "id": "q4-1",
+          "question": "Who is really trying to steal the Stone?",
+          "type": "text",
+          "answer": "Professor Quirrell"
+        },
+        {
+          "id": "q4-2",
+          "question": "Who has possessed Quirrell?",
+          "type": "text",
+          "answer": "Voldemort"
+        },
+        {
+          "id": "q4-3",
+          "question": "What happens to Ron?",
+          "type": "text",
+          "answer": "he is injured during a giant chess game"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 5,
+      "title": "The Mirror of Erised",
+      "content": "Harry confronts Quirrell and Voldemort, who wants the Stone to regain his body. Harry looks into the Mirror of Erised and sees himself holding the Stone, which magically appears in his pocket. When Quirrell tries to kill Harry, Harry's touch burns Quirrell because of the love protection his mother left when she died for him. Voldemort's spirit flees, and Harry wakes up in the hospital. Dumbledore explains that the Stone has been destroyed. Gryffindor wins the House Cup, and Harry returns to the ...\n\n[Get the full book to continue reading!]",
+      "questions": [
+        {
+          "id": "q5-1",
+          "question": "How does Harry defeat Quirrell?",
+          "type": "text",
+          "answer": "his touch burns Quirrell"
+        },
+        {
+          "id": "q5-2",
+          "question": "What happens to the Sorcerer's Stone?",
+          "type": "text",
+          "answer": "it is destroyed"
+        },
+        {
+          "id": "q5-3",
+          "question": "Which house wins the House Cup?",
+          "type": "text",
+          "answer": "Gryffindor"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    }
+  ],
+  "whereToRead": {
+    "gutenbergLink": "https://www.gutenberg.org/ebooks/search/?query=Harry%20Potter%20and%20the%20Sorcerer's%20Stone",
+    "archiveLink": "https://archive.org/search.php?query=Harry%20Potter%20and%20the%20Sorcerer's%20Stone",
+    "amazonLink": "https://www.amazon.com/s?k=Harry%20Potter%20and%20the%20Sorcerer's%20Stone",
+    "googleBooksLink": "https://books.google.com/books?q=Harry%20Potter%20and%20the%20Sorcerer's%20Stone",
+    "goodreadsLink": "https://www.goodreads.com/search?q=Harry%20Potter%20and%20the%20Sorcerer's%20Stone",
+    "wikipediaLink": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Sorcerer's_Stone",
+    "note": "📖 This is a preview. Access the full book through the links below!"
+  },
+  "educationalNote": "This platform helps you practice reading comprehension. Summary content is provided for educational purposes. Please purchase or borrow the complete book to read the full story and support the author."
+}

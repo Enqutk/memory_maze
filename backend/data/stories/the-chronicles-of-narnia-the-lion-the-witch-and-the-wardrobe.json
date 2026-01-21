@@ -1,0 +1,101 @@
+{
+  "id": "the-chronicles-of-narnia-the-lion-the-witch-and-the-wardrobe",
+  "title": "The Lion, the Witch and the Wardrobe",
+  "author": "C.S. Lewis",
+  "difficulty": "easy",
+  "description": "Four siblings discover a magical land through a wardrobe.",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "Beginning",
+      "content": "The Lion, the Witch and the Wardrobe begins with Four siblings discover a magical land through a wardrobe. The main character faces initial challenges and meets key people who will shape their journey.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "questions": [
+        {
+          "id": "q1-1",
+          "question": "What is the title of this book?",
+          "type": "text",
+          "answer": "The Lion, the Witch and the Wardrobe"
+        },
+        {
+          "id": "q1-2",
+          "question": "What chapter is this?",
+          "type": "text",
+          "answer": "1"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 2,
+      "title": "Development",
+      "content": "The story develops as conflicts arise and relationships are tested. New information changes everything the characters thought they knew.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "questions": [
+        {
+          "id": "q2-1",
+          "question": "What happens in this chapter?",
+          "type": "text",
+          "answer": "conflicts arise and relationships are tested"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 3,
+      "title": "Climax",
+      "content": "The tension reaches its peak as the main character confronts the central conflict. Difficult choices must be made.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "questions": [
+        {
+          "id": "q3-1",
+          "question": "What is this chapter about?",
+          "type": "text",
+          "answer": "the climax where tension reaches its peak"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 4,
+      "title": "Resolution",
+      "content": "After the intense climax, the story moves toward resolution. Characters reflect on their journey and its meaning.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "questions": [
+        {
+          "id": "q4-1",
+          "question": "What happens in the resolution?",
+          "type": "text",
+          "answer": "characters reflect on their journey"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 5,
+      "title": "Conclusion",
+      "content": "The story concludes with lasting changes to the characters and their world. Lessons learned shape the future.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "questions": [
+        {
+          "id": "q5-1",
+          "question": "How does the story end?",
+          "type": "text",
+          "answer": "with lasting changes and lessons learned"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    }
+  ],
+  "coverImage": "",
+  "whereToRead": {
+    "gutenbergLink": "https://www.gutenberg.org/ebooks/search/?query=The%20Lion%2C%20the%20Witch%20and%20the%20Wardrobe",
+    "archiveLink": "https://archive.org/search.php?query=The%20Lion%2C%20the%20Witch%20and%20the%20Wardrobe",
+    "amazonLink": "https://www.amazon.com/s?k=The%20Lion%2C%20the%20Witch%20and%20the%20Wardrobe",
+    "googleBooksLink": "https://books.google.com/books?q=The%20Lion%2C%20the%20Witch%20and%20the%20Wardrobe",
+    "goodreadsLink": "https://www.goodreads.com/search?q=The%20Lion%2C%20the%20Witch%20and%20the%20Wardrobe",
+    "wikipediaLink": "https://en.wikipedia.org/wiki/The_Lion%2C_the_Witch_and_the_Wardrobe",
+    "note": "📖 This is a preview. Access the full book through the links below!"
+  },
+  "educationalNote": "This platform helps you practice reading comprehension. Summary content is provided for educational purposes. Please purchase or borrow the complete book to read the full story and support the author."
+}

@@ -1,0 +1,191 @@
+{
+  "id": "to-kill-a-mockingbird",
+  "title": "To Kill a Mockingbird",
+  "author": "Harper Lee",
+  "description": "Scout Finch grows up in Depression-era Alabama as her father, attorney Atticus Finch, defends a black man falsely accused of rape. A powerful story about justice, prejudice, and moral courage.",
+  "difficulty": "medium",
+  "coverImage": "",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "Scout and Jem",
+      "content": "Scout Finch lives in the small town of Maycomb, Alabama, with her older brother Jem and their father Atticus, a lawyer. Their mother died when Scout was young. The children are fascinated by their mysterious neighbor, Boo Radley, who never leaves his house. The neighborhood children dare each other to approach the Radley house. Scout, Jem, and their friend Dill spend their summer creating stories about Boo and trying to catch a glimpse of him.\n\n[This is a preview. Read the full book for the comp...\n\n[Get the full book to continue reading!]",
+      "questions": [
+        {
+          "id": "q1-1",
+          "question": "Where does Scout live?",
+          "type": "text",
+          "answer": "Maycomb, Alabama"
+        },
+        {
+          "id": "q1-2",
+          "question": "What is Scout's father's profession?",
+          "type": "text",
+          "answer": "lawyer"
+        },
+        {
+          "id": "q1-3",
+          "question": "Who is the mysterious neighbor?",
+          "type": "text",
+          "answer": "Boo Radley"
+        },
+        {
+          "id": "q1-4",
+          "question": "What is Scout's brother's name?",
+          "type": "text",
+          "answer": "Jem"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 2,
+      "title": "The Trial",
+      "content": "Atticus is appointed to defend Tom Robinson, a black man accused of raping Mayella Ewell, a white woman. Despite the evidence proving Tom's innocence, the all-white jury finds him guilty because of racial prejudice. Atticus demonstrates Tom's disability that would have made the crime impossible, and exposes the Ewells' lies. The children watch from the colored balcony and witness injustice firsthand. Atticus teaches them that real courage is fighting for what's right even when you know you'll lo...\n\n[Get the full book to continue reading!]",
+      "questions": [
+        {
+          "id": "q2-1",
+          "question": "Who is Atticus defending?",
+          "type": "text",
+          "answer": "Tom Robinson"
+        },
+        {
+          "id": "q2-2",
+          "question": "What is Tom accused of?",
+          "type": "text",
+          "answer": "raping Mayella Ewell"
+        },
+        {
+          "id": "q2-3",
+          "question": "What is the verdict?",
+          "type": "text",
+          "answer": "guilty"
+        },
+        {
+          "id": "q2-4",
+          "question": "What does Atticus teach about courage?",
+          "type": "text",
+          "answer": "fighting for what's right even when you know you'll lose"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 3,
+      "title": "Bob Ewell's Revenge",
+      "content": "Bob Ewell, Mayella's father, is humiliated by Atticus in court. He threatens Atticus and spits in his face. Atticus remains dignified, but Ewell seeks revenge. Tom Robinson is killed while trying to escape prison. On Halloween night, Ewell attacks Scout and Jem as they walk home from a school pageant. In the darkness, someone rescues the children. Jem's arm is broken in the struggle.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "questions": [
+        {
+          "id": "q3-1",
+          "question": "Who threatens Atticus?",
+          "type": "text",
+          "answer": "Bob Ewell"
+        },
+        {
+          "id": "q3-2",
+          "question": "What happens to Tom Robinson?",
+          "type": "text",
+          "answer": "he is killed while trying to escape prison"
+        },
+        {
+          "id": "q3-3",
+          "question": "When does Ewell attack the children?",
+          "type": "text",
+          "answer": "Halloween night"
+        },
+        {
+          "id": "q3-4",
+          "question": "What injury does Jem suffer?",
+          "type": "text",
+          "answer": "broken arm"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 4,
+      "title": "Boo Radley Emerges",
+      "content": "The person who rescued Scout and Jem was Boo Radley. In the struggle, Boo killed Bob Ewell to protect the children. Sheriff Tate decides to report that Ewell fell on his own knife, protecting Boo from unwanted attention. Scout finally meets Boo and walks him home. Standing on the Radley porch, Scout sees the neighborhood from Boo's perspective, understanding at last what Atticus meant about walking in someone else's shoes.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "questions": [
+        {
+          "id": "q4-1",
+          "question": "Who rescued the children?",
+          "type": "text",
+          "answer": "Boo Radley"
+        },
+        {
+          "id": "q4-2",
+          "question": "What happened to Bob Ewell?",
+          "type": "text",
+          "answer": "Boo killed him"
+        },
+        {
+          "id": "q4-3",
+          "question": "What does Sheriff Tate report?",
+          "type": "text",
+          "answer": "that Ewell fell on his own knife"
+        },
+        {
+          "id": "q4-4",
+          "question": "What does Scout understand at the end?",
+          "type": "text",
+          "answer": "walking in someone else's shoes"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 5,
+      "title": "Lessons Learned",
+      "content": "Scout reflects on the events of the past years. She has learned that most people are good once you get to know them, but that prejudice and fear can make people do terrible things. Atticus taught her to stand up for justice even when it's unpopular. She learned that Boo Radley was a kind, protective person, not the monster the children imagined. Scout has grown from a naive child into someone who understands the complexity of human nature and the importance of compassion.\n\n[This is a preview. Re...\n\n[Get the full book to continue reading!]",
+      "questions": [
+        {
+          "id": "q5-1",
+          "question": "What has Scout learned about people?",
+          "type": "text",
+          "answer": "most people are good once you get to know them"
+        },
+        {
+          "id": "q5-2",
+          "question": "What did Atticus teach Scout?",
+          "type": "text",
+          "answer": "to stand up for justice even when it's unpopular"
+        },
+        {
+          "id": "q5-3",
+          "question": "What kind of person was Boo Radley?",
+          "type": "text",
+          "answer": "kind and protective"
+        },
+        {
+          "id": "q5-4",
+          "question": "What does Scout understand about human nature?",
+          "type": "text",
+          "answer": "its complexity"
+        },
+        {
+          "id": "q5-5",
+          "question": "What important value does the book teach?",
+          "type": "text",
+          "answer": "compassion"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    }
+  ],
+  "whereToRead": {
+    "gutenbergLink": "https://www.gutenberg.org/ebooks/search/?query=To%20Kill%20a%20Mockingbird",
+    "archiveLink": "https://archive.org/search.php?query=To%20Kill%20a%20Mockingbird",
+    "amazonLink": "https://www.amazon.com/s?k=To%20Kill%20a%20Mockingbird",
+    "googleBooksLink": "https://books.google.com/books?q=To%20Kill%20a%20Mockingbird",
+    "goodreadsLink": "https://www.goodreads.com/search?q=To%20Kill%20a%20Mockingbird",
+    "wikipediaLink": "https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird",
+    "note": "📖 This is a preview. Access the full book through the links below!"
+  },
+  "educationalNote": "This platform helps you practice reading comprehension. Summary content is provided for educational purposes. Please purchase or borrow the complete book to read the full story and support the author."
+}

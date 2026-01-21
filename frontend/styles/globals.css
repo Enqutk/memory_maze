@@ -5,27 +5,31 @@
 }
 
 :root {
-  /* Gold Colors - Very Dark Gold */
-  --gold: #6b4e0f;
-  --gold-light: #8b6914;
-  --gold-dark: #4a3509;
-  --gold-shiny: linear-gradient(135deg, #8b6914 0%, #6b4e0f 25%, #8b6914 50%, #4a3509 75%, #8b6914 100%);
-  --gold-glow: 0 0 20px rgba(107, 78, 15, 0.5), 0 0 40px rgba(107, 78, 15, 0.3);
+  /* Professional Book-Themed Colors */
+  --primary: #2c3e50;        /* Deep Slate - Professional */
+  --primary-dark: #1a252f;   /* Darker Slate */
+  --primary-light: #34495e;  /* Lighter Slate */
+  --accent: #8b6f47;         /* Warm Brown - Book leather */
+  --accent-dark: #6b5535;    /* Darker Brown */
+  --accent-light: #a6896a;   /* Lighter Brown */
+  --secondary: #5d6d7e;      /* Muted Blue-Gray */
+  --tertiary: #85929e;       /* Soft Gray */
   
   /* Light Mode Backgrounds */
-  --bg-color: #ffffff;
+  --bg-color: #f8f6f3;       /* Warm Cream */
   --card-bg: #ffffff;
-  --card-hover: #fafafa;
+  --card-hover: #f5f3f0;
+  --paper-bg: #fafaf8;       /* Paper-like */
   
   /* Light Mode Typography */
-  --text-primary: #000000;
-  --text-secondary: #1a1a1a;
-  --text-tertiary: #4a4a4a;
+  --text-primary: #2c3e50;   /* Deep Slate */
+  --text-secondary: #5d6d7e; /* Muted */
+  --text-tertiary: #85929e;  /* Light Gray */
   
   /* Light Mode Borders */
-  --border-color: #e5e5e5;
-  --border-light: #f0f0f0;
-  --border-dark: #d0d0d0;
+  --border-color: #e8e6e3;   /* Subtle Border */
+  --border-light: #f0efed;
+  --border-dark: #d4d2cf;
   
   /* Shadows */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -46,20 +50,21 @@
 }
 
 [data-theme="dark"] {
-  /* Dark Mode Backgrounds */
-  --bg-color: #000000;
-  --card-bg: #0a0a0a;
-  --card-hover: #141414;
+  /* Dark Mode Backgrounds - Book Study Theme */
+  --bg-color: #1a1a1a;
+  --card-bg: #252525;
+  --card-hover: #2a2a2a;
+  --paper-bg: #222222;
   
   /* Dark Mode Typography */
-  --text-primary: #ffffff;
-  --text-secondary: #e5e5e5;
-  --text-tertiary: #a0a0a0;
+  --text-primary: #e8e6e3;
+  --text-secondary: #c7c5c2;
+  --text-tertiary: #999795;
   
   /* Dark Mode Borders */
-  --border-color: #1a1a1a;
-  --border-light: #0f0f0f;
-  --border-dark: #2a2a2a;
+  --border-color: #3a3a3a;
+  --border-light: #2f2f2f;
+  --border-dark: #4a4a4a;
   
   /* Dark Mode Shadows */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
@@ -68,9 +73,6 @@
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
   --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-  
-  /* Gold glow is more visible in dark mode */
-  --gold-glow: 0 0 30px rgba(107, 78, 15, 0.7), 0 0 60px rgba(107, 78, 15, 0.4);
 }
 
 body {
@@ -99,12 +101,11 @@ body {
   width: 60px;
   height: 60px;
   border: 4px solid var(--border-color);
-  border-top-color: var(--gold);
+  border-top-color: var(--primary);
   border-radius: 50%;
-  animation: spin 0.8s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  animation: spin 0.8s linear infinite;
   position: relative;
   z-index: 1;
-  box-shadow: var(--gold-glow);
 }
 
 .spinner::after {
@@ -115,10 +116,10 @@ body {
   width: 40px;
   height: 40px;
   border: 3px solid var(--border-light);
-  border-top-color: var(--gold-light);
+  border-top-color: var(--accent);
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  animation: spin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite reverse;
+  animation: spin 1.2s linear infinite reverse;
 }
 
 @keyframes spin {
@@ -148,36 +149,34 @@ p {
   line-height: 1.7;
 }
 
-/* Buttons - Refined */
+/* Buttons - Professional */
 button {
   cursor: pointer;
   font-family: 'Inter', sans-serif;
   border: none;
-  border-radius: 12px;
-  padding: 14px 28px;
-  font-size: 15px;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 14px;
   font-weight: 600;
-  letter-spacing: -0.01em;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.01em;
+  transition: all 0.2s ease;
   position: relative;
-  overflow: hidden;
 }
 
 button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
-  transform: none !important;
 }
 
-/* Form Inputs - Enhanced */
+/* Form Inputs - Professional */
 input, textarea, select {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
-  border: 2px solid var(--border-color);
-  border-radius: 12px;
-  padding: 14px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 12px 16px;
   width: 100%;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s ease;
   background: var(--card-bg);
   color: var(--text-primary);
 }
@@ -188,8 +187,8 @@ input:hover, textarea:hover, select:hover {
 
 input:focus, textarea:focus, select:focus {
   outline: none;
-  border-color: var(--gold);
-  box-shadow: 0 0 0 4px rgba(107, 78, 15, 0.1), var(--gold-glow);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.1);
 }
 
 input::placeholder, textarea::placeholder {
@@ -212,11 +211,11 @@ input::placeholder, textarea::placeholder {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--gold);
+  background: var(--primary);
 }
 
 /* Selection */
 ::selection {
-  background: rgba(107, 78, 15, 0.3);
+  background: rgba(44, 62, 80, 0.2);
   color: var(--text-primary);
 }

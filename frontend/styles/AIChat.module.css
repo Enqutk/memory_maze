@@ -5,26 +5,26 @@
   width: 420px;
   height: 100vh;
   background: var(--card-bg);
-  border-left: 2px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
   display: flex;
   flex-direction: column;
   z-index: 1000;
-  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
-  animation: slideInRight 0.3s ease-out;
+  box-shadow: -2px 0 12px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.3s ease;
 }
 
-@keyframes slideInRight {
+@keyframes fadeIn {
   from {
-    transform: translateX(100%);
+    opacity: 0;
   }
   to {
-    transform: translateX(0);
+    opacity: 1;
   }
 }
 
 .chatHeader {
   padding: 20px;
-  border-bottom: 2px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   background: var(--card-bg);
   display: flex;
   justify-content: space-between;
@@ -37,17 +37,19 @@
 }
 
 .headerInfo h3 {
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.125rem;
+  font-weight: 600;
   color: var(--text-primary);
-  margin: 0 0 4px 0;
+  margin: 0 0 6px 0;
   font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.01em;
 }
 
 .subtitle {
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   color: var(--text-tertiary);
   display: block;
+  line-height: 1.4;
 }
 
 .headerActions {
@@ -57,27 +59,25 @@
 }
 
 .recommendBtn {
-  padding: 8px 16px;
-  font-size: 0.875rem;
-  background: var(--gold-shiny);
-  background-size: 200% 200%;
-  color: #000000;
-  border: 1px solid var(--gold-dark);
-  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 0.8125rem;
+  background: var(--primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.2s ease;
   white-space: nowrap;
-  animation: shimmer 3s ease-in-out infinite;
 }
 
 .recommendBtn:hover:not(:disabled) {
-  transform: translateY(-2px);
-  box-shadow: var(--gold-glow);
+  background: var(--primary-dark);
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.2);
 }
 
 .recommendBtn:disabled {
-  opacity: 0.6;
+  opacity: 0.5;
   cursor: not-allowed;
 }
 
@@ -87,21 +87,22 @@
   padding: 0;
   background: var(--card-bg);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  border-radius: 6px;
   color: var(--text-primary);
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 300;
 }
 
 .closeBtn:hover {
   background: var(--card-hover);
-  border-color: var(--gold);
-  color: var(--gold);
+  border-color: var(--border-dark);
+  color: var(--text-primary);
 }
 
 .messagesContainer {
@@ -111,23 +112,13 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  background: var(--bg-color);
 }
 
 .message {
   display: flex;
   max-width: 85%;
-  animation: fadeIn 0.3s ease-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  animation: fadeIn 0.2s ease;
 }
 
 .message.user {
@@ -141,21 +132,20 @@
 
 .messageContent {
   padding: 12px 16px;
-  border-radius: 16px;
+  border-radius: 8px;
   line-height: 1.6;
   font-size: 0.9375rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .message.user .messageContent {
-  background: var(--gold-shiny);
-  background-size: 200% 200%;
-  color: #000000;
-  border: 1px solid var(--gold-dark);
-  animation: shimmer 3s ease-in-out infinite;
+  background: var(--primary);
+  color: #ffffff;
+  border: none;
 }
 
 .message.assistant .messageContent {
-  background: var(--card-hover);
+  background: var(--card-bg);
   color: var(--text-primary);
   border: 1px solid var(--border-color);
 }
@@ -182,24 +172,26 @@
 }
 
 .message.user .bookLink {
-  color: #000000;
-  text-decoration-color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration-color: rgba(255, 255, 255, 0.6);
 }
 
 .message.assistant .bookLink {
-  color: var(--gold);
-  text-decoration-color: var(--gold);
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+  font-weight: 600;
 }
 
 .bookLink:hover {
   opacity: 0.8;
-  transform: scale(1.05);
+  text-decoration-thickness: 2px;
 }
 
 .typingIndicator {
   display: flex;
-  gap: 4px;
+  gap: 6px;
   padding: 8px 0;
+  align-items: center;
 }
 
 .typingIndicator span {
@@ -220,38 +212,39 @@
 
 @keyframes typing {
   0%, 60%, 100% {
-    transform: translateY(0);
-    opacity: 0.7;
+    opacity: 0.4;
+    transform: scale(0.9);
   }
   30% {
-    transform: translateY(-10px);
     opacity: 1;
+    transform: scale(1);
   }
 }
 
 .inputContainer {
-  padding: 20px;
-  border-top: 2px solid var(--border-color);
+  padding: 16px 20px;
+  border-top: 1px solid var(--border-color);
   background: var(--card-bg);
   display: flex;
-  gap: 12px;
+  gap: 10px;
 }
 
 .input {
   flex: 1;
   padding: 12px 16px;
-  border: 2px solid var(--border-color);
-  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
   background: var(--card-bg);
   color: var(--text-primary);
   font-size: 0.9375rem;
-  transition: all 0.3s;
+  transition: all 0.2s ease;
+  font-family: 'Inter', sans-serif;
 }
 
 .input:focus {
   outline: none;
-  border-color: var(--gold);
-  box-shadow: 0 0 0 4px rgba(107, 78, 15, 0.1);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.1);
 }
 
 .input:disabled {
@@ -260,37 +253,26 @@
 }
 
 .sendBtn {
-  padding: 12px 24px;
-  background: var(--gold-shiny);
-  background-size: 200% 200%;
-  color: #000000;
-  border: 1px solid var(--gold-dark);
-  border-radius: 12px;
+  padding: 12px 20px;
+  background: var(--primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s;
-  animation: shimmer 3s ease-in-out infinite;
+  transition: all 0.2s ease;
   white-space: nowrap;
+  font-size: 0.9375rem;
 }
 
 .sendBtn:hover:not(:disabled) {
-  transform: translateY(-2px);
-  box-shadow: var(--gold-glow);
+  background: var(--primary-dark);
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.2);
 }
 
 .sendBtn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
-  animation: none;
-}
-
-@keyframes shimmer {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
 }
 
 /* Responsive */

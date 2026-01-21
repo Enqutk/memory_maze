@@ -1,0 +1,101 @@
+{
+  "id": "anne-of-green-gables",
+  "title": "Anne of Green Gables",
+  "author": "L.M. Montgomery",
+  "difficulty": "easy",
+  "description": "An imaginative orphan girl finds a home with elderly siblings in Canada.",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "Beginning",
+      "content": "Anne of Green Gables begins with An imaginative orphan girl finds a home with elderly siblings in Canada. The main character faces initial challenges and meets key people who will shape their journey.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "questions": [
+        {
+          "id": "q1-1",
+          "question": "What is the title of this book?",
+          "type": "text",
+          "answer": "Anne of Green Gables"
+        },
+        {
+          "id": "q1-2",
+          "question": "What chapter is this?",
+          "type": "text",
+          "answer": "1"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 2,
+      "title": "Development",
+      "content": "The story develops as conflicts arise and relationships are tested. New information changes everything the characters thought they knew.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "questions": [
+        {
+          "id": "q2-1",
+          "question": "What happens in this chapter?",
+          "type": "text",
+          "answer": "conflicts arise and relationships are tested"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 3,
+      "title": "Climax",
+      "content": "The tension reaches its peak as the main character confronts the central conflict. Difficult choices must be made.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "questions": [
+        {
+          "id": "q3-1",
+          "question": "What is this chapter about?",
+          "type": "text",
+          "answer": "the climax where tension reaches its peak"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 4,
+      "title": "Resolution",
+      "content": "After the intense climax, the story moves toward resolution. Characters reflect on their journey and its meaning.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "questions": [
+        {
+          "id": "q4-1",
+          "question": "What happens in the resolution?",
+          "type": "text",
+          "answer": "characters reflect on their journey"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    },
+    {
+      "chapter": 5,
+      "title": "Conclusion",
+      "content": "The story concludes with lasting changes to the characters and their world. Lessons learned shape the future.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "questions": [
+        {
+          "id": "q5-1",
+          "question": "How does the story end?",
+          "type": "text",
+          "answer": "with lasting changes and lessons learned"
+        }
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
+    }
+  ],
+  "coverImage": "",
+  "whereToRead": {
+    "gutenbergLink": "https://www.gutenberg.org/ebooks/search/?query=Anne%20of%20Green%20Gables",
+    "archiveLink": "https://archive.org/search.php?query=Anne%20of%20Green%20Gables",
+    "amazonLink": "https://www.amazon.com/s?k=Anne%20of%20Green%20Gables",
+    "googleBooksLink": "https://books.google.com/books?q=Anne%20of%20Green%20Gables",
+    "goodreadsLink": "https://www.goodreads.com/search?q=Anne%20of%20Green%20Gables",
+    "wikipediaLink": "https://en.wikipedia.org/wiki/Anne_of_Green_Gables",
+    "note": "📖 This is a preview. Access the full book through the links below!"
+  },
+  "educationalNote": "This platform helps you practice reading comprehension. Summary content is provided for educational purposes. Please purchase or borrow the complete book to read the full story and support the author."
+}

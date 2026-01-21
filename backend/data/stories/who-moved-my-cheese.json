@@ -8,7 +8,7 @@
     {
       "chapter": 1,
       "title": "The Story Behind The Story",
-      "content": "The story takes place in a Maze where four characters look for Cheese. The Cheese is a metaphor for what you want in life—whether it's a good job, a loving relationship, money, health, or peace of mind. The Maze is where you look for what you want—the organization you work in, the family you live in, or the community you live in. The four characters are Sniff, Scurry, Hem, and Haw. Sniff and Scurry are mice. They are simple creatures with simple brains. They rely on their basic instincts and trial and error. Hem and Haw are little people, about the size of mice, but they have human brains and complex emotions. They are the ones who can think, learn, and adapt.",
+      "content": "The story takes place in a Maze where four characters look for Cheese. The Cheese is a metaphor for what you want in life—whether it's a good job, a loving relationship, money, health, or peace of mind. The Maze is where you look for what you want—the organization you work in, the family you live in, or the community you live in. The four characters are Sniff, Scurry, Hem, and Haw. Sniff and Scurry are mice. They are simple creatures with simple brains. They rely on their basic instincts and tri...\n\n[Get the full book to continue reading!]",
       "questions": [
         {
           "id": "q1-1",
@@ -34,12 +34,14 @@
           "type": "text",
           "answer": "Sniff and Scurry"
         }
-      ]
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
     },
     {
       "chapter": 2,
       "title": "The Characters",
-      "content": "Sniff and Scurry are mice. They have simple, rodent brains, good instincts, and the ability to adapt quickly. When they notice the cheese has moved, they immediately put on their running shoes and head out into the Maze to look for New Cheese. Hem and Haw are little people, the size of mice, but they have human brains and complex emotions. They have the ability to think, learn, and adapt, but they also have beliefs and emotions that can get in their way. When they discover the cheese has moved, Hem and Haw get angry and feel entitled. They believe the cheese should be there because they deserve it. They waste time complaining and looking for someone to blame.",
+      "content": "Sniff and Scurry are mice. They have simple, rodent brains, good instincts, and the ability to adapt quickly. When they notice the cheese has moved, they immediately put on their running shoes and head out into the Maze to look for New Cheese. Hem and Haw are little people, the size of mice, but they have human brains and complex emotions. They have the ability to think, learn, and adapt, but they also have beliefs and emotions that can get in their way. When they discover the cheese has moved, ...\n\n[Get the full book to continue reading!]",
       "questions": [
         {
           "id": "q2-1",
@@ -65,12 +67,14 @@
           "type": "text",
           "answer": "Sniff and Scurry"
         }
-      ]
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
     },
     {
       "chapter": 3,
       "title": "The Handwriting on the Wall",
-      "content": "As Haw ventured deeper into the Maze, he began to see things differently. He started to realize that his fear was making things worse. He wrote on the wall: 'What would you do if you weren't afraid?' This question helped him see that his fear was paralyzing him. He also wrote: 'The quicker you let go of old cheese, the sooner you find new cheese.' Haw realized that holding onto the old way of doing things was preventing him from finding new opportunities. He began to laugh at himself and his old beliefs. He started to move faster and with more confidence.",
+      "content": "As Haw ventured deeper into the Maze, he began to see things differently. He started to realize that his fear was making things worse. He wrote on the wall: 'What would you do if you weren't afraid?' This question helped him see that his fear was paralyzing him. He also wrote: 'The quicker you let go of old cheese, the sooner you find new cheese.' Haw realized that holding onto the old way of doing things was preventing him from finding new opportunities. He began to laugh at himself and his old...\n\n[Get the full book to continue reading!]",
       "questions": [
         {
           "id": "q3-1",
@@ -96,12 +100,14 @@
           "type": "text",
           "answer": "laugh at himself and move faster"
         }
-      ]
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
     },
     {
       "chapter": 4,
       "title": "Finding New Cheese",
-      "content": "After what seemed like a long time, Haw finally found New Cheese Station N. It was the biggest supply of cheese he had ever seen. Sniff and Scurry were already there, enjoying the new cheese. Haw joined them and began to enjoy the new cheese. He realized that the new cheese was actually better than the old cheese. He also realized that if he had moved sooner, he would have found it earlier. Haw learned that change happens, and you need to anticipate it, monitor it, and adapt to it quickly. He also learned that the biggest inhibitor to change lies within yourself—nothing gets better until you change.",
+      "content": "After what seemed like a long time, Haw finally found New Cheese Station N. It was the biggest supply of cheese he had ever seen. Sniff and Scurry were already there, enjoying the new cheese. Haw joined them and began to enjoy the new cheese. He realized that the new cheese was actually better than the old cheese. He also realized that if he had moved sooner, he would have found it earlier. Haw learned that change happens, and you need to anticipate it, monitor it, and adapt to it quickly. He al...\n\n[Get the full book to continue reading!]",
       "questions": [
         {
           "id": "q4-1",
@@ -127,12 +133,14 @@
           "type": "text",
           "answer": "you need to anticipate it, monitor it, and adapt to it quickly"
         }
-      ]
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
     },
     {
       "chapter": 5,
       "title": "The Lessons",
-      "content": "Haw learned many valuable lessons from his journey. He learned that change happens—they keep moving the cheese. He learned to anticipate change—get ready for the cheese to move. He learned to monitor change—smell the cheese often so you know when it's getting old. He learned to adapt to change quickly—the quicker you let go of old cheese, the sooner you enjoy new cheese. Most importantly, he learned that change happens—move with the cheese. And he learned to enjoy change—savor the adventure and enjoy the taste of new cheese. Haw wrote these lessons on the wall for Hem, hoping his friend would one day find them and learn from them too.",
+      "content": "Haw learned many valuable lessons from his journey. He learned that change happens—they keep moving the cheese. He learned to anticipate change—get ready for the cheese to move. He learned to monitor change—smell the cheese often so you know when it's getting old. He learned to adapt to change quickly—the quicker you let go of old cheese, the sooner you enjoy new cheese. Most importantly, he learned that change happens—move with the cheese. And he learned to enjoy change—savor the adventure and ...\n\n[Get the full book to continue reading!]",
       "questions": [
         {
           "id": "q5-1",
@@ -164,7 +172,20 @@
           "type": "text",
           "answer": "move with the cheese or enjoy change"
         }
-      ]
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
     }
-  ]
+  ],
+  "whereToRead": {
+    "gutenbergLink": "https://www.gutenberg.org/ebooks/search/?query=Who%20Moved%20My%20Cheese",
+    "archiveLink": "https://archive.org/search.php?query=Who%20Moved%20My%20Cheese",
+    "amazonLink": "https://www.amazon.com/s?k=Who%20Moved%20My%20Cheese",
+    "googleBooksLink": "https://books.google.com/books?q=Who%20Moved%20My%20Cheese",
+    "goodreadsLink": "https://www.goodreads.com/search?q=Who%20Moved%20My%20Cheese",
+    "wikipediaLink": "https://en.wikipedia.org/wiki/Who_Moved_My_Cheese",
+    "note": "📖 This is a preview. Access the full book through the links below!"
+  },
+  "author": "Classic Author",
+  "educationalNote": "This platform helps you practice reading comprehension. Summary content is provided for educational purposes. Please purchase or borrow the complete book to read the full story and support the author."
 }

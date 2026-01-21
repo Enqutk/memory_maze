@@ -2,7 +2,13 @@ const { verifyToken } = require('../services/authService');
 const userService = require('../services/userService');
 
 function verifyTokenMiddleware(req, res, next) {
-  const token = req.headers.authorization?.split(' ')[1];
+  const authHeader = req.headers.authorization;
+  
+  if (!authHeader) {
+    return res.status(401).json({ error: 'No token provided' });
+  }
+
+  const token = authHeader.split(' ')[1]; // Extract token from "Bearer <token>"
 
   if (!token) {
     return res.status(401).json({ error: 'No token provided' });
@@ -13,7 +19,17 @@ function verifyTokenMiddleware(req, res, next) {
     req.user = decoded;
     next();
   } catch (error) {
-    res.status(401).json({ error: 'Invalid token' });
+    console.error('Token verification error:', error.message);
+    
+    // Provide more specific error messages
+    if (error.message?.includes('expired')) {
+      return res.status(401).json({ error: 'Token expired. Please login again.' });
+    }
+    if (error.message?.includes('malformed')) {
+      return res.status(401).json({ error: 'Invalid token format.' });
+    }
+    
+    res.status(401).json({ error: 'Invalid token. Please login again.' });
   }
 }
 

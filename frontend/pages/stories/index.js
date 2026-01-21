@@ -16,6 +16,10 @@ export default function StoriesPage() {
   const [user, setUser] = useState(null);
   const [showDashboard, setShowDashboard] = useState(true);
   const [chatOpen, setChatOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState('all');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [difficultyFilter, setDifficultyFilter] = useState('all');
+  const [sortBy, setSortBy] = useState('title');
 
   useEffect(() => {
     const userData = localStorage.getItem('user');
@@ -81,6 +85,49 @@ export default function StoriesPage() {
     }
   };
 
+  // Filter and sort stories
+  const getFilteredStories = () => {
+    let filtered = [...stories];
+
+    // Filter by tab (all or saved)
+    if (activeTab === 'saved') {
+      filtered = filtered.filter(s => savedBooks.includes(s.id));
+    }
+
+    // Filter by search query
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase();
+      filtered = filtered.filter(s => 
+        s.title.toLowerCase().includes(query) ||
+        s.description.toLowerCase().includes(query)
+      );
+    }
+
+    // Filter by difficulty
+    if (difficultyFilter !== 'all') {
+      filtered = filtered.filter(s => s.difficulty === difficultyFilter);
+    }
+
+    // Sort stories
+    filtered.sort((a, b) => {
+      switch (sortBy) {
+        case 'title':
+          return a.title.localeCompare(b.title);
+        case 'difficulty':
+          const difficultyOrder = { easy: 1, medium: 2, hard: 3 };
+          return difficultyOrder[a.difficulty] - difficultyOrder[b.difficulty];
+        case 'chapters':
+          return b.totalChapters - a.totalChapters;
+        default:
+          return 0;
+      }
+    });
+
+    return filtered;
+  };
+
+  const filteredStories = getFilteredStories();
+
   if (loading) {
     return <div className={styles.loading}>Loading stories...</div>;
   }
@@ -102,7 +149,7 @@ export default function StoriesPage() {
             onClick={() => setChatOpen(!chatOpen)} 
             className={styles.chatBtn}
           >
-            AI Assistant
+            KimemAI
           </button>
           {isAdmin() && (
             <button 
@@ -127,40 +174,84 @@ export default function StoriesPage() {
       {showDashboard && (
         <div className={styles.dashboard}>
           <div className={styles.dashboardGrid}>
-            <div className={styles.dashboardCard}>
-              <div className={styles.dashboardIcon}>STREAK</div>
+            <div className={`${styles.dashboardCard} ${styles.streakCard}`}>
+              <div className={styles.streakIconWrapper}>
+                <div className={styles.streakFlame}>
+                  {stats?.currentStreak > 0 ? '🔥' : '📚'}
+                </div>
+                <div className={styles.streakBadge}>{stats?.currentStreak || 0}</div>
+              </div>
               <div className={styles.dashboardContent}>
-                <div className={styles.dashboardValue}>{stats?.currentStreak || 0}</div>
-                <div className={styles.dashboardLabel}>Day Streak</div>
+                <div className={styles.streakHeader}>
+                  <span className={styles.streakLabel}>Reading Streak</span>
+                  {stats?.currentStreak > 0 && (
+                    <span className={styles.streakDays}>{stats.currentStreak} {stats.currentStreak === 1 ? 'day' : 'days'}</span>
+                  )}
+                </div>
                 {stats?.currentStreak > 0 && (
-                  <div className={styles.streakBar}>
-                    <div 
-                      className={styles.streakFill}
-                      style={{ width: `${Math.min((stats.currentStreak / 30) * 100, 100)}%` }}
-                    />
+                  <>
+                    <div className={styles.streakBar}>
+                      <div 
+                        className={styles.streakFill}
+                        style={{ width: `${Math.min((stats.currentStreak / 30) * 100, 100)}%` }}
+                      />
+                    </div>
+                    <div className={styles.streakProgress}>
+                      <span>{Math.min(stats.currentStreak, 30)} / 30 days</span>
+                      <span className={styles.streakGoal}>30-day goal</span>
+                    </div>
+                  </>
+                )}
+                {stats?.currentStreak === 0 && (
+                  <p className={styles.streakMessage}>Start reading to build your streak! 📚</p>
+                )}
+              </div>
+            </div>
+            <div className={`${styles.dashboardCard} ${styles.booksCard}`}>
+              <div className={styles.cardIconWrapper}>
+                <div className={styles.cardIcon}>📚</div>
+              </div>
+              <div className={styles.dashboardContent}>
+                <div className={styles.dashboardValue}>{stats?.totalBooksRead || 0}</div>
+                <div className={styles.dashboardLabel}>Books Completed</div>
+                {stats?.totalBooksRead > 0 && (
+                  <div className={styles.cardFooter}>
+                    <span className={styles.cardFooterText}>Keep reading! ⭐</span>
                   </div>
                 )}
               </div>
             </div>
-            <div className={styles.dashboardCard}>
-              <div className={styles.dashboardIcon}>BOOKS</div>
-              <div className={styles.dashboardContent}>
-                <div className={styles.dashboardValue}>{stats?.totalBooksRead || 0}</div>
-                <div className={styles.dashboardLabel}>Books Completed</div>
+            <div className={`${styles.dashboardCard} ${styles.chaptersCard}`}>
+              <div className={styles.cardIconWrapper}>
+                <div className={styles.cardIcon}>📖</div>
               </div>
-            </div>
-            <div className={styles.dashboardCard}>
-              <div className={styles.dashboardIcon}>CHAPTERS</div>
               <div className={styles.dashboardContent}>
                 <div className={styles.dashboardValue}>{stats?.totalChaptersRead || 0}</div>
                 <div className={styles.dashboardLabel}>Chapters Read</div>
+                {stats?.totalChaptersRead > 0 && (
+                  <div className={styles.cardFooter}>
+                    <span className={styles.cardFooterText}>Great progress! ⭐</span>
+                  </div>
+                )}
               </div>
             </div>
-            <div className={styles.dashboardCard}>
-              <div className={styles.dashboardIcon}>BADGES</div>
+            <div className={`${styles.dashboardCard} ${styles.badgesCard}`}>
+              <div className={styles.cardIconWrapper}>
+                <div className={styles.cardIcon}>🏅</div>
+              </div>
               <div className={styles.dashboardContent}>
                 <div className={styles.dashboardValue}>{badges.length}</div>
                 <div className={styles.dashboardLabel}>Badges Earned</div>
+                {badges.length > 0 && (
+                  <div className={styles.cardFooter}>
+                    <span className={styles.cardFooterText}>Amazing achievements! ⭐</span>
+                  </div>
+                )}
+                {badges.length === 0 && (
+                  <div className={styles.cardFooter}>
+                    <span className={styles.cardFooterText}>Complete books to earn badges!</span>
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -171,20 +262,72 @@ export default function StoriesPage() {
         <div className={styles.sectionHeader}>
           <h2>Choose Your Adventure</h2>
           <div className={styles.tabs}>
-            <button className={`${styles.tab} ${styles.active}`}>All Stories</button>
             <button 
-              className={styles.tab}
-              onClick={() => {
-                const saved = stories.filter(s => savedBooks.includes(s.id));
-                // You can add filtering logic here
-              }}
+              className={`${styles.tab} ${activeTab === 'all' ? styles.active : ''}`}
+              onClick={() => setActiveTab('all')}
+            >
+              All Stories ({stories.length})
+            </button>
+            <button 
+              className={`${styles.tab} ${activeTab === 'saved' ? styles.active : ''}`}
+              onClick={() => setActiveTab('saved')}
             >
               Saved ({savedBooks.length})
             </button>
           </div>
         </div>
-        <div className={styles.storiesGrid}>
-          {stories.map((story) => {
+
+        <div className={styles.searchAndFilters}>
+          <div className={styles.searchContainer}>
+            <input
+              type="text"
+              placeholder="Search books by title or description..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className={styles.searchInput}
+            />
+          </div>
+          <div className={styles.filtersContainer}>
+            <select
+              value={difficultyFilter}
+              onChange={(e) => setDifficultyFilter(e.target.value)}
+              className={styles.filterSelect}
+            >
+              <option value="all">All Difficulties</option>
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value)}
+              className={styles.filterSelect}
+            >
+              <option value="title">Sort by Title</option>
+              <option value="difficulty">Sort by Difficulty</option>
+              <option value="chapters">Sort by Chapters</option>
+            </select>
+          </div>
+        </div>
+
+        {filteredStories.length === 0 ? (
+          <div className={styles.noResults}>
+            <p>No books found matching your criteria.</p>
+            {(searchQuery || difficultyFilter !== 'all') && (
+              <button 
+                onClick={() => {
+                  setSearchQuery('');
+                  setDifficultyFilter('all');
+                }}
+                className={styles.clearFiltersBtn}
+              >
+                Clear Filters
+              </button>
+            )}
+          </div>
+        ) : (
+          <div className={styles.storiesGrid}>
+            {filteredStories.map((story) => {
             const isSaved = savedBooks.includes(story.id);
             return (
               <div
@@ -210,7 +353,10 @@ export default function StoriesPage() {
                   <span className={styles.chapters}>
                     {story.totalChapters} chapters
                   </span>
-                  {badges.some(b => b.storyId === story.id) && (
+                  {badges.some(b => b.storyId === story.id && b.type === 'excellent_score') && (
+                    <span className={styles.greenBadge}>Excellent ⭐</span>
+                  )}
+                  {badges.some(b => b.storyId === story.id && b.type === 'book_completed') && (
                     <span className={styles.completedBadge}>Completed</span>
                   )}
                 </div>
@@ -222,7 +368,8 @@ export default function StoriesPage() {
               </div>
             );
           })}
-        </div>
+          </div>
+        )}
       </div>
 
       <AIChat 

@@ -3,121 +3,185 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--bg-color);
+  background: linear-gradient(135deg, var(--bg-color) 0%, var(--paper-bg) 100%);
   padding: 24px;
   position: relative;
   overflow: hidden;
 }
 
+.heroBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.03;
+  background-image: 
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 98px,
+      var(--text-primary) 98px,
+      var(--text-primary) 100px
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bookIllustration {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 300px;
+  height: 400px;
+  background: var(--accent);
+  border-radius: 4px 8px 8px 4px;
+  box-shadow: 
+    -20px 0 40px rgba(0, 0, 0, 0.1),
+    inset -10px 0 20px rgba(0, 0, 0, 0.05);
+  opacity: 0.15;
+}
+
+.bookIllustration::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(to right, transparent 0%, rgba(255,255,255,0.1) 50%, transparent 100%),
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0px,
+      transparent 39px,
+      rgba(0,0,0,0.02) 39px,
+      rgba(0,0,0,0.02) 40px
+    );
+  border-left: 2px solid rgba(0,0,0,0.1);
+}
+
 .authContainer {
   background: var(--card-bg);
-  border-radius: 24px;
-  padding: 48px 40px;
-  box-shadow: var(--shadow-xl);
-  max-width: 480px;
+  border-radius: 8px;
+  padding: 56px 48px;
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.08),
+    0 1px 3px rgba(0, 0, 0, 0.05);
+  max-width: 520px;
   width: 100%;
   position: relative;
   z-index: 1;
-  animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   border: 1px solid var(--border-color);
 }
 
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.logoSection {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.bookIcon {
+  font-size: 4rem;
+  margin-bottom: 16px;
+  filter: grayscale(20%);
 }
 
 .appTitle {
-  font-size: 3.5rem;
-  font-weight: 800;
-  font-family: 'Poppins', sans-serif;
+  font-size: 2.75rem;
+  font-weight: 600;
+  font-family: 'Georgia', 'Times New Roman', serif;
   color: var(--text-primary);
   text-align: center;
-  margin-bottom: 12px;
-  animation: fadeIn 0.8s ease-out;
-  letter-spacing: -0.03em;
+  margin: 0 0 20px 0;
+  letter-spacing: 0.02em;
   position: relative;
-  display: inline-block;
-  width: 100%;
+  display: block;
 }
 
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-10px) rotate(5deg);
-  }
+.divider {
+  width: 60px;
+  height: 2px;
+  background: var(--accent);
+  margin: 0 auto 24px;
+  position: relative;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.divider::before,
+.divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.divider::before {
+  left: -16px;
+}
+
+.divider::after {
+  right: -16px;
 }
 
 .appSubtitle {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   color: var(--text-secondary);
   text-align: center;
-  margin-bottom: 8px;
-  font-weight: 500;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.01em;
 }
 
 .appDescription {
-  font-size: 0.95rem;
-  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  color: var(--text-tertiary);
   text-align: center;
-  margin-bottom: 32px;
-  line-height: 1.6;
+  margin-bottom: 40px;
+  line-height: 1.75;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .authTabs {
   display: flex;
-  gap: 8px;
-  background: var(--card-bg);
-  padding: 6px;
-  border-radius: 12px;
+  gap: 0;
+  background: var(--card-hover);
+  padding: 4px;
+  border-radius: 6px;
   margin-bottom: 32px;
   border: 1px solid var(--border-color);
 }
 
 .tabBtn {
   flex: 1;
-  padding: 12px 24px;
+  padding: 14px 24px;
   background: transparent;
   color: var(--text-secondary);
   border: none;
-  border-radius: 8px;
-  font-size: 16px;
+  border-radius: 4px;
+  font-size: 15px;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.2s ease;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.01em;
 }
 
 .tabBtn:hover {
-  background: var(--card-hover);
+  background: rgba(0, 0, 0, 0.02);
   color: var(--text-primary);
 }
 
 .tabBtn.active {
-  background: var(--gold-shiny);
-  background-size: 200% 200%;
-  color: #000000;
-  font-weight: 700;
-  box-shadow: var(--shadow-md), var(--gold-glow);
-  animation: shimmer 3s ease-in-out infinite;
-  border: 1px solid var(--gold-dark);
+  background: var(--card-bg);
+  color: var(--text-primary);
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .authForm {
@@ -139,115 +203,67 @@
 }
 
 .formGroup input {
-  padding: 16px 18px;
-  border: 2px solid var(--border-color);
-  border-radius: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
   font-size: 15px;
   font-family: 'Inter', sans-serif;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  background: white;
+  transition: all 0.2s ease;
+  background: var(--card-bg);
   color: var(--text-primary);
+  letter-spacing: 0.01em;
 }
 
 .formGroup input:hover {
   border-color: var(--border-dark);
+  background: var(--card-hover);
 }
 
 .formGroup input:focus {
   outline: none;
-  border-color: var(--gold);
+  border-color: var(--accent);
   box-shadow: 
-    0 0 0 4px rgba(107, 78, 15, 0.1),
-    0 2px 8px rgba(107, 78, 15, 0.2),
-    var(--gold-glow);
-  transform: translateY(-1px);
+    0 0 0 3px rgba(139, 111, 71, 0.1),
+    0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .errorMessage {
-  background: #000000;
-  color: var(--gold);
+  background: #fff5f5;
+  color: #c53030;
   padding: 14px 18px;
-  border-radius: 12px;
+  border-radius: 6px;
   font-size: 14px;
-  font-weight: 600;
-  border: 2px solid var(--gold);
-  box-shadow: var(--shadow-md), var(--gold-glow);
-  animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97);
-}
-
-@keyframes shake {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-10px);
-  }
-  75% {
-    transform: translateX(10px);
-  }
+  font-weight: 500;
+  border: 1px solid #feb2b2;
 }
 
 .btnPrimary {
-  background: var(--gold-shiny);
-  background-size: 200% 200%;
-  color: #000000;
+  background: var(--primary);
+  color: #ffffff;
   padding: 16px 32px;
-  border-radius: 12px;
+  border-radius: 6px;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 600;
   font-family: 'Inter', sans-serif;
-  border: 2px solid var(--gold-dark);
+  border: none;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: var(--shadow-md), var(--gold-glow);
-  letter-spacing: -0.01em;
-  animation: shimmer 3s ease-in-out infinite;
-  position: relative;
-  overflow: hidden;
-}
-
-.btnPrimary::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  transform: rotate(45deg);
-  animation: shine 2s infinite;
-}
-
-@keyframes shimmer {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-}
-
-@keyframes shine {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 100%;
-  }
+  transition: all 0.2s ease;
+  letter-spacing: 0.01em;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.15);
 }
 
 .btnPrimary:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg), var(--gold-glow);
-  border-color: var(--gold);
+  background: var(--primary-dark);
+  box-shadow: 0 4px 12px rgba(44, 62, 80, 0.2);
 }
 
 .btnPrimary:active {
-  transform: translateY(0);
+  transform: translateY(1px);
+  box-shadow: 0 1px 4px rgba(44, 62, 80, 0.15);
 }
 
 .btnPrimary:disabled {
-  opacity: 0.6;
+  opacity: 0.5;
   cursor: not-allowed;
   transform: none;
 }

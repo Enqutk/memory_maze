@@ -1,5 +1,11 @@
 const { loadProgress, saveProgress, loadStory } = require('../utils/fileUtils');
 const userService = require('./userService');
+const { Groq } = require('groq-sdk');
+
+// Initialize Groq for AI-powered answer checking
+const groq = new Groq({
+  apiKey: process.env.GROQ_API_KEY || process.env.OPENAI_API_KEY || ''
+});
 
 async function getUserProgress(email, storyId) {
   const progress = await loadProgress(email, storyId);
@@ -96,19 +102,48 @@ async function updateProgressAfterCheckpoint(email, storyId, chapterNumber, answ
         const story = await loadStory(storyId);
         
         if (story && nextChapter > story.chapters.length) {
+          // Book completed - check for green badge (90+ on all chapters)
           if (!user.badges) {
             user.badges = [];
           }
-          const existingBadge = user.badges.find(b => b.storyId === storyId);
-          if (!existingBadge) {
+          
+          // Check if all chapters have 90+ score
+          const allChaptersScored90Plus = story.chapters.every(ch => {
+            const chapterKey = `chapter${ch.chapter}`;
+            const chapterScore = progress.scores[chapterKey];
+            return chapterScore !== null && chapterScore >= 90;
+          });
+          
+          const existingCompletedBadge = user.badges.find(b => 
+            b.storyId === storyId && b.type === 'book_completed'
+          );
+          const existingGreenBadge = user.badges.find(b => 
+            b.storyId === storyId && b.type === 'excellent_score'
+          );
+          
+          // Add completed badge if not exists
+          if (!existingCompletedBadge) {
             user.badges.push({
               id: `badge-${Date.now()}`,
               storyId,
               storyTitle: story.title,
               earnedAt: new Date().toISOString(),
-              type: 'book_completed'
+              type: 'book_completed',
+              score: score
             });
             user.stats.totalBooksRead = (user.stats.totalBooksRead || 0) + 1;
+          }
+          
+          // Add green badge if 90+ on all chapters and doesn't exist
+          if (allChaptersScored90Plus && !existingGreenBadge) {
+            user.badges.push({
+              id: `badge-green-${Date.now()}`,
+              storyId,
+              storyTitle: story.title,
+              earnedAt: new Date().toISOString(),
+              type: 'excellent_score',
+              score: score
+            });
           }
         }
       }
@@ -128,6 +163,49 @@ async function updateProgressAfterCheckpoint(email, storyId, chapterNumber, answ
   };
 }
 
+// AI-powered answer checking (handles spelling errors and semantic similarity)
+async function checkAnswerWithAI(question, userAnswer, correctAnswer) {
+  try {
+    const apiKey = process.env.GROQ_API_KEY || process.env.OPENAI_API_KEY;
+    if (!apiKey) {
+      // Fall back to exact match if no API key
+      return userAnswer.toLowerCase().trim() === correctAnswer.toLowerCase().trim();
+    }
+
+    const prompt = `You are an educational assessment assistant. Check if the student's answer is correct, considering spelling errors and semantic similarity.
+
+Question: "${question}"
+Correct Answer: "${correctAnswer}"
+Student's Answer: "${userAnswer}"
+
+Instructions:
+- The student's answer should be considered correct if it means the same thing as the correct answer
+- Ignore minor spelling errors (e.g., "shephered" vs "shepherd" is correct)
+- Ignore differences in capitalization, punctuation, and extra spaces
+- Accept synonyms if they convey the same meaning
+- Only mark as incorrect if the answer is fundamentally wrong or completely unrelated
+
+Respond with ONLY "CORRECT" or "INCORRECT" (no other text).`;
+
+    const completion = await groq.chat.completions.create({
+      model: 'llama-3.3-70b-versatile',
+      messages: [
+        { role: 'system', content: 'You are a helpful educational assistant. Respond with only "CORRECT" or "INCORRECT".' },
+        { role: 'user', content: prompt }
+      ],
+      temperature: 0.3, // Lower temperature for more consistent results
+      max_tokens: 10
+    });
+
+    const response = completion.choices[0].message.content.trim().toUpperCase();
+    return response === 'CORRECT';
+  } catch (error) {
+    console.error('AI answer check error:', error);
+    // Fall back to exact match if AI fails
+    return userAnswer.toLowerCase().trim() === correctAnswer.toLowerCase().trim();
+  }
+}
+
 async function verifyAnswers(storyId, chapterNumber, answers) {
   const story = await loadStory(storyId);
   if (!story) {
@@ -139,22 +217,36 @@ async function verifyAnswers(storyId, chapterNumber, answers) {
     throw new Error('Chapter not found');
   }
 
-  let correctCount = 0;
-  const results = chapter.questions.map((q, index) => {
-    const userAnswer = answers[index]?.toLowerCase().trim();
-    const correctAnswer = q.answer.toLowerCase().trim();
-    const isCorrect = userAnswer === correctAnswer;
+  // Check all answers (use AI for semantic checking)
+  const checkPromises = chapter.questions.map(async (q, index) => {
+    const userAnswer = answers[index] || '';
+    const correctAnswer = q.answer;
     
-    if (isCorrect) correctCount++;
+    // First try exact match (faster)
+    const exactMatch = userAnswer.toLowerCase().trim() === correctAnswer.toLowerCase().trim();
+    
+    if (exactMatch) {
+      return {
+        questionId: q.id,
+        isCorrect: true,
+        correctAnswer: q.answer,
+        userAnswer: answers[index] || ''
+      };
+    }
+    
+    // If not exact match, use AI to check semantic similarity
+    const aiCheck = await checkAnswerWithAI(q.question, userAnswer, correctAnswer);
     
     return {
       questionId: q.id,
-      isCorrect,
+      isCorrect: aiCheck,
       correctAnswer: q.answer,
-      userAnswer: answers[index]
+      userAnswer: answers[index] || ''
     };
   });
 
+  const results = await Promise.all(checkPromises);
+  const correctCount = results.filter(r => r.isCorrect).length;
   const score = Math.round((correctCount / chapter.questions.length) * 100);
 
   return {

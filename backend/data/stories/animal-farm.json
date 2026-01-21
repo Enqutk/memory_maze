@@ -8,7 +8,7 @@
     {
       "chapter": 1,
       "title": "Old Major's Dream",
-      "content": "Old Major, a prize-winning boar, calls a meeting of all the animals on Manor Farm. He tells them about a dream he had, where all animals lived together without human tyranny. He teaches them a song called 'Beasts of England' which describes his utopian vision. Old Major explains that Man is the only real enemy. He says that all the evils of their lives are due to Man, and that once Man is overthrown, the produce of their labor would be their own. Old Major dies three days later, but his ideas inspire the animals to plan a rebellion. The most intelligent animals, the pigs, begin to organize the others.",
+      "content": "Old Major, a prize-winning boar, calls a meeting of all the animals on Manor Farm. He tells them about a dream he had, where all animals lived together without human tyranny. He teaches them a song called 'Beasts of England' which describes his utopian vision. Old Major explains that Man is the only real enemy. He says that all the evils of their lives are due to Man, and that once Man is overthrown, the produce of their labor would be their own. Old Major dies three days later, but his ideas in...\n\n[Get the full book to continue reading!]",
       "questions": [
         {
           "id": "q1-1",
@@ -34,12 +34,14 @@
           "type": "text",
           "answer": "the pigs"
         }
-      ]
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
     },
     {
       "chapter": 2,
       "title": "The Rebellion",
-      "content": "Three months after Old Major's death, the animals successfully rebel against Mr. Jones, the farm owner. The pigs, who are the most intelligent, take the lead. They paint over the sign 'Manor Farm' and replace it with 'Animal Farm'. They establish the Seven Commandments of Animalism, which are written on the barn wall. The most important commandment is: 'All animals are equal.' The animals work hard to make the farm successful. The pigs, especially Napoleon and Snowball, emerge as leaders. They begin to read and write, and they teach the other animals to do the same, though most animals never learn more than a few letters.",
+      "content": "Three months after Old Major's death, the animals successfully rebel against Mr. Jones, the farm owner. The pigs, who are the most intelligent, take the lead. They paint over the sign 'Manor Farm' and replace it with 'Animal Farm'. They establish the Seven Commandments of Animalism, which are written on the barn wall. The most important commandment is: 'All animals are equal.' The animals work hard to make the farm successful. The pigs, especially Napoleon and Snowball, emerge as leaders. They b...\n\n[Get the full book to continue reading!]",
       "questions": [
         {
           "id": "q2-1",
@@ -65,12 +67,14 @@
           "type": "text",
           "answer": "Manor Farm"
         }
-      ]
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
     },
     {
       "chapter": 3,
       "title": "The Windmill",
-      "content": "Snowball proposes building a windmill to generate electricity for the farm. Napoleon opposes the idea. The animals debate the issue, and Snowball makes an eloquent speech in favor of the windmill. Just as the animals are about to vote in favor of Snowball's plan, Napoleon gives a strange whimper, and nine enormous dogs burst into the barn. They chase Snowball off the farm. Napoleon then announces that the windmill will be built after all, claiming it was his idea all along. The animals are confused, but they accept Napoleon's leadership. The windmill becomes a symbol of the animals' hard work and sacrifice.",
+      "content": "Snowball proposes building a windmill to generate electricity for the farm. Napoleon opposes the idea. The animals debate the issue, and Snowball makes an eloquent speech in favor of the windmill. Just as the animals are about to vote in favor of Snowball's plan, Napoleon gives a strange whimper, and nine enormous dogs burst into the barn. They chase Snowball off the farm. Napoleon then announces that the windmill will be built after all, claiming it was his idea all along. The animals are confu...\n\n[Get the full book to continue reading!]",
       "questions": [
         {
           "id": "q3-1",
@@ -96,12 +100,14 @@
           "type": "text",
           "answer": "it was his idea all along"
         }
-      ]
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
     },
     {
       "chapter": 4,
       "title": "The Commandments Change",
-      "content": "Over time, the pigs begin to break the Seven Commandments, but Squealer, Napoleon's spokesperson, always finds a way to explain their actions. The pigs move into the farmhouse and sleep in beds, which violates the commandment 'No animal shall sleep in a bed.' But Squealer changes the commandment to 'No animal shall sleep in a bed with sheets.' The pigs also begin to drink alcohol, which violates 'No animal shall drink alcohol.' But Squealer changes it to 'No animal shall drink alcohol to excess.' The most important change comes when the commandment 'All animals are equal' is changed to 'All animals are equal, but some animals are more equal than others.'",
+      "content": "Over time, the pigs begin to break the Seven Commandments, but Squealer, Napoleon's spokesperson, always finds a way to explain their actions. The pigs move into the farmhouse and sleep in beds, which violates the commandment 'No animal shall sleep in a bed.' But Squealer changes the commandment to 'No animal shall sleep in a bed with sheets.' The pigs also begin to drink alcohol, which violates 'No animal shall drink alcohol.' But Squealer changes it to 'No animal shall drink alcohol to excess....\n\n[Get the full book to continue reading!]",
       "questions": [
         {
           "id": "q4-1",
@@ -127,12 +133,14 @@
           "type": "text",
           "answer": "All animals are equal, but some animals are more equal than others"
         }
-      ]
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
     },
     {
       "chapter": 5,
       "title": "The Pigs Become Men",
-      "content": "Years pass, and the farm becomes more prosperous, but only the pigs and dogs benefit. The other animals work harder than ever, but they receive less food. The pigs begin to walk on two legs and carry whips. They wear clothes and smoke pipes. One day, the animals look through the farmhouse window and see the pigs playing cards with human farmers. They can no longer tell the difference between the pigs and the men. The Seven Commandments are erased from the barn wall, replaced with a single commandment: 'All animals are equal, but some animals are more equal than others.' The farm's name is changed back to 'Manor Farm.' The revolution has come full circle.",
+      "content": "Years pass, and the farm becomes more prosperous, but only the pigs and dogs benefit. The other animals work harder than ever, but they receive less food. The pigs begin to walk on two legs and carry whips. They wear clothes and smoke pipes. One day, the animals look through the farmhouse window and see the pigs playing cards with human farmers. They can no longer tell the difference between the pigs and the men. The Seven Commandments are erased from the barn wall, replaced with a single comman...\n\n[Get the full book to continue reading!]",
       "questions": [
         {
           "id": "q5-1",
@@ -164,7 +172,20 @@
           "type": "text",
           "answer": "Manor Farm"
         }
-      ]
+      ],
+      "isPreview": true,
+      "fullBookRequired": true
     }
-  ]
+  ],
+  "whereToRead": {
+    "gutenbergLink": "https://www.gutenberg.org/ebooks/search/?query=Animal%20Farm",
+    "archiveLink": "https://archive.org/search.php?query=Animal%20Farm",
+    "amazonLink": "https://www.amazon.com/s?k=Animal%20Farm",
+    "googleBooksLink": "https://books.google.com/books?q=Animal%20Farm",
+    "goodreadsLink": "https://www.goodreads.com/search?q=Animal%20Farm",
+    "wikipediaLink": "https://en.wikipedia.org/wiki/Animal_Farm",
+    "note": "📖 This is a preview. Access the full book through the links below!"
+  },
+  "author": "Classic Author",
+  "educationalNote": "This platform helps you practice reading comprehension. Summary content is provided for educational purposes. Please purchase or borrow the complete book to read the full story and support the author."
 }
