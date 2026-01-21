@@ -7,8 +7,8 @@
   "chapters": [
     {
       "chapter": 1,
-      "title": "Beginning",
-      "content": "Dracula begins with Count Dracula attempts to move to England to spread the undead curse. The main character faces initial challenges and meets key people who will shape their journey.",
+      "title": "CHAPTER I.",
+      "content": "Jonathan Harker’s Journal",
       "questions": [
         {
           "id": "q1-1",
@@ -26,8 +26,8 @@
     },
     {
       "chapter": 2,
-      "title": "Development",
-      "content": "The story develops as conflicts arise and relationships are tested. New information changes everything the characters thought they knew.",
+      "title": "CHAPTER II.",
+      "content": "Jonathan Harker’s Journal",
       "questions": [
         {
           "id": "q2-1",
@@ -39,8 +39,8 @@
     },
     {
       "chapter": 3,
-      "title": "Climax",
-      "content": "The tension reaches its peak as the main character confronts the central conflict. Difficult choices must be made.",
+      "title": "CHAPTER III.",
+      "content": "Jonathan Harker’s Journal",
       "questions": [
         {
           "id": "q3-1",
@@ -52,8 +52,8 @@
     },
     {
       "chapter": 4,
-      "title": "Resolution",
-      "content": "After the intense climax, the story moves toward resolution. Characters reflect on their journey and its meaning.",
+      "title": "CHAPTER IV.",
+      "content": "Jonathan Harker’s Journal",
       "questions": [
         {
           "id": "q4-1",
@@ -65,14 +65,79 @@
     },
     {
       "chapter": 5,
-      "title": "Conclusion",
-      "content": "The story concludes with lasting changes to the characters and their world. Lessons learned shape the future.",
+      "title": "CHAPTER V.",
+      "content": "Letters—Lucy and Mina",
       "questions": [
         {
           "id": "q5-1",
           "question": "How does the story end?",
           "type": "text",
           "answer": "with lasting changes and lessons learned"
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "title": "CHAPTER VI.",
+      "content": "Mina Murray’s Journal",
+      "questions": [
+        {
+          "id": "q6-1",
+          "question": "What happens in CHAPTER VI.?",
+          "type": "text",
+          "answer": "summary of events"
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "title": "CHAPTER VII.",
+      "content": "Cutting from “The Dailygraph,” 8 August",
+      "questions": [
+        {
+          "id": "q7-1",
+          "question": "What happens in CHAPTER VII.?",
+          "type": "text",
+          "answer": "summary of events"
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "title": "CHAPTER VIII.",
+      "content": "Mina Murray’s Journal",
+      "questions": [
+        {
+          "id": "q8-1",
+          "question": "What happens in CHAPTER VIII.?",
+          "type": "text",
+          "answer": "summary of events"
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "title": "CHAPTER IX.",
+      "content": "Mina Murray’s Journal",
+      "questions": [
+        {
+          "id": "q9-1",
+          "question": "What happens in CHAPTER IX.?",
+          "type": "text",
+          "answer": "summary of events"
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "title": "CHAPTER X.",
+      "content": "Mina Murray’s Journal",
+      "questions": [
+        {
+          "id": "q10-1",
+          "question": "What happens in CHAPTER X.?",
+          "type": "text",
+          "answer": "summary of events"
         }
       ]
     }
