@@ -227,65 +227,81 @@ export default function StoryPage() {
         </div>
       </header>
 
-      {/* Where to Read Banner - Styled & Ethiopia-Friendly */}
+      {/* Where to Read - Professional Theme */}
       {story.whereToRead && (
-        <div className={styles.whereToReadBanner}>
-          <div className={styles.bannerContent}>
-            <div className={styles.bannerLeft}>
-              <div className={styles.bannerIcon}>📚</div>
-              <div className={styles.bannerText}>
-                <h3>Want the Full Book?</h3>
-                <p>{story.whereToRead.note || 'Access the complete story!'}</p>
+        <div className={styles.whereToReadCard}>
+          <div className={styles.cardHeader}>
+            <div className={styles.cardIcon}>📖</div>
+            <div>
+              <h3 className={styles.cardTitle}>Want the Full Book?</h3>
+              <p className={styles.cardSubtitle}>This is a preview. Access the complete book below!</p>
+            </div>
+          </div>
+          
+          <div className={styles.linksGrid}>
+            {/* Free Access Section */}
+            <div className={styles.linkCategory}>
+              <h4 className={styles.categoryTitle}>
+                <span className={styles.categoryIcon}>🆓</span>
+                Free Access
+              </h4>
+              <div className={styles.linkButtons}>
+                {story.whereToRead.gutenbergLink && (
+                  <a href={story.whereToRead.gutenbergLink} target="_blank" rel="noopener noreferrer" className={`${styles.accessLink} ${styles.freeLink}`}>
+                    <span className={styles.linkIcon}>📚</span>
+                    <span>Project Gutenberg</span>
+                  </a>
+                )}
+                {story.whereToRead.archiveLink && (
+                  <a href={story.whereToRead.archiveLink} target="_blank" rel="noopener noreferrer" className={`${styles.accessLink} ${styles.freeLink}`}>
+                    <span className={styles.linkIcon}>🏛️</span>
+                    <span>Internet Archive</span>
+                  </a>
+                )}
               </div>
             </div>
-            
-            <div className={styles.bannerRight}>
-              <div className={styles.linkSection}>
-                <p className={styles.sectionTitle}>🆓 Free Access</p>
-                <div className={styles.linkGroup}>
-                  {story.whereToRead.gutenbergLink && (
-                    <a href={story.whereToRead.gutenbergLink} target="_blank" rel="noopener noreferrer" className={`${styles.linkBtn} ${styles.freeBtn}`}>
-                      Project Gutenberg
-                    </a>
-                  )}
-                  {story.whereToRead.archiveLink && (
-                    <a href={story.whereToRead.archiveLink} target="_blank" rel="noopener noreferrer" className={`${styles.linkBtn} ${styles.freeBtn}`}>
-                      Internet Archive
-                    </a>
-                  )}
-                </div>
+
+            {/* Purchase Section */}
+            <div className={styles.linkCategory}>
+              <h4 className={styles.categoryTitle}>
+                <span className={styles.categoryIcon}>🛒</span>
+                Buy/Read
+              </h4>
+              <div className={styles.linkButtons}>
+                {story.whereToRead.googleBooksLink && (
+                  <a href={story.whereToRead.googleBooksLink} target="_blank" rel="noopener noreferrer" className={styles.accessLink}>
+                    <span className={styles.linkIcon}>📕</span>
+                    <span>Google Books</span>
+                  </a>
+                )}
+                {story.whereToRead.amazonLink && (
+                  <a href={story.whereToRead.amazonLink} target="_blank" rel="noopener noreferrer" className={styles.accessLink}>
+                    <span className={styles.linkIcon}>🛍️</span>
+                    <span>Amazon</span>
+                  </a>
+                )}
               </div>
-              
-              <div className={styles.linkSection}>
-                <p className={styles.sectionTitle}>🛒 Buy/Read</p>
-                <div className={styles.linkGroup}>
-                  {story.whereToRead.googleBooksLink && (
-                    <a href={story.whereToRead.googleBooksLink} target="_blank" rel="noopener noreferrer" className={styles.linkBtn}>
-                      Google Books
-                    </a>
-                  )}
-                  {story.whereToRead.amazonLink && (
-                    <a href={story.whereToRead.amazonLink} target="_blank" rel="noopener noreferrer" className={styles.linkBtn}>
-                      Amazon
-                    </a>
-                  )}
-                </div>
-              </div>
-              
-              <div className={styles.linkSection}>
-                <p className={styles.sectionTitle}>ℹ️ Info</p>
-                <div className={styles.linkGroup}>
-                  {story.whereToRead.goodreadsLink && (
-                    <a href={story.whereToRead.goodreadsLink} target="_blank" rel="noopener noreferrer" className={styles.linkBtn}>
-                      Goodreads
-                    </a>
-                  )}
-                  {story.whereToRead.wikipediaLink && (
-                    <a href={story.whereToRead.wikipediaLink} target="_blank" rel="noopener noreferrer" className={styles.linkBtn}>
-                      Wikipedia
-                    </a>
-                  )}
-                </div>
+            </div>
+
+            {/* Info Section */}
+            <div className={styles.linkCategory}>
+              <h4 className={styles.categoryTitle}>
+                <span className={styles.categoryIcon}>ℹ️</span>
+                More Info
+              </h4>
+              <div className={styles.linkButtons}>
+                {story.whereToRead.goodreadsLink && (
+                  <a href={story.whereToRead.goodreadsLink} target="_blank" rel="noopener noreferrer" className={styles.accessLink}>
+                    <span className={styles.linkIcon}>⭐</span>
+                    <span>Goodreads</span>
+                  </a>
+                )}
+                {story.whereToRead.wikipediaLink && (
+                  <a href={story.whereToRead.wikipediaLink} target="_blank" rel="noopener noreferrer" className={styles.accessLink}>
+                    <span className={styles.linkIcon}>📰</span>
+                    <span>Wikipedia</span>
+                  </a>
+                )}
               </div>
             </div>
           </div>
