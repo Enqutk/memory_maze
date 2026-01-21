@@ -8,7 +8,7 @@
     {
       "chapter": 1,
       "title": "The Red Door",
-      "content": "The door was red and the room was silent. Sarah stood outside, her hand trembling as she reached for the brass handle. The letter had said to come alone, at midnight, to this abandoned warehouse on the edge of the city. She took a deep breath and pushed the door open. Inside, the air was thick with dust and the smell of old wood. A single light bulb hung from the ceiling, casting long shadows across the concrete floor. On the far wall, she noticed a painting of a clock showing 3:17. Underneath i...\n\n[Get the full book to continue reading!]",
+      "content": "The door was red and the room was silent. Sarah stood outside, her hand trembling as she reached for the brass handle. The letter had said to come alone, at midnight, to this abandoned warehouse on the edge of the city. She took a deep breath and pushed the door open. Inside, the air was thick with dust and the smell of old wood. A single light bulb hung from the ceiling, casting long shadows across the concrete floor. On the far wall, she noticed a painting of a clock showing 3:17. Underneath i...",
       "questions": [
         {
           "id": "q1-1",
@@ -28,14 +28,12 @@
           "type": "text",
           "answer": "brass, sight and smell"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     },
     {
       "chapter": 2,
       "title": "The Locked Room",
-      "content": "Sarah turned around, her heart racing. The door was indeed closed, and when she tried the handle, it wouldn't budge. Panic began to set in, but she forced herself to think clearly. The envelope in her hand felt heavy. She tore it open and found a single sheet of paper with three words written in elegant script: 'Remember the clock.' Sarah looked back at the painting. The clock still showed 3:17, but something was different. She moved closer and noticed that the numbers were actually buttons. She...\n\n[Get the full book to continue reading!]",
+      "content": "Sarah turned around, her heart racing. The door was indeed closed, and when she tried the handle, it wouldn't budge. Panic began to set in, but she forced herself to think clearly. The envelope in her hand felt heavy. She tore it open and found a single sheet of paper with three words written in elegant script: 'Remember the clock.' Sarah looked back at the painting. The clock still showed 3:17, but something was different. She moved closer and noticed that the numbers were actually buttons. She...",
       "questions": [
         {
           "id": "q2-1",
@@ -61,14 +59,12 @@
           "type": "text",
           "answer": "panic, forced herself to think clearly"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     },
     {
       "chapter": 3,
       "title": "The Hidden Passage",
-      "content": "The passage was narrow and dark, with walls that felt damp to the touch. Sarah used her phone's flashlight to illuminate the way forward. The tunnel seemed to go on forever, but after about fifty steps, she came to another door. This one was different—it was made of metal and had no handle. Instead, there were three symbols carved into its surface: a triangle, a circle, and a square. Sarah remembered the symbol from the door frame—a triangle with a circle inside. She touched the triangle, then t...\n\n[Get the full book to continue reading!]",
+      "content": "The passage was narrow and dark, with walls that felt damp to the touch. Sarah used her phone's flashlight to illuminate the way forward. The tunnel seemed to go on forever, but after about fifty steps, she came to another door. This one was different—it was made of metal and had no handle. Instead, there were three symbols carved into its surface: a triangle, a circle, and a square. Sarah remembered the symbol from the door frame—a triangle with a circle inside. She touched the triangle, then t...",
       "questions": [
         {
           "id": "q3-1",
@@ -94,14 +90,12 @@
           "type": "text",
           "answer": "underground or basement, midnight"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     },
     {
       "chapter": 4,
       "title": "The Library of Memories",
-      "content": "Sarah approached the journal carefully. The room was vast, with bookshelves reaching up to a high ceiling. Each shelf was labeled with dates, and the books seemed to be organized chronologically. She picked up the journal and read more. 'Every memory is a key. Every forgotten detail is a lock. To find the truth, you must remember everything.' Sarah looked around the room. On one wall, there was a map of the city. A red X marked the warehouse where she had entered. But there were other marks too—...\n\n[Get the full book to continue reading!]",
+      "content": "Sarah approached the journal carefully. The room was vast, with bookshelves reaching up to a high ceiling. Each shelf was labeled with dates, and the books seemed to be organized chronologically. She picked up the journal and read more. 'Every memory is a key. Every forgotten detail is a lock. To find the truth, you must remember everything.' Sarah looked around the room. On one wall, there was a map of the city. A red X marked the warehouse where she had entered. But there were other marks too—...",
       "questions": [
         {
           "id": "q4-1",
@@ -127,14 +121,12 @@
           "type": "text",
           "answer": "each represents different clue types, time sequence, symbols, locations"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     },
     {
       "chapter": 5,
       "title": "The Final Truth",
-      "content": "Sarah understood now. The clock had stopped at 3:17. The symbols led to specific locations. The words from each chapter were clues. She had to remember: the red door, the clock sequence 3-1-7, the triangle-circle symbol, the fifty steps, the three symbols on the metal door, and the journal's message. She left the library and made her way to the museum—the location marked with the yellow triangle. There, in a small exhibit about local history, she found a display case. Inside was a key, and next ...\n\n[Get the full book to continue reading!]",
+      "content": "Sarah understood now. The clock had stopped at 3:17. The symbols led to specific locations. The words from each chapter were clues. She had to remember: the red door, the clock sequence 3-1-7, the triangle-circle symbol, the fifty steps, the three symbols on the metal door, and the journal's message. She left the library and made her way to the museum—the location marked with the yellow triangle. There, in a small exhibit about local history, she found a display case. Inside was a key, and next ...",
       "questions": [
         {
           "id": "q5-1",
@@ -166,9 +158,7 @@
           "type": "text",
           "answer": "clock 3:17, button sequence 3-1-7, triangle circle symbol, map symbols and colors"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     }
   ],
   "whereToRead": {
@@ -177,8 +167,7 @@
     "amazonLink": "https://www.amazon.com/s?k=Find%20the%20Truth",
     "googleBooksLink": "https://books.google.com/books?q=Find%20the%20Truth",
     "goodreadsLink": "https://www.goodreads.com/search?q=Find%20the%20Truth",
-    "wikipediaLink": "https://en.wikipedia.org/wiki/Find_the_Truth",
-    "note": "📖 This is a preview. Access the full book through the links below!"
+    "wikipediaLink": "https://en.wikipedia.org/wiki/Find_the_Truth"
   },
   "author": "Classic Author",
   "educationalNote": "This platform helps you practice reading comprehension. Summary content is provided for educational purposes. Please purchase or borrow the complete book to read the full story and support the author."

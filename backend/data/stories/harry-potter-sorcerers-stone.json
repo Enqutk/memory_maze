@@ -9,7 +9,7 @@
     {
       "chapter": 1,
       "title": "The Boy Who Lived",
-      "content": "Harry Potter lives with his cruel aunt, uncle, and cousin, the Dursleys, who treat him terribly. On his 11th birthday, a giant named Hagrid arrives and tells Harry the truth: he is a wizard, and his parents were murdered by the evil Lord Voldemort. Harry survived Voldemort's killing curse as a baby, making him famous in the wizarding world as \"The Boy Who Lived.\" Hagrid takes Harry to Diagon Alley to buy school supplies for Hogwarts School of Witchcraft and Wizardry.\n\n[This is a preview. Read th...\n\n[Get the full book to continue reading!]",
+      "content": "Harry Potter lives with his cruel aunt, uncle, and cousin, the Dursleys, who treat him terribly. On his 11th birthday, a giant named Hagrid arrives and tells Harry the truth: he is a wizard, and his parents were murdered by the evil Lord Voldemort. Harry survived Voldemort's killing curse as a baby, making him famous in the wizarding world as \"The Boy Who Lived.\" Hagrid takes Harry to Diagon Alley to buy school supplies for Hogwarts School of Witchcraft and Wizardry.\n\n[This is a preview. Read th...",
       "questions": [
         {
           "id": "q1-1",
@@ -29,14 +29,12 @@
           "type": "text",
           "answer": "The Boy Who Lived"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     },
     {
       "chapter": 2,
       "title": "Hogwarts",
-      "content": "Harry boards the Hogwarts Express at Platform 9¾ and meets Ron Weasley and Hermione Granger, who become his best friends. At Hogwarts, students are sorted into four houses. Harry is sorted into Gryffindor along with Ron and Hermione. Harry also meets Draco Malfoy, a bully from Slytherin house. Harry discovers he has a natural talent for flying and is chosen to be the youngest Seeker on the Gryffindor Quidditch team in a century.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "content": "Harry boards the Hogwarts Express at Platform 9¾ and meets Ron Weasley and Hermione Granger, who become his best friends. At Hogwarts, students are sorted into four houses. Harry is sorted into Gryffindor along with Ron and Hermione. Harry also meets Draco Malfoy, a bully from Slytherin house. Harry discovers he has a natural talent for flying and is chosen to be the youngest Seeker on the Gryffindor Quidditch team in a century.",
       "questions": [
         {
           "id": "q2-1",
@@ -56,14 +54,12 @@
           "type": "text",
           "answer": "Seeker"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     },
     {
       "chapter": 3,
       "title": "The Three-Headed Dog",
-      "content": "Harry, Ron, and Hermione accidentally discover a three-headed dog guarding a trapdoor on the third floor. They learn that something called the Sorcerer's Stone, which grants immortality, is hidden at Hogwarts. They suspect that Professor Snape, who seems to hate Harry, is trying to steal it. Meanwhile, Harry receives an Invisibility Cloak that belonged to his father, allowing him to explore the castle unseen.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "content": "Harry, Ron, and Hermione accidentally discover a three-headed dog guarding a trapdoor on the third floor. They learn that something called the Sorcerer's Stone, which grants immortality, is hidden at Hogwarts. They suspect that Professor Snape, who seems to hate Harry, is trying to steal it. Meanwhile, Harry receives an Invisibility Cloak that belonged to his father, allowing him to explore the castle unseen.",
       "questions": [
         {
           "id": "q3-1",
@@ -83,14 +79,12 @@
           "type": "text",
           "answer": "an Invisibility Cloak"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     },
     {
       "chapter": 4,
       "title": "Through the Trapdoor",
-      "content": "Harry, Ron, and Hermione realize someone is going to steal the Stone. They decide to protect it themselves and go through the trapdoor, facing a series of magical challenges. Ron is injured during a giant chess game, and Hermione stays behind to help him. Harry continues alone and discovers the shocking truth: it's not Snape trying to steal the Stone—it's Professor Quirrell, who has been possessed by Voldemort.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "content": "Harry, Ron, and Hermione realize someone is going to steal the Stone. They decide to protect it themselves and go through the trapdoor, facing a series of magical challenges. Ron is injured during a giant chess game, and Hermione stays behind to help him. Harry continues alone and discovers the shocking truth: it's not Snape trying to steal the Stone—it's Professor Quirrell, who has been possessed by Voldemort.",
       "questions": [
         {
           "id": "q4-1",
@@ -110,14 +104,12 @@
           "type": "text",
           "answer": "he is injured during a giant chess game"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     },
     {
       "chapter": 5,
       "title": "The Mirror of Erised",
-      "content": "Harry confronts Quirrell and Voldemort, who wants the Stone to regain his body. Harry looks into the Mirror of Erised and sees himself holding the Stone, which magically appears in his pocket. When Quirrell tries to kill Harry, Harry's touch burns Quirrell because of the love protection his mother left when she died for him. Voldemort's spirit flees, and Harry wakes up in the hospital. Dumbledore explains that the Stone has been destroyed. Gryffindor wins the House Cup, and Harry returns to the ...\n\n[Get the full book to continue reading!]",
+      "content": "Harry confronts Quirrell and Voldemort, who wants the Stone to regain his body. Harry looks into the Mirror of Erised and sees himself holding the Stone, which magically appears in his pocket. When Quirrell tries to kill Harry, Harry's touch burns Quirrell because of the love protection his mother left when she died for him. Voldemort's spirit flees, and Harry wakes up in the hospital. Dumbledore explains that the Stone has been destroyed. Gryffindor wins the House Cup, and Harry returns to the ...",
       "questions": [
         {
           "id": "q5-1",
@@ -137,9 +129,7 @@
           "type": "text",
           "answer": "Gryffindor"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     }
   ],
   "whereToRead": {
@@ -148,8 +138,7 @@
     "amazonLink": "https://www.amazon.com/s?k=Harry%20Potter%20and%20the%20Sorcerer's%20Stone",
     "googleBooksLink": "https://books.google.com/books?q=Harry%20Potter%20and%20the%20Sorcerer's%20Stone",
     "goodreadsLink": "https://www.goodreads.com/search?q=Harry%20Potter%20and%20the%20Sorcerer's%20Stone",
-    "wikipediaLink": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Sorcerer's_Stone",
-    "note": "📖 This is a preview. Access the full book through the links below!"
+    "wikipediaLink": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Sorcerer's_Stone"
   },
   "educationalNote": "This platform helps you practice reading comprehension. Summary content is provided for educational purposes. Please purchase or borrow the complete book to read the full story and support the author."
 }

@@ -8,7 +8,7 @@
     {
       "chapter": 1,
       "title": "Beginning",
-      "content": "The Adventures of Huckleberry Finn begins with Huck and Jim float down the Mississippi River seeking freedom. The main character faces initial challenges and meets key people who will shape their journey.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "content": "The Adventures of Huckleberry Finn begins with Huck and Jim float down the Mississippi River seeking freedom. The main character faces initial challenges and meets key people who will shape their journey.",
       "questions": [
         {
           "id": "q1-1",
@@ -22,14 +22,12 @@
           "type": "text",
           "answer": "1"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     },
     {
       "chapter": 2,
       "title": "Development",
-      "content": "The story develops as conflicts arise and relationships are tested. New information changes everything the characters thought they knew.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "content": "The story develops as conflicts arise and relationships are tested. New information changes everything the characters thought they knew.",
       "questions": [
         {
           "id": "q2-1",
@@ -37,14 +35,12 @@
           "type": "text",
           "answer": "conflicts arise and relationships are tested"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     },
     {
       "chapter": 3,
       "title": "Climax",
-      "content": "The tension reaches its peak as the main character confronts the central conflict. Difficult choices must be made.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "content": "The tension reaches its peak as the main character confronts the central conflict. Difficult choices must be made.",
       "questions": [
         {
           "id": "q3-1",
@@ -52,14 +48,12 @@
           "type": "text",
           "answer": "the climax where tension reaches its peak"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     },
     {
       "chapter": 4,
       "title": "Resolution",
-      "content": "After the intense climax, the story moves toward resolution. Characters reflect on their journey and its meaning.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "content": "After the intense climax, the story moves toward resolution. Characters reflect on their journey and its meaning.",
       "questions": [
         {
           "id": "q4-1",
@@ -67,14 +61,12 @@
           "type": "text",
           "answer": "characters reflect on their journey"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     },
     {
       "chapter": 5,
       "title": "Conclusion",
-      "content": "The story concludes with lasting changes to the characters and their world. Lessons learned shape the future.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "content": "The story concludes with lasting changes to the characters and their world. Lessons learned shape the future.",
       "questions": [
         {
           "id": "q5-1",
@@ -82,9 +74,7 @@
           "type": "text",
           "answer": "with lasting changes and lessons learned"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     }
   ],
   "coverImage": "",
@@ -94,8 +84,7 @@
     "amazonLink": "https://www.amazon.com/s?k=The%20Adventures%20of%20Huckleberry%20Finn",
     "googleBooksLink": "https://books.google.com/books?q=The%20Adventures%20of%20Huckleberry%20Finn",
     "goodreadsLink": "https://www.goodreads.com/search?q=The%20Adventures%20of%20Huckleberry%20Finn",
-    "wikipediaLink": "https://en.wikipedia.org/wiki/The_Adventures_of_Huckleberry_Finn",
-    "note": "📖 This is a preview. Access the full book through the links below!"
+    "wikipediaLink": "https://en.wikipedia.org/wiki/The_Adventures_of_Huckleberry_Finn"
   },
   "educationalNote": "This platform helps you practice reading comprehension. Summary content is provided for educational purposes. Please purchase or borrow the complete book to read the full story and support the author."
 }

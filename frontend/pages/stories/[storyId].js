@@ -233,8 +233,8 @@ export default function StoryPage() {
           <div className={styles.cardHeader}>
             <div className={styles.cardIcon}>📖</div>
             <div>
-              <h3 className={styles.cardTitle}>Want the Full Book?</h3>
-              <p className={styles.cardSubtitle}>This is a preview. Access the complete book below!</p>
+              <h3 className={styles.cardTitle}>Where to Read</h3>
+              <p className={styles.cardSubtitle}>Find this book on these platforms for more content and formats!</p>
             </div>
           </div>
           

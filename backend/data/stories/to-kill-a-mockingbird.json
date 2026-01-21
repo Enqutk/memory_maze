@@ -9,7 +9,7 @@
     {
       "chapter": 1,
       "title": "Scout and Jem",
-      "content": "Scout Finch lives in the small town of Maycomb, Alabama, with her older brother Jem and their father Atticus, a lawyer. Their mother died when Scout was young. The children are fascinated by their mysterious neighbor, Boo Radley, who never leaves his house. The neighborhood children dare each other to approach the Radley house. Scout, Jem, and their friend Dill spend their summer creating stories about Boo and trying to catch a glimpse of him.\n\n[This is a preview. Read the full book for the comp...\n\n[Get the full book to continue reading!]",
+      "content": "Scout Finch lives in the small town of Maycomb, Alabama, with her older brother Jem and their father Atticus, a lawyer. Their mother died when Scout was young. The children are fascinated by their mysterious neighbor, Boo Radley, who never leaves his house. The neighborhood children dare each other to approach the Radley house. Scout, Jem, and their friend Dill spend their summer creating stories about Boo and trying to catch a glimpse of him.\n\n[This is a preview. Read the full book for the comp...",
       "questions": [
         {
           "id": "q1-1",
@@ -35,14 +35,12 @@
           "type": "text",
           "answer": "Jem"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     },
     {
       "chapter": 2,
       "title": "The Trial",
-      "content": "Atticus is appointed to defend Tom Robinson, a black man accused of raping Mayella Ewell, a white woman. Despite the evidence proving Tom's innocence, the all-white jury finds him guilty because of racial prejudice. Atticus demonstrates Tom's disability that would have made the crime impossible, and exposes the Ewells' lies. The children watch from the colored balcony and witness injustice firsthand. Atticus teaches them that real courage is fighting for what's right even when you know you'll lo...\n\n[Get the full book to continue reading!]",
+      "content": "Atticus is appointed to defend Tom Robinson, a black man accused of raping Mayella Ewell, a white woman. Despite the evidence proving Tom's innocence, the all-white jury finds him guilty because of racial prejudice. Atticus demonstrates Tom's disability that would have made the crime impossible, and exposes the Ewells' lies. The children watch from the colored balcony and witness injustice firsthand. Atticus teaches them that real courage is fighting for what's right even when you know you'll lo...",
       "questions": [
         {
           "id": "q2-1",
@@ -68,14 +66,12 @@
           "type": "text",
           "answer": "fighting for what's right even when you know you'll lose"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     },
     {
       "chapter": 3,
       "title": "Bob Ewell's Revenge",
-      "content": "Bob Ewell, Mayella's father, is humiliated by Atticus in court. He threatens Atticus and spits in his face. Atticus remains dignified, but Ewell seeks revenge. Tom Robinson is killed while trying to escape prison. On Halloween night, Ewell attacks Scout and Jem as they walk home from a school pageant. In the darkness, someone rescues the children. Jem's arm is broken in the struggle.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "content": "Bob Ewell, Mayella's father, is humiliated by Atticus in court. He threatens Atticus and spits in his face. Atticus remains dignified, but Ewell seeks revenge. Tom Robinson is killed while trying to escape prison. On Halloween night, Ewell attacks Scout and Jem as they walk home from a school pageant. In the darkness, someone rescues the children. Jem's arm is broken in the struggle.",
       "questions": [
         {
           "id": "q3-1",
@@ -101,14 +97,12 @@
           "type": "text",
           "answer": "broken arm"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     },
     {
       "chapter": 4,
       "title": "Boo Radley Emerges",
-      "content": "The person who rescued Scout and Jem was Boo Radley. In the struggle, Boo killed Bob Ewell to protect the children. Sheriff Tate decides to report that Ewell fell on his own knife, protecting Boo from unwanted attention. Scout finally meets Boo and walks him home. Standing on the Radley porch, Scout sees the neighborhood from Boo's perspective, understanding at last what Atticus meant about walking in someone else's shoes.\n\n[This is a preview. Read the full book for the complete chapter!]\n\n[This is a preview. Read the full book for the complete chapter!]",
+      "content": "The person who rescued Scout and Jem was Boo Radley. In the struggle, Boo killed Bob Ewell to protect the children. Sheriff Tate decides to report that Ewell fell on his own knife, protecting Boo from unwanted attention. Scout finally meets Boo and walks him home. Standing on the Radley porch, Scout sees the neighborhood from Boo's perspective, understanding at last what Atticus meant about walking in someone else's shoes.",
       "questions": [
         {
           "id": "q4-1",
@@ -134,14 +128,12 @@
           "type": "text",
           "answer": "walking in someone else's shoes"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     },
     {
       "chapter": 5,
       "title": "Lessons Learned",
-      "content": "Scout reflects on the events of the past years. She has learned that most people are good once you get to know them, but that prejudice and fear can make people do terrible things. Atticus taught her to stand up for justice even when it's unpopular. She learned that Boo Radley was a kind, protective person, not the monster the children imagined. Scout has grown from a naive child into someone who understands the complexity of human nature and the importance of compassion.\n\n[This is a preview. Re...\n\n[Get the full book to continue reading!]",
+      "content": "Scout reflects on the events of the past years. She has learned that most people are good once you get to know them, but that prejudice and fear can make people do terrible things. Atticus taught her to stand up for justice even when it's unpopular. She learned that Boo Radley was a kind, protective person, not the monster the children imagined. Scout has grown from a naive child into someone who understands the complexity of human nature and the importance of compassion.\n\n[This is a preview. Re...",
       "questions": [
         {
           "id": "q5-1",
@@ -173,9 +165,7 @@
           "type": "text",
           "answer": "compassion"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     }
   ],
   "whereToRead": {
@@ -184,8 +174,7 @@
     "amazonLink": "https://www.amazon.com/s?k=To%20Kill%20a%20Mockingbird",
     "googleBooksLink": "https://books.google.com/books?q=To%20Kill%20a%20Mockingbird",
     "goodreadsLink": "https://www.goodreads.com/search?q=To%20Kill%20a%20Mockingbird",
-    "wikipediaLink": "https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird",
-    "note": "📖 This is a preview. Access the full book through the links below!"
+    "wikipediaLink": "https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird"
   },
   "educationalNote": "This platform helps you practice reading comprehension. Summary content is provided for educational purposes. Please purchase or borrow the complete book to read the full story and support the author."
 }

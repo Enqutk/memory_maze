@@ -8,7 +8,7 @@
     {
       "chapter": 1,
       "title": "The Shepherd",
-      "content": "Santiago was a young Andalusian shepherd. He had studied at the seminary for several years, but he had always wanted to travel. His parents had wanted him to become a priest, but he had convinced them to let him become a shepherd instead. He owned a flock of sheep and traveled with them throughout the countryside. He had learned to read from the priest, and he carried a book with him always. One day, he had a recurring dream about finding treasure near the Egyptian pyramids. He decided to visit ...\n\n[Get the full book to continue reading!]",
+      "content": "Santiago was a young Andalusian shepherd. He had studied at the seminary for several years, but he had always wanted to travel. His parents had wanted him to become a priest, but he had convinced them to let him become a shepherd instead. He owned a flock of sheep and traveled with them throughout the countryside. He had learned to read from the priest, and he carried a book with him always. One day, he had a recurring dream about finding treasure near the Egyptian pyramids. He decided to visit ...",
       "questions": [
         {
           "id": "q1-1",
@@ -34,14 +34,12 @@
           "type": "text",
           "answer": "he must travel to the pyramids in Egypt to find his treasure"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     },
     {
       "chapter": 2,
       "title": "The King of Salem",
-      "content": "Santiago met an old man who claimed to be the King of Salem. The old man told Santiago about the concept of a Personal Legend. He explained that when you want something, all the universe conspires in helping you to achieve it. The old man gave Santiago two stones: Urim and Thummim. These stones would help Santiago make decisions. The old man told Santiago that he must follow omens, which are signs from the universe. He also told Santiago that the secret of happiness is to see all the marvels of ...\n\n[Get the full book to continue reading!]",
+      "content": "Santiago met an old man who claimed to be the King of Salem. The old man told Santiago about the concept of a Personal Legend. He explained that when you want something, all the universe conspires in helping you to achieve it. The old man gave Santiago two stones: Urim and Thummim. These stones would help Santiago make decisions. The old man told Santiago that he must follow omens, which are signs from the universe. He also told Santiago that the secret of happiness is to see all the marvels of ...",
       "questions": [
         {
           "id": "q2-1",
@@ -67,14 +65,12 @@
           "type": "text",
           "answer": "shepherd"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     },
     {
       "chapter": 3,
       "title": "The Crystal Merchant",
-      "content": "Santiago arrived in Tangier, but he was robbed of all his money. He found work with a crystal merchant. The merchant had a shop that had been there for thirty years, but he had never realized his dream of making a pilgrimage to Mecca. Santiago helped the merchant improve his business by suggesting they display the crystal in the street. The business flourished, and Santiago earned enough money to continue his journey. However, the merchant taught Santiago an important lesson: sometimes it's bett...\n\n[Get the full book to continue reading!]",
+      "content": "Santiago arrived in Tangier, but he was robbed of all his money. He found work with a crystal merchant. The merchant had a shop that had been there for thirty years, but he had never realized his dream of making a pilgrimage to Mecca. Santiago helped the merchant improve his business by suggesting they display the crystal in the street. The business flourished, and Santiago earned enough money to continue his journey. However, the merchant taught Santiago an important lesson: sometimes it's bett...",
       "questions": [
         {
           "id": "q3-1",
@@ -100,14 +96,12 @@
           "type": "text",
           "answer": "sometimes it's better to dream about your dreams than to actually achieve them"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     },
     {
       "chapter": 4,
       "title": "The Englishman and the Alchemist",
-      "content": "Santiago joined a caravan crossing the Sahara Desert. In the caravan, he met an Englishman who was searching for the Alchemist. The Englishman had studied alchemy from books and believed that the secret of turning lead into gold could be found through knowledge. Santiago learned that the Englishman was searching for a 200-year-old alchemist who lived at the Al-Fayoum oasis. When they reached the oasis, Santiago met the Alchemist himself. The Alchemist told Santiago that he must listen to his hea...\n\n[Get the full book to continue reading!]",
+      "content": "Santiago joined a caravan crossing the Sahara Desert. In the caravan, he met an Englishman who was searching for the Alchemist. The Englishman had studied alchemy from books and believed that the secret of turning lead into gold could be found through knowledge. Santiago learned that the Englishman was searching for a 200-year-old alchemist who lived at the Al-Fayoum oasis. When they reached the oasis, Santiago met the Alchemist himself. The Alchemist told Santiago that he must listen to his hea...",
       "questions": [
         {
           "id": "q4-1",
@@ -133,14 +127,12 @@
           "type": "text",
           "answer": "he must listen to his heart, because the heart knows all things"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     },
     {
       "chapter": 5,
       "title": "The Pyramids",
-      "content": "Santiago finally reached the pyramids. He began to dig where he believed the treasure was buried. However, he was attacked by refugees who stole his gold. Before they left, one of the refugees told Santiago about his own dream: he had dreamed of finding treasure under a sycamore tree in an abandoned church in Spain. Santiago realized that this was the church where he had slept with his sheep! The treasure was not at the pyramids—it was back where he started. Santiago returned to Spain and found ...\n\n[Get the full book to continue reading!]",
+      "content": "Santiago finally reached the pyramids. He began to dig where he believed the treasure was buried. However, he was attacked by refugees who stole his gold. Before they left, one of the refugees told Santiago about his own dream: he had dreamed of finding treasure under a sycamore tree in an abandoned church in Spain. Santiago realized that this was the church where he had slept with his sheep! The treasure was not at the pyramids—it was back where he started. Santiago returned to Spain and found ...",
       "questions": [
         {
           "id": "q5-1",
@@ -172,9 +164,7 @@
           "type": "text",
           "answer": "the journey itself had been the real treasure"
         }
-      ],
-      "isPreview": true,
-      "fullBookRequired": true
+      ]
     }
   ],
   "whereToRead": {
@@ -183,8 +173,7 @@
     "amazonLink": "https://www.amazon.com/s?k=The%20Alchemist",
     "googleBooksLink": "https://books.google.com/books?q=The%20Alchemist",
     "goodreadsLink": "https://www.goodreads.com/search?q=The%20Alchemist",
-    "wikipediaLink": "https://en.wikipedia.org/wiki/The_Alchemist",
-    "note": "📖 This is a preview. Access the full book through the links below!"
+    "wikipediaLink": "https://en.wikipedia.org/wiki/The_Alchemist"
   },
   "author": "Classic Author",
   "educationalNote": "This platform helps you practice reading comprehension. Summary content is provided for educational purposes. Please purchase or borrow the complete book to read the full story and support the author."
